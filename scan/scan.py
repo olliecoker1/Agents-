@@ -54,12 +54,35 @@ def prob_to_american(p):
     return round(-100 * p / (1 - p)) if p >= 0.5 else round(100 * (1 - p) / p)
 
 
+def _better(market, name, cand, cur):
+    """True if cand is a more favourable number/price for the bettor than cur."""
+    if cur is None:
+        return True
+    if market == "totals" and name == "Over":
+        return (-cand["point"], cand["price"]) > (-cur["point"], cur["price"])
+    if market in ("spreads", "totals"):
+        return (cand["point"], cand["price"]) > (cur["point"], cur["price"])
+    return cand["price"] > cur["price"]
+
+
 def consensus(event):
-    """Median line across bookmakers, plus no-vig moneyline probabilities."""
+    """Median line across bookmakers, no-vig moneyline probabilities and best prices."""
     h2h, spreads, totals = {}, {}, []
+    best = {"h2h": {}, "spreads": {}, "totals": {}}
     for book in event.get("bookmakers", []):
+        title = book.get("title") or book.get("key")
         for market in book.get("markets", []):
             outcomes = market.get("outcomes", [])
+            if market["key"] not in best:
+                continue
+            for o in outcomes:
+                cand = {"price": o["price"], "book": title}
+                if "point" in o:
+                    cand["point"] = o["point"]
+                elif market["key"] != "h2h":
+                    continue
+                if _better(market["key"], o["name"], cand, best[market["key"]].get(o["name"])):
+                    best[market["key"]][o["name"]] = cand
             if market["key"] == "h2h":
                 for o in outcomes:
                     h2h.setdefault(o["name"], []).append(american_to_prob(o["price"]))
@@ -72,7 +95,7 @@ def consensus(event):
                     if o["name"] == "Over" and "point" in o:
                         totals.append(o["point"])
 
-    out = {"books": len(event.get("bookmakers", []))}
+    out = {"books": len(event.get("bookmakers", [])), "best_price": best}
     if h2h:
         raw = {name: statistics.median(ps) for name, ps in h2h.items()}
         overround = sum(raw.values())
@@ -183,6 +206,7 @@ def scan_league(sport, api_key, now, horizon):
     teams = {g["home"] for g in games} | {g["away"] for g in games}
     return {
         "league": name,
+        "sport_key": sport,
         "games": games,
         "news": fetch_news(path, has_injuries, teams) if games else None,
         "odds_requests_remaining": headers.get("x-requests-remaining"),

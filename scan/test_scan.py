@@ -6,8 +6,8 @@ from scan import american_to_prob, consensus, movement, prob_to_american
 def book(home_ml, away_ml, spread, total):
     return {"markets": [
         {"key": "h2h", "outcomes": [{"name": "Home", "price": home_ml}, {"name": "Away", "price": away_ml}]},
-        {"key": "spreads", "outcomes": [{"name": "Home", "point": spread}, {"name": "Away", "point": -spread}]},
-        {"key": "totals", "outcomes": [{"name": "Over", "point": total}, {"name": "Under", "point": total}]},
+        {"key": "spreads", "outcomes": [{"name": "Home", "point": spread, "price": -110}, {"name": "Away", "point": -spread, "price": -110}]},
+        {"key": "totals", "outcomes": [{"name": "Over", "point": total, "price": -110}, {"name": "Under", "point": total, "price": -110}]},
     ]}
 
 
@@ -26,6 +26,19 @@ class ScanTest(unittest.TestCase):
         self.assertGreater(line["hold_pct"], 0)
         self.assertEqual(line["spread"]["Home"], -3.0)
         self.assertEqual(line["total"], 46.0)
+
+    def test_best_price(self):
+        ev = {"bookmakers": [
+            dict(book(-150, 130, -3.0, 45.5), title="A"),
+            dict(book(-140, 125, -2.5, 46.5), title="B"),
+        ]}
+        best = consensus(ev)["best_price"]
+        self.assertEqual(best["h2h"]["Home"], {"price": -140, "book": "B"})
+        self.assertEqual(best["h2h"]["Away"]["book"], "A")
+        self.assertEqual(best["spreads"]["Home"]["point"], -2.5)
+        self.assertEqual(best["spreads"]["Away"]["point"], 3.0)
+        self.assertEqual(best["totals"]["Over"]["point"], 45.5)
+        self.assertEqual(best["totals"]["Under"]["point"], 46.5)
 
     def test_movement(self):
         before = consensus({"bookmakers": [book(-150, 130, -3.0, 45.5)]})
