@@ -178,7 +178,7 @@ def scan_league(sport, api_key, now, horizon):
     name, path, has_injuries = LEAGUES[sport]
     events, headers = get_json(ODDS_URL.format(sport=sport), {
         "apiKey": api_key,
-        "regions": "us,uk",
+        "regions": "uk",  # UK-licensed books only: the prices the user can actually get
         "markets": "h2h,spreads,totals",
         "oddsFormat": "american",
     })

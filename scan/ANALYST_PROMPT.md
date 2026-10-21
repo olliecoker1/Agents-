@@ -78,3 +78,5 @@ review" with the final summary line.
 - Every report states that sports betting involves financial risk.
 - Mark unconfirmed news (rumours, single-source reports) as unconfirmed.
 - Lines in the file may be up to a few minutes old; say so.
+- Prices come from UK-licensed bookmakers only. Show odds in the report as
+  decimal (e.g. 1.91) alongside the bookmaker name.
