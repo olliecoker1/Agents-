@@ -3,8 +3,12 @@
 Writes data/latest.json for the analysis step and stores a timestamped odds
 snapshot per league so the next run can measure line movement.
 
-Usage: python3 scan/scan.py [--hours 36]
+Usage: python3 scan/scan.py [--hours 36] [--leagues nfl,nba,epl] [--reserve 25]
 Requires ODDS_API_KEY (https://the-odds-api.com). Standard library only.
+
+Free-plan budget (500 credits/month): the events list is free, so a league is
+only priced (3 credits: 3 markets x 1 region) when it has a game in the window,
+and pricing stops once remaining credits fall to the reserve kept for settling.
 """
 
 import argparse
@@ -30,6 +34,7 @@ LEAGUES = {
 }
 
 ODDS_URL = "https://api.the-odds-api.com/v4/sports/{sport}/odds"
+EVENTS_URL = "https://api.the-odds-api.com/v4/sports/{sport}/events"  # costs 0 credits
 ESPN_URL = "https://site.api.espn.com/apis/site/v2/sports/{path}/{endpoint}"
 
 
@@ -54,26 +59,27 @@ def prob_to_american(p):
     return round(-100 * p / (1 - p)) if p >= 0.5 else round(100 * (1 - p) / p)
 
 
-def _better(market, name, cand, cur):
-    """True if cand is a more favourable number/price for the bettor than cur."""
-    if cur is None:
-        return True
-    if market == "totals" and name == "Over":
-        return (-cand["point"], cand["price"]) > (-cur["point"], cur["price"])
-    if market in ("spreads", "totals"):
-        return (cand["point"], cand["price"]) > (cur["point"], cur["price"])
-    return cand["price"] > cur["price"]
+def _main_line(cands):
+    """Best price on the line most books offer, ignoring alternate lines.
+
+    Books list alternate spreads/totals (e.g. +8 at -667) alongside the main
+    line; comparing points across those would pick unbettable junk prices.
+    """
+    points = [c["point"] for c in cands]
+    mid = statistics.median(points)
+    main = max(set(points), key=lambda p: (points.count(p), -abs(p - mid)))
+    return max((c for c in cands if c["point"] == main), key=lambda c: c["price"])
 
 
 def consensus(event):
     """Median line across bookmakers, no-vig moneyline probabilities and best prices."""
     h2h, spreads, totals = {}, {}, []
-    best = {"h2h": {}, "spreads": {}, "totals": {}}
+    offers = {"h2h": {}, "spreads": {}, "totals": {}}
     for book in event.get("bookmakers", []):
         title = book.get("title") or book.get("key")
         for market in book.get("markets", []):
             outcomes = market.get("outcomes", [])
-            if market["key"] not in best:
+            if market["key"] not in offers:
                 continue
             for o in outcomes:
                 cand = {"price": o["price"], "book": title}
@@ -81,8 +87,7 @@ def consensus(event):
                     cand["point"] = o["point"]
                 elif market["key"] != "h2h":
                     continue
-                if _better(market["key"], o["name"], cand, best[market["key"]].get(o["name"])):
-                    best[market["key"]][o["name"]] = cand
+                offers[market["key"]].setdefault(o["name"], []).append(cand)
             if market["key"] == "h2h":
                 for o in outcomes:
                     h2h.setdefault(o["name"], []).append(american_to_prob(o["price"]))
@@ -95,6 +100,11 @@ def consensus(event):
                     if o["name"] == "Over" and "point" in o:
                         totals.append(o["point"])
 
+    best = {
+        key: {name: (max(c, key=lambda x: x["price"]) if key == "h2h" else _main_line(c))
+              for name, c in by_name.items()}
+        for key, by_name in offers.items()
+    }
     out = {"books": len(event.get("bookmakers", [])), "best_price": best}
     if h2h:
         raw = {name: statistics.median(ps) for name, ps in h2h.items()}
@@ -174,9 +184,25 @@ def fetch_news(path, has_injuries, teams):
     return news
 
 
-def scan_league(sport, api_key, now, horizon):
+def _iso(t):
+    return t.strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
+def scan_league(sport, api_key, now, horizon, reserve=0):
     name, path, has_injuries = LEAGUES[sport]
+    window = {"commenceTimeFrom": _iso(now), "commenceTimeTo": _iso(now + horizon)}
+    upcoming, headers = get_json(EVENTS_URL.format(sport=sport), {"apiKey": api_key, **window})
+    remaining = headers.get("x-requests-remaining")
+    skipped = None
+    if not upcoming:
+        skipped = "no games in window"
+    elif remaining is not None and float(remaining) - 3 < reserve:
+        skipped = f"credit reserve: {remaining} left, keeping {reserve} for settlement"
+    if skipped:
+        return {"league": name, "sport_key": sport, "games": [], "news": None,
+                "skipped": skipped, "odds_requests_remaining": remaining}
     events, headers = get_json(ODDS_URL.format(sport=sport), {
+        **window,
         "apiKey": api_key,
         "regions": "uk",  # UK-licensed books only: the prices the user can actually get
         "markets": "h2h,spreads,totals",
@@ -216,7 +242,14 @@ def scan_league(sport, api_key, now, horizon):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--hours", type=int, default=36, help="look-ahead window for games")
+    parser.add_argument("--leagues", default="nfl,nba,epl", help="comma-separated: nfl,nba,epl")
+    parser.add_argument("--reserve", type=int, default=25,
+                        help="don't price leagues once remaining credits would drop below this")
     args = parser.parse_args()
+    wanted = {l.strip().upper() for l in args.leagues.split(",")}
+    sports = [s for s, (name, _, _) in LEAGUES.items() if name in wanted]
+    if not sports:
+        sys.exit(f"No known leagues in {args.leagues!r}; use nfl, nba, epl.")
 
     api_key = os.environ.get("ODDS_API_KEY")
     if not api_key:
@@ -224,16 +257,22 @@ def main():
 
     now = datetime.now(timezone.utc)
     report = {"generated_utc": now.isoformat(timespec="seconds"), "leagues": [], "errors": []}
-    for sport in LEAGUES:
+    for sport in sports:
         try:
-            report["leagues"].append(scan_league(sport, api_key, now, timedelta(hours=args.hours)))
+            report["leagues"].append(
+                scan_league(sport, api_key, now, timedelta(hours=args.hours), args.reserve))
         except Exception as e:
             report["errors"].append(f"{sport}: {e}")
 
     DATA.mkdir(exist_ok=True)
     (DATA / "latest.json").write_text(json.dumps(report, indent=1))
     n = sum(len(l["games"]) for l in report["leagues"])
-    print(f"{n} games in the next {args.hours}h; errors: {report['errors'] or 'none'}")
+    left = [l["odds_requests_remaining"] for l in report["leagues"] if l["odds_requests_remaining"]]
+    print(f"{n} games in the next {args.hours}h; credits left: {left[-1] if left else '?'}; "
+          f"errors: {report['errors'] or 'none'}")
+    for l in report["leagues"]:
+        if l.get("skipped"):
+            print(f"  {l['league']} skipped: {l['skipped']}")
     if not report["leagues"]:
         sys.exit(1)
 

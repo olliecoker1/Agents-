@@ -1,0 +1,65 @@
+{
+ "d0202960708a442401d7fc7bd74a0183": {
+  "books": 20,
+  "best_price": {
+   "h2h": {
+    "Ipswich Town": {
+     "price": 235,
+     "book": "Betfair"
+    },
+    "Nottingham Forest": {
+     "price": 134,
+     "book": "Betfair"
+    },
+    "Draw": {
+     "price": 260,
+     "book": "Betfred (UK)"
+    }
+   },
+   "spreads": {
+    "Ipswich Town": {
+     "price": -102,
+     "book": "Matchbook",
+     "point": 0.25
+    },
+    "Nottingham Forest": {
+     "price": 100,
+     "book": "Matchbook",
+     "point": -0.25
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -138,
+     "book": "William Hill",
+     "point": 2.5
+    },
+    "Under": {
+     "price": 112,
+     "book": "Grosvenor",
+     "point": 2.5
+    }
+   }
+  },
+  "moneyline": {
+   "Ipswich Town": {
+    "consensus_price": 210,
+    "no_vig_prob": 0.3035
+   },
+   "Nottingham Forest": {
+    "consensus_price": 120,
+    "no_vig_prob": 0.4277
+   },
+   "Draw": {
+    "consensus_price": 250,
+    "no_vig_prob": 0.2688
+   }
+  },
+  "hold_pct": 6.28,
+  "spread": {
+   "Ipswich Town": 0.25,
+   "Nottingham Forest": -0.25
+  },
+  "total": 2.5
+ }
+}

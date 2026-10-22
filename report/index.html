@@ -1,0 +1,74 @@
+<title>Pre-Bet Market Scan</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Source+Sans+3:wght@400;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one column; trial ledger strip, then the market board, then notes */
+:root{--bg:#f3f5f2;--panel:#ffffff;--ink:#16201b;--muted:#5d6b63;--line:#d6ddd8;--turf:#1f6b46;--warn:#9a5b00;
+--display:"Barlow Condensed","Arial Narrow",sans-serif;--body:"Source Sans 3",system-ui,sans-serif;--mono:"JetBrains Mono",ui-monospace,monospace}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1512;--panel:#17201b;--ink:#e3ebe6;--muted:#93a39a;--line:#2a3730;--turf:#5cc28d;--warn:#e0a54a;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0f1512;--panel:#17201b;--ink:#e3ebe6;--muted:#93a39a;--line:#2a3730;--turf:#5cc28d;--warn:#e0a54a;color-scheme:dark}
+body{background:var(--bg);color:var(--ink);font:16px/1.5 var(--body)}
+main{max-width:1080px;margin:0 auto;padding-block:28px 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:28px}
+h1,h2{font-family:var(--display);letter-spacing:.01em;margin:0;text-wrap:balance}
+h1{font-size:2.4rem;line-height:1}
+h2{font-size:1.4rem;text-transform:uppercase;letter-spacing:.06em}
+.meta{color:var(--muted);font-size:.9rem;margin-top:6px}
+.strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.strip div{background:var(--panel);padding:14px 16px}
+.k{font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.v{font-family:var(--mono);font-size:1.35rem;font-variant-numeric:tabular-nums}
+.wrap{overflow-x:auto;border:1px solid var(--line);border-radius:6px;background:var(--panel)}
+table{border-collapse:collapse;width:100%;min-width:760px;font-size:.92rem}
+th{font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);text-align:left;padding:10px 12px;border-bottom:1px solid var(--line)}
+td{padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top;font-variant-numeric:tabular-nums}
+tr:last-child td{border-bottom:0}
+.sub{color:var(--muted);font-size:.8rem}
+.bk{color:var(--muted);font-size:.78rem}
+.lg{font-family:var(--mono);font-size:.75rem;color:var(--turf);border:1px solid var(--turf);border-radius:3px;padding:1px 5px}
+.note{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:16px 18px;display:grid;gap:8px}
+.note p,.note ul{margin:0}
+.risk{color:var(--warn);font-weight:600}
+</style>
+<main>
+<header>
+<h1>Pre-Bet Market Scan</h1>
+<div class="meta">Scan: Thu 22 Oct 2026, 08:39 UTC · Lines may be a few minutes old · UK-licensed bookmakers only</div>
+</header>
+
+<section>
+<h2>Paper trading: £200 notional, 30 days</h2>
+<div class="strip" style="margin-top:10px">
+<div><div class="k">Bankroll</div><div class="v">£200.00</div></div>
+<div><div class="k">Record (W-L-P)</div><div class="v">0-0-0</div></div>
+<div><div class="k">ROI</div><div class="v">–</div></div>
+<div><div class="k">Beat closing line</div><div class="v">–</div></div>
+<div><div class="k">Open bets</div><div class="v">0</div></div>
+<div><div class="k">Trial ends</div><div class="v">21 Nov</div></div>
+</div>
+<p class="meta">Trial started 22 Oct 08:40 UTC. Flat stake of 2% of bankroll. No bets placed yet: the first full news analysis runs at the next scheduled scan.</p>
+</section>
+
+<section>
+<h2>Market board: next 36 hours</h2>
+<p class="meta">Best decimal price across UK books, taken on the main line. "Fair" is the no-vig consensus probability of the favourite.</p>
+<div class="wrap"><table>
+<thead><tr><th>League</th><th>Game</th><th>Match odds</th><th>Spread / handicap (home)</th><th>Total</th></tr></thead>
+<tbody>
+<tr><td><span class=lg>NFL</span></td><td><b>New England Patriots @ Chicago Bears</b><div class=sub>Fri 23 Oct, 00:15 UTC · 19 books · fair: Bears 58.7%</div></td><td>Bears 1.80 <span class=bk>BoyleSports</span> · Patriots 2.46 <span class=bk>Matchbook</span></td><td>Bears -2.5 @ 1.80 <span class=bk>888sport</span></td><td>O 50.5 @ 1.95 <span class=bk>Matchbook</span><br>U 50.5 @ 2.00 <span class=bk>Matchbook</span></td></tr>
+<tr><td><span class=lg>NBA</span></td><td><b>Cleveland Cavaliers @ Philadelphia 76ers</b><div class=sub>Thu 22 Oct, 23:10 UTC · 19 books · fair: 76ers 58.1%</div></td><td>Cavaliers 2.44 <span class=bk>Matchbook</span> · 76ers 1.70 <span class=bk>Betfair</span></td><td>76ers -3.5 @ 1.98 <span class=bk>Matchbook</span></td><td>O 235.5 @ 1.93 <span class=bk>Virgin Bet</span><br>U 235.5 @ 1.99 <span class=bk>Matchbook</span></td></tr>
+<tr><td><span class=lg>NBA</span></td><td><b>Denver Nuggets @ Oklahoma City Thunder</b><div class=sub>Fri 23 Oct, 01:40 UTC · 19 books · fair: Thunder 72.9%</div></td><td>Nuggets 3.85 <span class=bk>Matchbook</span> · Thunder 1.35 <span class=bk>Betfair</span></td><td>Thunder -8.5 @ 2.00 <span class=bk>888sport</span></td><td>O 235.5 @ 1.91 <span class=bk>Ladbrokes</span><br>U 235.5 @ 1.92 <span class=bk>LiveScore Bet</span></td></tr>
+<tr><td><span class=lg>NBA</span></td><td><b>Chicago Bulls @ Milwaukee Bucks</b><div class=sub>Fri 23 Oct, 20:10 UTC · 16 books · fair: Bucks 51.3%</div></td><td>Bulls 2.00 <span class=bk>Betfair</span> · Bucks 1.94 <span class=bk>Betfair</span></td><td>Bucks -0.5 @ 1.83 <span class=bk>LiveScore Bet</span></td><td>O 238.5 @ 1.93 <span class=bk>LiveScore Bet</span><br>U 238.5 @ 1.89 <span class=bk>LiveScore Bet</span></td></tr>
+<tr><td><span class=lg>EPL</span></td><td><b>Nottingham Forest @ Ipswich Town</b><div class=sub>Fri 23 Oct, 19:00 UTC · 20 books · fair: Forest 42.8%</div></td><td>Town 3.35 <span class=bk>Betfair</span> · Forest 2.34 <span class=bk>Betfair</span> · Draw 3.60 <span class=bk>Betfred (UK)</span></td><td>Town +0.25 @ 1.98 <span class=bk>Matchbook</span></td><td>O 2.5 @ 1.72 <span class=bk>William Hill</span><br>U 2.5 @ 2.12 <span class=bk>Grosvenor</span></td></tr>
+</tbody></table></div>
+</section>
+
+<section class="note">
+<h2>Status</h2>
+<ul>
+<li>Odds API free plan: 480 of 500 credits left this month.</li>
+<li>Schedule: daily scan at 11:15 UK time, plus NFL pre-kickoff runs on Sundays and EPL runs on Saturday and Sunday lunchtimes.</li>
+<li>Exchange prices (Betfair, Matchbook) are before commission, which is usually 2–5% of winnings.</li>
+</ul>
+<p class="risk">Sports betting involves financial risk. This page describes market prices and implied probabilities; it is not advice to place any bet.</p>
+</section>
+</main>

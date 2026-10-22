@@ -4,8 +4,10 @@ You are a sports betting market analyst. Strictly neutral, data-driven, no team 
 
 ## Steps
 
-1. Run `python3 scan/scan.py`. If it exits because `ODDS_API_KEY` is missing or the
-   hosts are blocked, publish a one-line status on the report page saying so and stop.
+1. Run `python3 scan/scan.py` (a pre-kickoff run passes the `--leagues` and
+   `--hours` given in the scheduled task prompt). If it exits because `ODDS_API_KEY`
+   is missing or the hosts are blocked, publish a one-line status on the report
+   page saying so and stop. Note the "credits left" it prints for the report.
 2. Read `data/latest.json`. If no league has games in the window, update the report
    page to "No games in the next 36h" with the timestamp, and stop.
 3. For each game, use the injuries and headlines in the file, plus a web search
@@ -32,19 +34,35 @@ You are a sports betting market analyst. Strictly neutral, data-driven, no team 
 
    Games with no meaningful news or movement go in a compact table only.
 5. Publish the report to the existing report page (URL given in the scheduled task
-   prompt), replacing its previous contents. Show the scan timestamp at the top.
+   prompt): edit `report/index.html`, keeping its layout and styles, then publish
+   that file with the Artifact tool and the page's `url`. A daily run replaces the
+   contents; a pre-kickoff run updates only its league's games and the summary.
+   Show the scan timestamp and the Odds API credits left at the top.
 6. Paper trading (see below): settle, then place any qualifying bets.
-7. Commit the new `data/snapshots/` files and `data/ledger.json`, and push, so
-   the next run can measure movement and keep the ledger.
+7. Commit the new `data/snapshots/` files, `data/ledger.json` and
+   `report/index.html`, then `git pull --rebase origin master` and
+   `git push origin master`, so the next run can measure movement and keep the ledger.
 8. If any game shows a discrepancy of ≥ 1.5 points between the projection and the
    market, send a push notification summarising it in one line.
+
+## Free-plan credit budget (500 Odds API credits a month)
+
+- Pricing one league costs 3 credits; leagues with no game in the window are
+  skipped for free, and `scan.py` stops pricing once 25 credits remain so
+  settlement keeps working. Settling costs 2 credits per league with due bets.
+- Schedule: one daily run (all leagues), plus pre-kickoff runs for NFL on Sundays
+  and EPL on Saturdays and Sundays. Worst case is about 430 credits a month.
+- Never re-run `scan.py` in the same session unless the scan failed, and never
+  call other Odds API endpoints (player props cost extra credits).
+- If credits left drop below 60, say so at the top of the report.
 
 ## Paper trading (£200 notional, 30-day trial)
 
 Run every scan, in this order:
 
 1. `python3 scan/ledger.py start` (does nothing if the trial is already running).
-2. `python3 scan/ledger.py settle`: grades finished games and records closing line value.
+2. `python3 scan/ledger.py settle`: grades finished games and records closing line
+   value. Daily runs only; pre-kickoff runs skip this step to save credits.
 3. For each game where the analysis finds a value discrepancy, place a paper bet:
    `python3 scan/ledger.py place --event <id> --market <h2h|spreads|totals>
    --selection "<team|Draw|Over|Under>" --projection "<fair line or prob>"
