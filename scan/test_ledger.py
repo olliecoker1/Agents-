@@ -41,6 +41,25 @@ class GradeTest(unittest.TestCase):
         self.assertGreater(ledger.clv(bet("h2h", "Home", dec=1.67), close)["clv_pct"], 0)
 
 
+class CardTest(unittest.TestCase):
+    def test_names(self):
+        self.assertTrue(ledger.same_team("AFC Bournemouth", "Bournemouth"))
+        self.assertTrue(ledger.same_team("Brighton & Hove Albion", "Brighton and Hove Albion"))
+        self.assertFalse(ledger.same_team("Manchester City", "Manchester United"))
+        self.assertEqual(ledger.find_player("Antonio Silva", ["António Silva"]), "António Silva")
+        self.assertEqual(ledger.find_player("B. Fernandes", ["Bruno Fernandes"]), "Bruno Fernandes")
+        self.assertIsNone(ledger.find_player("J. Smith", ["John Smith", "Jack Smith"]))
+
+    def test_grade_card(self):
+        squad = ["Sasa Lukic", "Ryan Yates", "Neco Williams"]
+        b = {"selection": "Sasa Lukic"}
+        self.assertEqual(ledger.grade_card(b, ["Sasa Lukic"], squad, squad), "win")
+        self.assertEqual(ledger.grade_card(b, [], squad, squad), "loss")
+        self.assertEqual(ledger.grade_card(b, [], ["Ryan Yates"], squad), "push")  # unused sub
+        self.assertEqual(ledger.grade_card({"selection": "Not There"}, [], squad, squad), "push")
+        self.assertIsNone(ledger.grade_card(b, [], [], []))  # no roster data yet
+
+
 class FlowTest(unittest.TestCase):
     def setUp(self):
         self.tmp = tempfile.TemporaryDirectory()
@@ -56,7 +75,9 @@ class FlowTest(unittest.TestCase):
         latest = {"generated_utc": now.isoformat(), "leagues": [{
             "league": "NFL", "sport_key": "americanfootball_nfl", "games": [{
                 "id": "ev1", "matchup": "Away @ Home", "home": "Home", "away": "Away",
-                "kickoff_utc": self.kickoff.isoformat(), "market": line}]}]}
+                "kickoff_utc": self.kickoff.isoformat(), "market": line,
+                "cards": {"Sasa Lukic": {"best": {"price": 200, "book": "Paddy Power"},
+                                         "books": 2, "median_implied_prob": 0.35}}}]}]}
         (root / "latest.json").write_text(json.dumps(latest))
         snap = root / "snapshots" / "americanfootball_nfl"
         snap.mkdir(parents=True)
@@ -96,6 +117,38 @@ class FlowTest(unittest.TestCase):
         s = ledger.summarise(led)
         self.assertEqual(s["record"], "1-0-0")
         self.assertEqual(s["beat_closing_line_pct"], 100.0)
+
+    def test_card_bet(self):
+        led = ledger.load()
+        ledger.cmd_start(led, None)
+        ledger.cmd_place(led, self.args(event="ev1", market="spreads", selection="Home",
+                                        projection="-5", reason="match bet"))
+        ledger.cmd_place(led, self.args(event="ev1", market="cards", selection="Sasa Lukic",
+                                        projection="0.45", reason="strict referee"))
+        b = led["bets"][1]
+        self.assertEqual((b["decimal_odds"], b["book"]), (3.0, "Paddy Power"))
+        with self.assertRaises(SystemExit):  # one card bet per game
+            ledger.cmd_place(led, self.args(event="ev1", market="cards", selection="Sasa Lukic",
+                                            projection="0.45", reason="dup"))
+
+        scoreboard = {"events": [{"id": "e9", "competitions": [{
+            "status": {"type": {"completed": True}},
+            "competitors": [{"homeAway": "home", "team": {"displayName": "Home FC"}, "score": "1"},
+                            {"homeAway": "away", "team": {"displayName": "Away"}, "score": "0"}],
+            "details": [{"yellowCard": True, "athletesInvolved": [{"displayName": "Saša Lukić"}]}]}]}]}
+        summary = {"rosters": [{"roster": [{"starter": True, "athlete": {"displayName": "Saša Lukić"}}]}]}
+
+        def fake_get(url, params=None):
+            if url.endswith("/scores"):
+                return [], {}
+            return (scoreboard if url.endswith("scoreboard") else summary), {}
+
+        led["bets"] = [b]  # settle the card bet only; match bets are covered above
+        with mock.patch.object(ledger, "now_utc", return_value=self.kickoff + timedelta(hours=4)), \
+             mock.patch.object(ledger, "get_json", fake_get):
+            ledger.cmd_settle(led, None)
+        self.assertEqual((b["result"], b["pnl"]), ("win", 8.0))
+        self.assertEqual(ledger.summarise(led)["by_market"]["cards"]["bets"], 1)
 
 
 if __name__ == "__main__":

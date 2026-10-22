@@ -61,6 +61,19 @@ class ScanTest(unittest.TestCase):
         self.assertIsNone(movement(after, None))
         self.assertEqual(movement(before, before), {})
 
+    def test_card_prices(self):
+        ev = {"bookmakers": [
+            {"title": "Paddy Power", "markets": [{"key": "player_to_receive_card", "outcomes": [
+                {"name": "Yes", "description": "Sasa Lukic", "price": 200}]}]},
+            {"title": "William Hill", "markets": [{"key": "player_to_receive_card", "outcomes": [
+                {"name": "Yes", "description": "Sasa Lukic", "price": 162}]}]},
+            {"title": "Betfair", "markets": [{"key": "player_to_receive_card", "outcomes": [
+                {"name": "Yes", "description": "Sasa Lukic", "price": -10000}]}]},
+        ]}
+        card = scan.card_prices(ev)["Sasa Lukic"]
+        self.assertEqual(card["best"], {"price": 200, "book": "Paddy Power"})
+        self.assertEqual(card["books"], 2)  # Betfair's 1.01 placeholder dropped
+
 
 class CreditBudgetTest(unittest.TestCase):
     now = datetime(2026, 10, 22, tzinfo=timezone.utc)

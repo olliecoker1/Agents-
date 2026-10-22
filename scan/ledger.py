@@ -3,6 +3,9 @@
 Bets are only placed at the best price found in the latest scan (data/latest.json),
 never at a typed-in price. Settlement pulls final scores from The Odds API and
 records closing line value (CLV) from the last odds snapshot before kickoff.
+EPL "player to be carded" bets (--market cards --selection "Player Name") settle
+from ESPN's match data at no credit cost; a player who doesn't appear is void,
+as at UK books. Card bets have no CLV (closing card odds would cost credits).
 
   python3 scan/ledger.py start
   python3 scan/ledger.py place --event ID --market spreads --selection "Team" \
@@ -14,17 +17,19 @@ records closing line value (CLV) from the last odds snapshot before kickoff.
 import argparse
 import json
 import os
+import re
 import sys
+import unicodedata
 from datetime import datetime, timedelta, timezone
 
-from scan import DATA, SNAPSHOTS, american_to_prob, get_json
+from scan import DATA, ESPN_URL, SNAPSHOTS, american_to_prob, get_json
 
 LEDGER = DATA / "ledger.json"
 SCORES_URL = "https://api.the-odds-api.com/v4/sports/{sport}/scores"
 STARTING_BANKROLL = 200.0
 TRIAL_DAYS = 30
 STAKE_PCT = 0.02  # flat 2% of current bankroll per bet
-MAX_BETS_PER_GAME = 1
+MAX_BETS_PER_GAME = 1  # per kind: one match bet and one card bet
 
 
 def now_utc():
@@ -84,6 +89,77 @@ def grade(bet, home_score, away_score):
     return "win" if diff > 0 else "loss" if diff < 0 else "push"
 
 
+def kind(market):
+    return "cards" if market == "cards" else "match"
+
+
+def norm(name):
+    name = unicodedata.normalize("NFKD", name).encode("ascii", "ignore").decode().lower()
+    name = re.sub(r"\b(afc|fc)\b", "", name.replace("&", "and"))
+    return " ".join(re.sub(r"[^a-z ]", " ", name).split())
+
+
+def same_team(a, b):
+    a, b = norm(a), norm(b)
+    return a == b or a in b or b in a
+
+
+def find_player(name, players):
+    """Match a bookmaker's player name to ESPN's; None if absent or ambiguous."""
+    target = norm(name)
+    exact = [p for p in players if norm(p) == target]
+    if exact:
+        return exact[0]
+    first, last = target.split()[0], target.split()[-1]
+    close = [p for p in players if norm(p).split()[-1] == last and norm(p)[0] == first[0]]
+    return close[0] if len(close) == 1 else None
+
+
+def espn_match(bet):
+    """ESPN scoreboard event for this bet's match, or None if not found / not finished."""
+    day = parse_ts(bet["kickoff_utc"]).strftime("%Y%m%d")
+    data, _ = get_json(ESPN_URL.format(path="soccer/eng.1", endpoint="scoreboard"), {"dates": day})
+    for ev in data.get("events", []):
+        comp = ev["competitions"][0]
+        teams = {c["homeAway"]: c["team"]["displayName"] for c in comp["competitors"]}
+        if same_team(teams.get("home", ""), bet["home"]) and same_team(teams.get("away", ""), bet["away"]):
+            return ev if comp["status"]["type"].get("completed") else None
+    return None
+
+
+def grade_card(bet, carded, appeared, squad):
+    """'win' if the player was shown a card, 'push' if they didn't play, None if unmatched."""
+    if find_player(bet["selection"], squad) is None:
+        # not in either matchday squad: void, unless ESPN just spells the name differently
+        return "push" if squad else None
+    if find_player(bet["selection"], carded):
+        return "win"
+    return "loss" if find_player(bet["selection"], appeared) else "push"
+
+
+def settle_card(bet):
+    ev = espn_match(bet)
+    if not ev:
+        return False
+    comp = ev["competitions"][0]
+    carded = [a.get("displayName", "") for d in comp.get("details", [])
+              if d.get("yellowCard") or d.get("redCard") for a in d.get("athletesInvolved", [])]
+    summary, _ = get_json(ESPN_URL.format(path="soccer/eng.1", endpoint="summary"), {"event": ev["id"]})
+    squad, appeared = [], []
+    for team in summary.get("rosters", []):
+        for p in team.get("roster", []):
+            name = p.get("athlete", {}).get("displayName", "")
+            squad.append(name)
+            if p.get("starter") or p.get("subbedIn"):
+                appeared.append(name)
+    result = grade_card(bet, carded, appeared, squad)
+    if result is None:
+        return False
+    bet["final_score"] = {c["team"]["displayName"]: c.get("score") for c in comp["competitors"]}
+    bet["result"] = result
+    return True
+
+
 def closing_line(bet):
     """Last consensus snapshot for this event taken before kickoff."""
     kickoff = parse_ts(bet["kickoff_utc"])
@@ -139,9 +215,16 @@ def cmd_place(ledger, args):
     league, game = found[0]
     if parse_ts(game["kickoff_utc"]) <= now_utc():
         sys.exit("Game has already started.")
-    if sum(b["event_id"] == args.event for b in ledger["bets"]) >= MAX_BETS_PER_GAME:
-        sys.exit("Already have a bet on this game.")
-    best = game["market"]["best_price"].get(args.market, {}).get(args.selection)
+    same = [b for b in ledger["bets"] if b["event_id"] == args.event and kind(b["market"]) == kind(args.market)]
+    if len(same) >= MAX_BETS_PER_GAME:
+        sys.exit(f"Already have a {kind(args.market)} bet on this game.")
+    if args.market == "cards":
+        card = game.get("cards", {}).get(args.selection)
+        if not card:
+            sys.exit(f"No card price for {args.selection!r} in latest scan (run scan.py with --cards-hours).")
+        best = card["best"]
+    else:
+        best = game["market"]["best_price"].get(args.market, {}).get(args.selection)
     if not best:
         sys.exit(f"No price for {args.market}/{args.selection}.")
     stake = stake_for(ledger)
@@ -167,7 +250,9 @@ def cmd_place(ledger, args):
         "implied_prob": round(american_to_prob(best["price"]), 4),
         "book": best["book"],
         "stake": stake,
-        "consensus_at_placement": {k: m.get(k) for k in ("spread", "total", "moneyline")},
+        "consensus_at_placement": ({"median_implied_prob": card["median_implied_prob"], "books": card["books"]}
+                                   if args.market == "cards" else
+                                   {k: m.get(k) for k in ("spread", "total", "moneyline")}),
         "projection": args.projection,
         "reason": args.reason,
         "status": "open",
@@ -187,13 +272,27 @@ def cmd_settle(ledger, args):
     if not due:
         print("Nothing to settle.")
         return
+    settled = 0
+    for b in [b for b in due if b["market"] == "cards"]:
+        try:
+            if settle_card(b):
+                b["pnl"] = round({"win": b["stake"] * (b["decimal_odds"] - 1), "loss": -b["stake"],
+                                  "push": 0.0}[b["result"]], 2)
+                b["status"] = "settled"
+                settled += 1
+        except Exception as e:  # ESPN is best-effort; retry next run
+            print(f"Card bet #{b['id']}: {e}")
+    match_due = [b for b in due if b["market"] != "cards"]
+    if not match_due:
+        save(ledger)
+        print(f"Settled {settled} of {len(due)} due bets. Bankroll £{bankroll(ledger):.2f}")
+        return
     api_key = os.environ.get("ODDS_API_KEY") or sys.exit("ODDS_API_KEY is not set.")
     scores = {}
-    for sport in {b["sport_key"] for b in due}:
+    for sport in {b["sport_key"] for b in match_due}:
         data, _ = get_json(SCORES_URL.format(sport=sport), {"apiKey": api_key, "daysFrom": 3})
         scores.update({e["id"]: e for e in data if e.get("completed")})
-    settled = 0
-    for b in due:
+    for b in match_due:
         ev = scores.get(b["event_id"])
         if not ev:
             continue
@@ -264,8 +363,9 @@ def main():
     sub.add_parser("start")
     pl = sub.add_parser("place")
     pl.add_argument("--event", required=True)
-    pl.add_argument("--market", required=True, choices=["h2h", "spreads", "totals"])
-    pl.add_argument("--selection", required=True, help="team name, 'Draw', 'Over' or 'Under'")
+    pl.add_argument("--market", required=True, choices=["h2h", "spreads", "totals", "cards"])
+    pl.add_argument("--selection", required=True,
+                    help="team name, 'Draw', 'Over', 'Under', or a player name for cards")
     pl.add_argument("--projection", required=True, help="your fair line or probability")
     pl.add_argument("--reason", required=True)
     sub.add_parser("settle")

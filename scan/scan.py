@@ -4,11 +4,15 @@ Writes data/latest.json for the analysis step and stores a timestamped odds
 snapshot per league so the next run can measure line movement.
 
 Usage: python3 scan/scan.py [--hours 36] [--leagues nfl,nba,epl] [--reserve 25]
+                            [--cards-hours 24]
 Requires ODDS_API_KEY (https://the-odds-api.com). Standard library only.
 
 Free-plan budget (500 credits/month): the events list is free, so a league is
 only priced (3 credits: 3 markets x 1 region) when it has a game in the window,
 and pricing stops once remaining credits fall to the reserve kept for settling.
+EPL "player to be carded" odds cost 1 credit per match and are only fetched for
+matches kicking off within --cards-hours (off by default; the daily run uses 24
+so each match is priced once).
 """
 
 import argparse
@@ -35,6 +39,9 @@ LEAGUES = {
 
 ODDS_URL = "https://api.the-odds-api.com/v4/sports/{sport}/odds"
 EVENTS_URL = "https://api.the-odds-api.com/v4/sports/{sport}/events"  # costs 0 credits
+EVENT_ODDS_URL = "https://api.the-odds-api.com/v4/sports/{sport}/events/{event}/odds"
+CARD_MARKET = "player_to_receive_card"
+MIN_CARD_PRICE = -2000  # decimal 1.05; exchanges list 1.01 when there is no liquidity
 ESPN_URL = "https://site.api.espn.com/apis/site/v2/sports/{path}/{endpoint}"
 
 
@@ -124,6 +131,48 @@ def consensus(event):
     return out
 
 
+def card_prices(event):
+    """Best 'to be carded' price per player, with the median no-margin-adjusted implied prob."""
+    offers = {}
+    for book in event.get("bookmakers", []):
+        for market in book.get("markets", []):
+            if market["key"] != CARD_MARKET:
+                continue
+            for o in market.get("outcomes", []):
+                if o.get("name") != "Yes" or not o.get("description") or o["price"] < MIN_CARD_PRICE:
+                    continue
+                offers.setdefault(o["description"], []).append(
+                    {"price": o["price"], "book": book.get("title") or book.get("key")})
+    return {
+        player: {
+            "best": max(c, key=lambda x: x["price"]),
+            "books": len(c),
+            "median_implied_prob": round(statistics.median(american_to_prob(x["price"]) for x in c), 4),
+        }
+        for player, c in sorted(offers.items())
+    }
+
+
+def fetch_cards(sport, api_key, games, now, horizon, reserve, remaining):
+    """Add card odds to games kicking off within horizon; returns credits remaining."""
+    for g in games:
+        if datetime.fromisoformat(g["kickoff_utc"].replace("Z", "+00:00")) > now + horizon:
+            continue
+        if remaining is not None and float(remaining) - 1 < reserve:
+            g["cards_skipped"] = f"credit reserve: {remaining} left"
+            continue
+        try:
+            ev, headers = get_json(EVENT_ODDS_URL.format(sport=sport, event=g["id"]), {
+                "apiKey": api_key, "regions": "uk", "markets": CARD_MARKET, "oddsFormat": "american",
+            })
+        except Exception as e:
+            g["cards_skipped"] = f"error: {e}"
+            continue
+        remaining = headers.get("x-requests-remaining", remaining)
+        g["cards"] = card_prices(ev)
+    return remaining
+
+
 def movement(current, previous):
     """Change in consensus numbers since the previous snapshot (None if unseen)."""
     if not previous:
@@ -188,7 +237,7 @@ def _iso(t):
     return t.strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
-def scan_league(sport, api_key, now, horizon, reserve=0):
+def scan_league(sport, api_key, now, horizon, reserve=0, cards_horizon=None):
     name, path, has_injuries = LEAGUES[sport]
     window = {"commenceTimeFrom": _iso(now), "commenceTimeTo": _iso(now + horizon)}
     upcoming, headers = get_json(EVENTS_URL.format(sport=sport), {"apiKey": api_key, **window})
@@ -225,6 +274,9 @@ def scan_league(sport, api_key, now, horizon, reserve=0):
             "market": line,
             "movement_since_last_scan": movement(line, previous.get(ev["id"])),
         })
+    remaining = headers.get("x-requests-remaining")
+    if sport == "soccer_epl" and cards_horizon:
+        remaining = fetch_cards(sport, api_key, games, now, cards_horizon, reserve, remaining)
     if snapshot:
         out = SNAPSHOTS / sport / f"{now.strftime('%Y%m%dT%H%M%SZ')}.json"
         out.parent.mkdir(parents=True, exist_ok=True)
@@ -235,7 +287,7 @@ def scan_league(sport, api_key, now, horizon, reserve=0):
         "sport_key": sport,
         "games": games,
         "news": fetch_news(path, has_injuries, teams) if games else None,
-        "odds_requests_remaining": headers.get("x-requests-remaining"),
+        "odds_requests_remaining": remaining,
     }
 
 
@@ -245,6 +297,8 @@ def main():
     parser.add_argument("--leagues", default="nfl,nba,epl", help="comma-separated: nfl,nba,epl")
     parser.add_argument("--reserve", type=int, default=25,
                         help="don't price leagues once remaining credits would drop below this")
+    parser.add_argument("--cards-hours", type=int, default=0,
+                        help="fetch EPL player-card odds for matches starting within this many hours")
     args = parser.parse_args()
     wanted = {l.strip().upper() for l in args.leagues.split(",")}
     sports = [s for s, (name, _, _) in LEAGUES.items() if name in wanted]
@@ -260,7 +314,8 @@ def main():
     for sport in sports:
         try:
             report["leagues"].append(
-                scan_league(sport, api_key, now, timedelta(hours=args.hours), args.reserve))
+                scan_league(sport, api_key, now, timedelta(hours=args.hours), args.reserve,
+                            timedelta(hours=args.cards_hours)))
         except Exception as e:
             report["errors"].append(f"{sport}: {e}")
 
@@ -273,6 +328,11 @@ def main():
     for l in report["leagues"]:
         if l.get("skipped"):
             print(f"  {l['league']} skipped: {l['skipped']}")
+        for g in l["games"]:
+            if "cards" in g:
+                print(f"  cards: {g['matchup']}: {len(g['cards'])} players priced")
+            elif g.get("cards_skipped"):
+                print(f"  cards: {g['matchup']}: skipped ({g['cards_skipped']})")
     if not report["leagues"]:
         sys.exit(1)
 
