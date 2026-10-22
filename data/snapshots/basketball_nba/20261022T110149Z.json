@@ -1,0 +1,167 @@
+{
+ "110e33c79c5ec8c0377702aff685f83b": {
+  "books": 19,
+  "best_price": {
+   "h2h": {
+    "Cleveland Cavaliers": {
+     "price": 140,
+     "book": "Betfair"
+    },
+    "Philadelphia 76ers": {
+     "price": -143,
+     "book": "Matchbook"
+    }
+   },
+   "spreads": {
+    "Cleveland Cavaliers": {
+     "price": -109,
+     "book": "Matchbook",
+     "point": 3.5
+    },
+    "Philadelphia 76ers": {
+     "price": 100,
+     "book": "Matchbook",
+     "point": -3.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -109,
+     "book": "Virgin Bet",
+     "point": 235.5
+    },
+    "Under": {
+     "price": 100,
+     "book": "Matchbook",
+     "point": 235.5
+    }
+   }
+  },
+  "moneyline": {
+   "Cleveland Cavaliers": {
+    "consensus_price": 125,
+    "no_vig_prob": 0.4182
+   },
+   "Philadelphia 76ers": {
+    "consensus_price": -162,
+    "no_vig_prob": 0.5818
+   }
+  },
+  "hold_pct": 6.28,
+  "spread": {
+   "Cleveland Cavaliers": 3.5,
+   "Philadelphia 76ers": -3.5
+  },
+  "total": 235.5
+ },
+ "223b2883b9b05a67329ef246384b85f1": {
+  "books": 19,
+  "best_price": {
+   "h2h": {
+    "Denver Nuggets": {
+     "price": 275,
+     "book": "Betfair"
+    },
+    "Oklahoma City Thunder": {
+     "price": -286,
+     "book": "Matchbook"
+    }
+   },
+   "spreads": {
+    "Denver Nuggets": {
+     "price": -104,
+     "book": "Matchbook",
+     "point": 8.5
+    },
+    "Oklahoma City Thunder": {
+     "price": 100,
+     "book": "888sport",
+     "point": -8.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -110,
+     "book": "Ladbrokes",
+     "point": 235.5
+    },
+    "Under": {
+     "price": -109,
+     "book": "LiveScore Bet",
+     "point": 235.5
+    }
+   }
+  },
+  "moneyline": {
+   "Denver Nuggets": {
+    "consensus_price": 250,
+    "no_vig_prob": 0.2709
+   },
+   "Oklahoma City Thunder": {
+    "consensus_price": -333,
+    "no_vig_prob": 0.7291
+   }
+  },
+  "hold_pct": 5.48,
+  "spread": {
+   "Denver Nuggets": 8.5,
+   "Oklahoma City Thunder": -8.5
+  },
+  "total": 235.5
+ },
+ "0cdc865f5b785c0be6bc409117fe38aa": {
+  "books": 16,
+  "best_price": {
+   "h2h": {
+    "Chicago Bulls": {
+     "price": 100,
+     "book": "Betfair"
+    },
+    "Milwaukee Bucks": {
+     "price": -109,
+     "book": "Smarkets"
+    }
+   },
+   "spreads": {
+    "Chicago Bulls": {
+     "price": 100,
+     "book": "LiveScore Bet",
+     "point": 0.5
+    },
+    "Milwaukee Bucks": {
+     "price": -120,
+     "book": "LiveScore Bet",
+     "point": -0.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -108,
+     "book": "LiveScore Bet",
+     "point": 238.5
+    },
+    "Under": {
+     "price": -112,
+     "book": "LiveScore Bet",
+     "point": 238.5
+    }
+   }
+  },
+  "moneyline": {
+   "Chicago Bulls": {
+    "consensus_price": -108,
+    "no_vig_prob": 0.4867
+   },
+   "Milwaukee Bucks": {
+    "consensus_price": -121,
+    "no_vig_prob": 0.5133
+   }
+  },
+  "hold_pct": 6.67,
+  "spread": {
+   "Chicago Bulls": 0.5,
+   "Milwaukee Bucks": -0.5
+  },
+  "total": 238.5
+ }
+}
