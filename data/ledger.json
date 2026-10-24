@@ -3,5 +3,47 @@
  "starting_bankroll": 200.0,
  "started_utc": "2026-10-22T08:40:13+00:00",
  "ends_utc": "2026-11-21T08:40:13+00:00",
- "bets": []
+ "bets": [
+  {
+   "id": 1,
+   "placed_utc": "2026-10-24T14:10:10+00:00",
+   "league": "NFL",
+   "sport_key": "americanfootball_nfl",
+   "event_id": "b1be064fb52a198a62109c279e7ab24c",
+   "matchup": "San Francisco 49ers @ Atlanta Falcons",
+   "home": "Atlanta Falcons",
+   "away": "San Francisco 49ers",
+   "kickoff_utc": "2026-10-25T17:00:00Z",
+   "market": "spreads",
+   "selection": "Atlanta Falcons",
+   "point": 2.5,
+   "price_american": 102,
+   "decimal_odds": 2.02,
+   "implied_prob": 0.495,
+   "book": "Matchbook",
+   "stake": 4.0,
+   "consensus_at_placement": {
+    "spread": {
+     "Atlanta Falcons": 2.5,
+     "San Francisco 49ers": -2.5
+    },
+    "total": 49.5,
+    "moneyline": {
+     "Atlanta Falcons": {
+      "consensus_price": 120,
+      "no_vig_prob": 0.431
+     },
+     "San Francisco 49ers": {
+      "consensus_price": -150,
+      "no_vig_prob": 0.569
+     }
+    }
+   },
+   "projection": "+1.75",
+   "reason": "MANUAL (user request, below 1.5-pt rule): 49ers without Evans, Bosa, Samuel per ESPN; fair ~SF -1.5 to -2 vs -2.5",
+   "status": "open",
+   "result": null,
+   "pnl": null
+  }
+ ]
 }
