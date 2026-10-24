@@ -1,0 +1,191 @@
+{
+ "f66e4f29c1b7bcfc5ab58c0b88c8850b": {
+  "books": 21,
+  "best_price": {
+   "h2h": {
+    "Arsenal": {
+     "price": -208,
+     "book": "Coral"
+    },
+    "Everton": {
+     "price": 720,
+     "book": "Betfair"
+    },
+    "Draw": {
+     "price": 380,
+     "book": "Betfair"
+    }
+   },
+   "spreads": {
+    "Arsenal": {
+     "price": 110,
+     "book": "Matchbook",
+     "point": -1.25
+    },
+    "Everton": {
+     "price": -114,
+     "book": "Matchbook",
+     "point": 1.25
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -130,
+     "book": "Casumo",
+     "point": 2.5
+    },
+    "Under": {
+     "price": 104,
+     "book": "Casumo",
+     "point": 2.5
+    }
+   }
+  },
+  "moneyline": {
+   "Arsenal": {
+    "consensus_price": -225,
+    "no_vig_prob": 0.6547
+   },
+   "Everton": {
+    "consensus_price": 600,
+    "no_vig_prob": 0.1351
+   },
+   "Draw": {
+    "consensus_price": 350,
+    "no_vig_prob": 0.2102
+   }
+  },
+  "hold_pct": 5.74,
+  "spread": {
+   "Arsenal": -1.25,
+   "Everton": 1.25
+  },
+  "total": 2.5
+ },
+ "0fbb2626ed9534b9dcf21d16925f9bd7": {
+  "books": 21,
+  "best_price": {
+   "h2h": {
+    "Coventry City": {
+     "price": 235,
+     "book": "Betfair"
+    },
+    "Fulham": {
+     "price": 134,
+     "book": "Betfair"
+    },
+    "Draw": {
+     "price": 260,
+     "book": "Betfred (UK)"
+    }
+   },
+   "spreads": {
+    "Coventry City": {
+     "price": -104,
+     "book": "Matchbook",
+     "point": 0.25
+    },
+    "Fulham": {
+     "price": 100,
+     "book": "Matchbook",
+     "point": -0.25
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -133,
+     "book": "William Hill",
+     "point": 2.5
+    },
+    "Under": {
+     "price": 108,
+     "book": "LeoVegas",
+     "point": 2.5
+    }
+   }
+  },
+  "moneyline": {
+   "Coventry City": {
+    "consensus_price": 210,
+    "no_vig_prob": 0.3053
+   },
+   "Fulham": {
+    "consensus_price": 123,
+    "no_vig_prob": 0.4244
+   },
+   "Draw": {
+    "consensus_price": 250,
+    "no_vig_prob": 0.2704
+   }
+  },
+  "hold_pct": 5.67,
+  "spread": {
+   "Coventry City": 0.25,
+   "Fulham": -0.25
+  },
+  "total": 2.5
+ },
+ "0382a9faef0bb8df1bcc436536cffb05": {
+  "books": 21,
+  "best_price": {
+   "h2h": {
+    "Chelsea": {
+     "price": -103,
+     "book": "Betfair"
+    },
+    "Tottenham Hotspur": {
+     "price": 300,
+     "book": "Betfair"
+    },
+    "Draw": {
+     "price": 300,
+     "book": "Betfred (UK)"
+    }
+   },
+   "spreads": {
+    "Chelsea": {
+     "price": -103,
+     "book": "Matchbook",
+     "point": -0.5
+    },
+    "Tottenham Hotspur": {
+     "price": 102,
+     "book": "Matchbook",
+     "point": 0.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -182,
+     "book": "LeoVegas",
+     "point": 2.5
+    },
+    "Under": {
+     "price": 140,
+     "book": "William Hill",
+     "point": 2.5
+    }
+   }
+  },
+  "moneyline": {
+   "Chelsea": {
+    "consensus_price": -111,
+    "no_vig_prob": 0.4998
+   },
+   "Tottenham Hotspur": {
+    "consensus_price": 275,
+    "no_vig_prob": 0.2534
+   },
+   "Draw": {
+    "consensus_price": 285,
+    "no_vig_prob": 0.2468
+   }
+  },
+  "hold_pct": 5.25,
+  "spread": {
+   "Chelsea": -0.5,
+   "Tottenham Hotspur": 0.5
+  },
+  "total": 3.0
+ }
+}
