@@ -1,0 +1,387 @@
+{
+ "9c460fd677a660d1bc7cfea0aa1826c1": {
+  "books": 20,
+  "best_price": {
+   "h2h": {
+    "Los Angeles Lakers": {
+     "price": -217,
+     "book": "Smarkets"
+    },
+    "Utah Jazz": {
+     "price": 215,
+     "book": "Betfair"
+    }
+   },
+   "spreads": {
+    "Los Angeles Lakers": {
+     "price": -106,
+     "book": "LiveScore Bet",
+     "point": -6.5
+    },
+    "Utah Jazz": {
+     "price": -103,
+     "book": "Matchbook",
+     "point": 6.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -111,
+     "book": "Betano (UK)",
+     "point": 237.5
+    },
+    "Under": {
+     "price": -111,
+     "book": "Betano (UK)",
+     "point": 237.5
+    }
+   }
+  },
+  "moneyline": {
+   "Los Angeles Lakers": {
+    "consensus_price": -250,
+    "no_vig_prob": 0.6729
+   },
+   "Utah Jazz": {
+    "consensus_price": 188,
+    "no_vig_prob": 0.3271
+   }
+  },
+  "hold_pct": 6.15,
+  "spread": {
+   "Los Angeles Lakers": -6.0,
+   "Utah Jazz": 6.0
+  },
+  "total": 237.5
+ },
+ "3f57b691d91174cd878320071f585c11": {
+  "books": 20,
+  "best_price": {
+   "h2h": {
+    "Brooklyn Nets": {
+     "price": 245,
+     "book": "Betfair"
+    },
+    "Indiana Pacers": {
+     "price": -250,
+     "book": "Smarkets"
+    }
+   },
+   "spreads": {
+    "Brooklyn Nets": {
+     "price": -110,
+     "book": "Virgin Bet",
+     "point": 7.5
+    },
+    "Indiana Pacers": {
+     "price": 102,
+     "book": "Matchbook",
+     "point": -7.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -108,
+     "book": "Virgin Bet",
+     "point": 231.5
+    },
+    "Under": {
+     "price": -111,
+     "book": "Betano (UK)",
+     "point": 231.5
+    }
+   }
+  },
+  "moneyline": {
+   "Brooklyn Nets": {
+    "consensus_price": 210,
+    "no_vig_prob": 0.3055
+   },
+   "Indiana Pacers": {
+    "consensus_price": -275,
+    "no_vig_prob": 0.6945
+   }
+  },
+  "hold_pct": 5.59,
+  "spread": {
+   "Brooklyn Nets": 7.5,
+   "Indiana Pacers": -7.5
+  },
+  "total": 231.5
+ },
+ "4bdaabae0c074d48156aaa3e315a5c4d": {
+  "books": 20,
+  "best_price": {
+   "h2h": {
+    "New York Knicks": {
+     "price": -263,
+     "book": "Betfair"
+    },
+    "Orlando Magic": {
+     "price": 255,
+     "book": "Matchbook"
+    }
+   },
+   "spreads": {
+    "New York Knicks": {
+     "price": -103,
+     "book": "LiveScore Bet",
+     "point": -7.5
+    },
+    "Orlando Magic": {
+     "price": -105,
+     "book": "Matchbook",
+     "point": 7.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -111,
+     "book": "Betano (UK)",
+     "point": 223.5
+    },
+    "Under": {
+     "price": -110,
+     "book": "888sport",
+     "point": 223.5
+    }
+   }
+  },
+  "moneyline": {
+   "New York Knicks": {
+    "consensus_price": -300,
+    "no_vig_prob": 0.7138
+   },
+   "Orlando Magic": {
+    "consensus_price": 232,
+    "no_vig_prob": 0.2862
+   }
+  },
+  "hold_pct": 5.08,
+  "spread": {
+   "New York Knicks": -7.5,
+   "Orlando Magic": 7.5
+  },
+  "total": 223.5
+ },
+ "e6834225d7e218a59333dbbc01fe67ab": {
+  "books": 20,
+  "best_price": {
+   "h2h": {
+    "Los Angeles Clippers": {
+     "price": 900,
+     "book": "Betway"
+    },
+    "Oklahoma City Thunder": {
+     "price": -909,
+     "book": "Matchbook"
+    }
+   },
+   "spreads": {
+    "Los Angeles Clippers": {
+     "price": -118,
+     "book": "888sport",
+     "point": 15.5
+    },
+    "Oklahoma City Thunder": {
+     "price": -118,
+     "book": "888sport",
+     "point": -15.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -111,
+     "book": "Betano (UK)",
+     "point": 221.5
+    },
+    "Under": {
+     "price": -111,
+     "book": "Betano (UK)",
+     "point": 221.5
+    }
+   }
+  },
+  "moneyline": {
+   "Los Angeles Clippers": {
+    "consensus_price": 750,
+    "no_vig_prob": 0.1123
+   },
+   "Oklahoma City Thunder": {
+    "consensus_price": -1321,
+    "no_vig_prob": 0.8877
+   }
+  },
+  "hold_pct": 4.73,
+  "spread": {
+   "Los Angeles Clippers": 16.25,
+   "Oklahoma City Thunder": -16.25
+  },
+  "total": 221.5
+ },
+ "b9f6f078c66480af12ca8bcc44969097": {
+  "books": 20,
+  "best_price": {
+   "h2h": {
+    "Minnesota Timberwolves": {
+     "price": -106,
+     "book": "Betfair"
+    },
+    "Toronto Raptors": {
+     "price": 104,
+     "book": "Betfair"
+    }
+   },
+   "spreads": {
+    "Minnesota Timberwolves": {
+     "price": -138,
+     "book": "888sport",
+     "point": 1.5
+    },
+    "Toronto Raptors": {
+     "price": 100,
+     "book": "888sport",
+     "point": -1.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -110,
+     "book": "888sport",
+     "point": 232.5
+    },
+    "Under": {
+     "price": -106,
+     "book": "LiveScore Bet",
+     "point": 232.5
+    }
+   }
+  },
+  "moneyline": {
+   "Minnesota Timberwolves": {
+    "consensus_price": -111,
+    "no_vig_prob": 0.5011
+   },
+   "Toronto Raptors": {
+    "consensus_price": -110,
+    "no_vig_prob": 0.4989
+   }
+  },
+  "hold_pct": 4.99,
+  "spread": {
+   "Minnesota Timberwolves": 1.5,
+   "Toronto Raptors": -1.5
+  },
+  "total": 232.5
+ },
+ "252f3af49fb5271bb040e95e0119f207": {
+  "books": 20,
+  "best_price": {
+   "h2h": {
+    "Detroit Pistons": {
+     "price": 118,
+     "book": "Betfair"
+    },
+    "Philadelphia 76ers": {
+     "price": -118,
+     "book": "Matchbook"
+    }
+   },
+   "spreads": {
+    "Detroit Pistons": {
+     "price": -114,
+     "book": "LiveScore Bet",
+     "point": 2.5
+    },
+    "Philadelphia 76ers": {
+     "price": -106,
+     "book": "LiveScore Bet",
+     "point": -2.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -109,
+     "book": "LiveScore Bet",
+     "point": 227.5
+    },
+    "Under": {
+     "price": -103,
+     "book": "Matchbook",
+     "point": 227.5
+    }
+   }
+  },
+  "moneyline": {
+   "Detroit Pistons": {
+    "consensus_price": 112,
+    "no_vig_prob": 0.4457
+   },
+   "Philadelphia 76ers": {
+    "consensus_price": -142,
+    "no_vig_prob": 0.5543
+   }
+  },
+  "hold_pct": 5.85,
+  "spread": {
+   "Detroit Pistons": 2.5,
+   "Philadelphia 76ers": -2.5
+  },
+  "total": 227.5
+ },
+ "dcc4a1c7f0427d8e1b2ee7d3f1d48e8a": {
+  "books": 20,
+  "best_price": {
+   "h2h": {
+    "Memphis Grizzlies": {
+     "price": -172,
+     "book": "Unibet (UK)"
+    },
+    "Sacramento Kings": {
+     "price": 170,
+     "book": "Matchbook"
+    }
+   },
+   "spreads": {
+    "Memphis Grizzlies": {
+     "price": -118,
+     "book": "William Hill",
+     "point": -4.5
+    },
+    "Sacramento Kings": {
+     "price": -118,
+     "book": "William Hill",
+     "point": 4.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -108,
+     "book": "Matchbook",
+     "point": 236.5
+    },
+    "Under": {
+     "price": -106,
+     "book": "Matchbook",
+     "point": 236.5
+    }
+   }
+  },
+  "moneyline": {
+   "Memphis Grizzlies": {
+    "consensus_price": -188,
+    "no_vig_prob": 0.6203
+   },
+   "Sacramento Kings": {
+    "consensus_price": 150,
+    "no_vig_prob": 0.3797
+   }
+  },
+  "hold_pct": 5.34,
+  "spread": {
+   "Memphis Grizzlies": -5.25,
+   "Sacramento Kings": 5.25
+  },
+  "total": 236.5
+ }
+}
