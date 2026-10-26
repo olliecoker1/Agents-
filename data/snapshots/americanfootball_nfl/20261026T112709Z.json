@@ -1,0 +1,57 @@
+{
+ "4853610e63c246f2027a6a248e642c9a": {
+  "books": 20,
+  "best_price": {
+   "h2h": {
+    "Dallas Cowboys": {
+     "price": -204,
+     "book": "Betfair"
+    },
+    "Philadelphia Eagles": {
+     "price": 200,
+     "book": "Smarkets"
+    }
+   },
+   "spreads": {
+    "Dallas Cowboys": {
+     "price": -110,
+     "book": "888sport",
+     "point": -4.5
+    },
+    "Philadelphia Eagles": {
+     "price": -110,
+     "book": "888sport",
+     "point": 4.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": 100,
+     "book": "Matchbook",
+     "point": 44.0
+    },
+    "Under": {
+     "price": -108,
+     "book": "Matchbook",
+     "point": 44.0
+    }
+   }
+  },
+  "moneyline": {
+   "Dallas Cowboys": {
+    "consensus_price": -226,
+    "no_vig_prob": 0.66
+   },
+   "Philadelphia Eagles": {
+    "consensus_price": 180,
+    "no_vig_prob": 0.34
+   }
+  },
+  "hold_pct": 5.04,
+  "spread": {
+   "Dallas Cowboys": -4.0,
+   "Philadelphia Eagles": 4.0
+  },
+  "total": 44.0
+ }
+}

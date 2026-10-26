@@ -41,9 +41,17 @@
    },
    "projection": "+1.75",
    "reason": "MANUAL (user request, below 1.5-pt rule): 49ers without Evans, Bosa, Samuel per ESPN; fair ~SF -1.5 to -2 vs -2.5",
-   "status": "open",
-   "result": null,
-   "pnl": null
+   "status": "settled",
+   "result": "win",
+   "pnl": 4.08,
+   "final_score": {
+    "Atlanta Falcons": 29.0,
+    "San Francisco 49ers": 20.0
+   },
+   "closing_snapshot_utc": "2026-10-25T16:12:34+00:00",
+   "clv": {
+    "clv_points": 1.0
+   }
   }
  ]
 }
