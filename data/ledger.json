@@ -52,6 +52,129 @@
    "clv": {
     "clv_points": 1.0
    }
+  },
+  {
+   "id": 2,
+   "placed_utc": "2026-10-28T11:31:55+00:00",
+   "league": "NBA",
+   "sport_key": "basketball_nba",
+   "event_id": "e74d54621abaed183e569394f935c362",
+   "matchup": "San Antonio Spurs @ Utah Jazz",
+   "home": "Utah Jazz",
+   "away": "San Antonio Spurs",
+   "kickoff_utc": "2026-10-29T01:10:00Z",
+   "market": "spreads",
+   "selection": "San Antonio Spurs",
+   "point": -12.5,
+   "price_american": -103,
+   "decimal_odds": 1.9709,
+   "implied_prob": 0.5074,
+   "book": "Virgin Bet",
+   "stake": 4.0,
+   "consensus_at_placement": {
+    "spread": {
+     "San Antonio Spurs": -12.5,
+     "Utah Jazz": 12.5
+    },
+    "total": 233.5,
+    "moneyline": {
+     "San Antonio Spurs": {
+      "consensus_price": -650,
+      "no_vig_prob": 0.8184
+     },
+     "Utah Jazz": {
+      "consensus_price": 420,
+      "no_vig_prob": 0.1816
+     }
+    }
+   },
+   "projection": "-13.5",
+   "reason": "[B lean] JJJ out 6-8 wks (torn MCL, Jazz confirmed), Markkanen day-to-day; fair ~Spurs -13.5 vs -12.5",
+   "status": "open",
+   "result": null,
+   "pnl": null
+  },
+  {
+   "id": 3,
+   "placed_utc": "2026-10-28T11:31:55+00:00",
+   "league": "NBA",
+   "sport_key": "basketball_nba",
+   "event_id": "1e3ca91e27ded6e4b4bb35aabb67b505",
+   "matchup": "Oklahoma City Thunder @ Dallas Mavericks",
+   "home": "Dallas Mavericks",
+   "away": "Oklahoma City Thunder",
+   "kickoff_utc": "2026-10-29T01:40:00Z",
+   "market": "spreads",
+   "selection": "Dallas Mavericks",
+   "point": 5.5,
+   "price_american": -103,
+   "decimal_odds": 1.9709,
+   "implied_prob": 0.5074,
+   "book": "LiveScore Bet",
+   "stake": 4.0,
+   "consensus_at_placement": {
+    "spread": {
+     "Dallas Mavericks": 5.5,
+     "Oklahoma City Thunder": -5.5
+    },
+    "total": 229.5,
+    "moneyline": {
+     "Dallas Mavericks": {
+      "consensus_price": 175,
+      "no_vig_prob": 0.3444
+     },
+     "Oklahoma City Thunder": {
+      "consensus_price": -225,
+      "no_vig_prob": 0.6556
+     }
+    }
+   },
+   "projection": "+4.5",
+   "reason": "[B lean] OKC's Jalen Williams left Sunday with significant injury (status unconfirmed); home dog; fair ~Thunder -4.5 vs -5.5",
+   "status": "open",
+   "result": null,
+   "pnl": null
+  },
+  {
+   "id": 4,
+   "placed_utc": "2026-10-28T11:31:55+00:00",
+   "league": "NBA",
+   "sport_key": "basketball_nba",
+   "event_id": "c6d62b9457cbd8517860e222f1d4f953",
+   "matchup": "Golden State Warriors @ Minnesota Timberwolves",
+   "home": "Minnesota Timberwolves",
+   "away": "Golden State Warriors",
+   "kickoff_utc": "2026-10-29T00:10:00Z",
+   "market": "spreads",
+   "selection": "Golden State Warriors",
+   "point": 3.5,
+   "price_american": -110,
+   "decimal_odds": 1.9091,
+   "implied_prob": 0.5238,
+   "book": "Virgin Bet",
+   "stake": 4.0,
+   "consensus_at_placement": {
+    "spread": {
+     "Golden State Warriors": 3.5,
+     "Minnesota Timberwolves": -3.5
+    },
+    "total": 228.5,
+    "moneyline": {
+     "Golden State Warriors": {
+      "consensus_price": 125,
+      "no_vig_prob": 0.4188
+     },
+     "Minnesota Timberwolves": {
+      "consensus_price": -161,
+      "no_vig_prob": 0.5812
+     }
+    }
+   },
+   "projection": "+2.5",
+   "reason": "[B lean] Edwards out (knee surgery); Wolves -3.5 leans slightly high for a team losing its top scorer; fair ~Wolves -2.5",
+   "status": "open",
+   "result": null,
+   "pnl": null
   }
  ]
 }

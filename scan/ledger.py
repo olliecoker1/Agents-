@@ -29,7 +29,7 @@ SCORES_URL = "https://api.the-odds-api.com/v4/sports/{sport}/scores"
 STARTING_BANKROLL = 200.0
 TRIAL_DAYS = 30
 STAKE_PCT = 0.02  # flat 2% of current bankroll per bet
-MAX_BETS_PER_GAME = 1  # per kind: one match bet and one card bet
+MAX_CARD_BETS_PER_GAME = 2  # match bets: one per market (h2h, spreads, totals) per game
 
 
 def now_utc():
@@ -87,10 +87,6 @@ def grade(bet, home_score, away_score):
         else:
             diff = mine - theirs
     return "win" if diff > 0 else "loss" if diff < 0 else "push"
-
-
-def kind(market):
-    return "cards" if market == "cards" else "match"
 
 
 def norm(name):
@@ -215,9 +211,15 @@ def cmd_place(ledger, args):
     league, game = found[0]
     if parse_ts(game["kickoff_utc"]) <= now_utc():
         sys.exit("Game has already started.")
-    same = [b for b in ledger["bets"] if b["event_id"] == args.event and kind(b["market"]) == kind(args.market)]
-    if len(same) >= MAX_BETS_PER_GAME:
-        sys.exit(f"Already have a {kind(args.market)} bet on this game.")
+    on_game = [b for b in ledger["bets"] if b["event_id"] == args.event]
+    if args.market == "cards":
+        cards = [b for b in on_game if b["market"] == "cards"]
+        if any(norm(b["selection"]) == norm(args.selection) for b in cards):
+            sys.exit(f"Already have a card bet on {args.selection} in this game.")
+        if len(cards) >= MAX_CARD_BETS_PER_GAME:
+            sys.exit(f"Already have {MAX_CARD_BETS_PER_GAME} card bets on this game.")
+    elif any(b["market"] == args.market for b in on_game):
+        sys.exit(f"Already have a {args.market} bet on this game.")
     if args.market == "cards":
         card = game.get("cards", {}).get(args.selection)
         if not card:

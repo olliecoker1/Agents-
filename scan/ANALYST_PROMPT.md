@@ -68,7 +68,7 @@ Run every scan, in this order:
 1. `python3 scan/ledger.py start` (does nothing if the trial is already running).
 2. `python3 scan/ledger.py settle`: grades finished games and records closing line
    value. Daily runs only; pre-kickoff runs skip this step to save credits.
-3. For each game where the analysis finds a value discrepancy, place a paper bet:
+3. Place the paper bets chosen under the selection rules below:
    `python3 scan/ledger.py place --event <id> --market <h2h|spreads|totals>
    --selection "<team|Draw|Over|Under>" --projection "<fair line or prob>"
    --reason "<one line>"`
@@ -81,8 +81,11 @@ Run every scan, in this order:
    only; card bets have no closing line), and the `by_market` split so card bets
    can be judged separately.
 
-Bet selection rules (qualify only if one applies and the game starts after this
-run):
+Bet selection rules. The owner wants a steady flow of bets, so there are two tiers.
+Start every bet's `--reason` with its tier, `[A]` or `[B lean]`, so the two can be
+judged separately. Only bet on games that start after this run.
+
+Tier A (strong edge), as before:
 - Spread: projection differs from the best available number by ≥ 1.5 pts (NFL),
   ≥ 2 pts (NBA), or ≥ 0.25 goals (EPL Asian handicap if offered).
 - Total: projection differs by ≥ 2 pts (NFL), ≥ 3 pts (NBA), or ≥ 0.25 goals (EPL).
@@ -95,13 +98,25 @@ run):
   direct opponent (pace, dribbles drawn), and match context (derby, relegation
   stakes). The player must be expected to start according to at least two
   reliable predicted-lineup sources, and the referee appointment must be
-  confirmed. Card prices carry a large margin, so most players will not qualify.
-- At most one match bet (spread, total or moneyline) and one card bet per game,
-  and five new bets per run in total. No bet just because the
-  line has moved; it needs a news-based projection that differs from the market.
-- Skip if the key news is unconfirmed.
-- Placing no bet is fine. The trial measures whether the edge is real, not
-  how many bets are made.
+  confirmed.
+
+Tier B (lean): a smaller edge from news, injuries, form, rest, schedule or
+matchup reasoning, stated in the reason.
+- Spread: ≥ 0.75 pts (NFL), ≥ 1 pt (NBA), or ≥ 0.25 goals (EPL).
+- Total: ≥ 1 pt (NFL), ≥ 1.5 pts (NBA), or ≥ 0.25 goals (EPL).
+- Moneyline: ≥ 2 percentage points.
+- Card: ≥ 3 percentage points, with the player a likely starter in at least one
+  reliable predicted lineup; the referee may be unconfirmed (say so in the reason).
+
+Volume:
+- Each daily run places at least 3 bets when at least 3 games are in the window,
+  taking the best Tier A edges first and then the best Tier B leans, up to 8 bets
+  per run. Pre-kickoff runs place up to 4 bets on their league's games.
+- Per game: at most one bet per market (spread, total, moneyline) and two card bets
+  (different players). Do not back both a spread and a moneyline on the same side
+  unless the reason explains why both have value.
+- A news item that is unconfirmed can support a Tier B lean only; mark it
+  unconfirmed in the reason. Never bet only because the line moved.
 
 When the trial ends (ledger.py refuses new bets), keep settling the open bets,
 then send one push notification: "Paper-trading month complete — ready to

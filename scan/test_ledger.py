@@ -100,9 +100,9 @@ class FlowTest(unittest.TestCase):
                                         projection="-5", reason="test"))
         b = led["bets"][0]
         self.assertEqual((b["point"], b["price_american"], b["book"], b["stake"]), (-3.0, -110, "BookA", 4.0))
-        with self.assertRaises(SystemExit):  # one bet per game
-            ledger.cmd_place(led, self.args(event="ev1", market="totals", selection="Over",
-                                            projection="48", reason="dup"))
+        with self.assertRaises(SystemExit):  # one bet per market per game
+            ledger.cmd_place(led, self.args(event="ev1", market="spreads", selection="Away",
+                                            projection="+5", reason="dup"))
 
         b["kickoff_utc"] = self.kickoff.isoformat()
         scores = [{"id": "ev1", "completed": True,
@@ -118,6 +118,15 @@ class FlowTest(unittest.TestCase):
         self.assertEqual(s["record"], "1-0-0")
         self.assertEqual(s["beat_closing_line_pct"], 100.0)
 
+    def test_one_bet_per_market(self):
+        led = ledger.load()
+        ledger.cmd_start(led, None)
+        ledger.cmd_place(led, self.args(event="ev1", market="spreads", selection="Home",
+                                        projection="-5", reason="spread"))
+        ledger.cmd_place(led, self.args(event="ev1", market="totals", selection="Over",
+                                        projection="48", reason="total"))
+        self.assertEqual([b["market"] for b in led["bets"]], ["spreads", "totals"])
+
     def test_card_bet(self):
         led = ledger.load()
         ledger.cmd_start(led, None)
@@ -127,7 +136,7 @@ class FlowTest(unittest.TestCase):
                                         projection="0.45", reason="strict referee"))
         b = led["bets"][1]
         self.assertEqual((b["decimal_odds"], b["book"]), (3.0, "Paddy Power"))
-        with self.assertRaises(SystemExit):  # one card bet per game
+        with self.assertRaises(SystemExit):  # one card bet per player
             ledger.cmd_place(led, self.args(event="ev1", market="cards", selection="Sasa Lukic",
                                             projection="0.45", reason="dup"))
 
