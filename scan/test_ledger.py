@@ -77,7 +77,14 @@ class FlowTest(unittest.TestCase):
                 "id": "ev1", "matchup": "Away @ Home", "home": "Home", "away": "Away",
                 "kickoff_utc": self.kickoff.isoformat(), "market": line,
                 "cards": {"Sasa Lukic": {"best": {"price": 200, "book": "Paddy Power"},
-                                         "books": 2, "median_implied_prob": 0.35}}}]}]}
+                                         "books": 2, "median_implied_prob": 0.35}},
+                "props": {"player_anytime_td": {"region": "us", "us_proxy": True, "players": {
+                    "Bijan Robinson": {"best": {"price": -120, "book": "FanDuel"}, "books": 4,
+                                       "median_implied_prob": 0.53}}},
+                          "player_points": {"region": "us", "us_proxy": True, "players": {
+                    "Kyle Pitts": {"line": 4.5, "Over": {"price": -110, "point": 4.5, "book": "BookA"},
+                                   "Under": {"price": -110, "point": 4.5, "book": "BookA"}, "books": 1,
+                                   "median_no_vig_over_prob": 0.5}}}}}]}]}
         (root / "latest.json").write_text(json.dumps(latest))
         snap = root / "snapshots" / "americanfootball_nfl"
         snap.mkdir(parents=True)
@@ -158,6 +165,50 @@ class FlowTest(unittest.TestCase):
             ledger.cmd_settle(led, None)
         self.assertEqual((b["result"], b["pnl"]), ("win", 8.0))
         self.assertEqual(ledger.summarise(led)["by_market"]["cards"]["bets"], 1)
+
+    def test_prop_bets(self):
+        led = ledger.load()
+        ledger.cmd_start(led, None)
+        ledger.cmd_place(led, self.args(event="ev1", market="props", prop="player_anytime_td",
+                                        selection="Bijan Robinson", side=None, projection="0.6", reason="td"))
+        ledger.cmd_place(led, self.args(event="ev1", market="props", prop="player_points",
+                                        selection="Kyle Pitts", side="Over", projection="6", reason="pts"))
+        td, pts = led["bets"]
+        self.assertEqual((td["side"], td["point"], td["us_proxy"], td["book"]), ("Yes", None, True, "FanDuel"))
+        self.assertEqual((pts["side"], pts["point"]), ("Over", 4.5))
+        with self.assertRaises(SystemExit):  # same player and prop twice
+            ledger.cmd_place(led, self.args(event="ev1", market="props", prop="player_anytime_td",
+                                            selection="Bijan Robinson", side=None, projection="0.6", reason="dup"))
+        with self.assertRaises(SystemExit):  # an over/under prop needs a side
+            ledger.cmd_place(led, self.args(event="ev1", market="props", prop="player_points",
+                                            selection="Kyle Pitts", side=None, projection="6", reason="x"))
+
+        scoreboard = {"events": [{"id": "e1", "competitions": [{
+            "status": {"type": {"completed": True}},
+            "competitors": [{"homeAway": "home", "team": {"displayName": "Home"}, "score": "29"},
+                            {"homeAway": "away", "team": {"displayName": "Away"}, "score": "20"}]}]}]}
+        summary = {"boxscore": {"players": [{"statistics": [
+            {"name": "rushing", "keys": ["rushingAttempts", "rushingYards", "rushingTouchdowns"],
+             "athletes": [{"athlete": {"displayName": "Bijan Robinson"}, "stats": ["18", "92", "1"]}]},
+            {"name": "passing", "keys": ["passingYards", "passingTouchdowns"],
+             "athletes": [{"athlete": {"displayName": "Kyle Pitts"}, "stats": ["20", "1"]}]},
+            {"name": "receiving", "keys": ["receptions", "points"],
+             "athletes": [{"athlete": {"displayName": "Kyle Pitts"}, "stats": ["3", "4"]}]}]}]}}
+
+        def fake_get(url, params=None):
+            return (scoreboard if url.endswith("scoreboard") else summary), {}
+
+        with mock.patch.object(ledger, "now_utc", return_value=self.kickoff + timedelta(hours=4)), \
+             mock.patch.object(ledger, "get_json", fake_get):
+            ledger.cmd_settle(led, None)
+        self.assertEqual((td["result"], td["actual"]), ("win", 1.0))
+        self.assertEqual((pts["result"], pts["actual"]), ("loss", 4.0))  # 4 < 4.5; passing TD ignored
+        self.assertEqual(set(ledger.summarise(led)["by_market"]), {"player_anytime_td", "player_points"})
+
+    def test_prop_void_when_player_did_not_play(self):
+        b = {"selection": "Bench Guy", "side": "Over", "point": 10.5}
+        self.assertEqual(ledger.grade_prop(b, {"Starter": 20}), "push")
+        self.assertEqual(ledger.find_player("Kyle Pitts", ["Kyle Pitts Sr.", "Drake London"]), "Kyle Pitts Sr.")
 
 
 if __name__ == "__main__":

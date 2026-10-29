@@ -6,10 +6,16 @@ records closing line value (CLV) from the last odds snapshot before kickoff.
 EPL "player to be carded" bets (--market cards --selection "Player Name") settle
 from ESPN's match data at no credit cost; a player who doesn't appear is void,
 as at UK books. Card bets have no CLV (closing card odds would cost credits).
+Player props (--market props --prop KEY --selection "Player" --side Over|Under|Yes)
+settle from ESPN box scores the same way: NBA player points, NFL anytime touchdown
+(any non-passing TD), EPL anytime goalscorer (own goals don't count). A player
+who doesn't play is void. NBA/NFL prop prices come from US books (us_proxy).
 
   python3 scan/ledger.py start
   python3 scan/ledger.py place --event ID --market spreads --selection "Team" \
       --projection "-1.5" --reason "why the market is off"
+  python3 scan/ledger.py place --event ID --market props --prop player_points \
+      --selection "Player" --side Over --projection "27.5" --reason "why"
   python3 scan/ledger.py settle
   python3 scan/ledger.py summary
 """
@@ -22,7 +28,7 @@ import sys
 import unicodedata
 from datetime import datetime, timedelta, timezone
 
-from scan import DATA, ESPN_URL, SNAPSHOTS, american_to_prob, get_json
+from scan import DATA, ESPN_URL, LEAGUES, SNAPSHOTS, american_to_prob, get_json
 
 LEDGER = DATA / "ledger.json"
 SCORES_URL = "https://api.the-odds-api.com/v4/sports/{sport}/scores"
@@ -30,6 +36,7 @@ STARTING_BANKROLL = 200.0
 TRIAL_DAYS = 30
 STAKE_PCT = 0.02  # flat 2% of current bankroll per bet
 MAX_CARD_BETS_PER_GAME = 2  # match bets: one per market (h2h, spreads, totals) per game
+MAX_PROP_BETS_PER_GAME = 3
 
 
 def now_utc():
@@ -102,24 +109,30 @@ def same_team(a, b):
 
 def find_player(name, players):
     """Match a bookmaker's player name to ESPN's; None if absent or ambiguous."""
-    target = norm(name)
-    exact = [p for p in players if norm(p) == target]
+    def key(n):  # "Kyle Pitts Sr." and "Kyle Pitts" are the same player
+        return " ".join(w for w in norm(n).split() if w not in ("jr", "sr", "ii", "iii", "iv")) or norm(n)
+
+    target = key(name)
+    exact = [p for p in players if key(p) == target]
     if exact:
         return exact[0]
     first, last = target.split()[0], target.split()[-1]
-    close = [p for p in players if norm(p).split()[-1] == last and norm(p)[0] == first[0]]
+    close = [p for p in players if key(p).split()[-1] == last and key(p)[0] == first[0]]
     return close[0] if len(close) == 1 else None
 
 
 def espn_match(bet):
     """ESPN scoreboard event for this bet's match, or None if not found / not finished."""
-    day = parse_ts(bet["kickoff_utc"]).strftime("%Y%m%d")
-    data, _ = get_json(ESPN_URL.format(path="soccer/eng.1", endpoint="scoreboard"), {"dates": day})
-    for ev in data.get("events", []):
-        comp = ev["competitions"][0]
-        teams = {c["homeAway"]: c["team"]["displayName"] for c in comp["competitors"]}
-        if same_team(teams.get("home", ""), bet["home"]) and same_team(teams.get("away", ""), bet["away"]):
-            return ev if comp["status"]["type"].get("completed") else None
+    path = LEAGUES[bet["sport_key"]][1]
+    kickoff = parse_ts(bet["kickoff_utc"])
+    # ESPN files US games under the US date, so a 00:10 UTC tip-off is on the day before
+    for day in sorted({kickoff.strftime("%Y%m%d"), (kickoff - timedelta(hours=8)).strftime("%Y%m%d")}):
+        data, _ = get_json(ESPN_URL.format(path=path, endpoint="scoreboard"), {"dates": day})
+        for ev in data.get("events", []):
+            comp = ev["competitions"][0]
+            teams = {c["homeAway"]: c["team"]["displayName"] for c in comp["competitors"]}
+            if same_team(teams.get("home", ""), bet["home"]) and same_team(teams.get("away", ""), bet["away"]):
+                return ev if comp["status"]["type"].get("completed") else None
     return None
 
 
@@ -153,6 +166,67 @@ def settle_card(bet):
         return False
     bet["final_score"] = {c["team"]["displayName"]: c.get("score") for c in comp["competitors"]}
     bet["result"] = result
+    return True
+
+
+def box_stats(summary, wanted):
+    """{player: total of the wanted stat keys} for everyone with a box-score line."""
+    out = {}
+    for team in summary.get("boxscore", {}).get("players", []):
+        for cat in team.get("statistics", []):
+            keys = cat.get("keys", [])
+            for a in cat.get("athletes", []):
+                if a.get("didNotPlay") or not a.get("stats"):
+                    continue
+                name = a.get("athlete", {}).get("displayName", "")
+                total = out.setdefault(name, 0)
+                for k, v in zip(keys, a["stats"]):
+                    if wanted(k):
+                        try:
+                            total += float(v)
+                        except ValueError:
+                            pass
+                out[name] = total
+    return out
+
+
+def grade_prop(bet, stats):
+    """stats: {player: value} for players who played; 'push' if the player didn't play."""
+    player = find_player(bet["selection"], list(stats))
+    if player is None:
+        return "push"
+    value = stats[player]
+    bet["actual"] = value
+    if bet["side"] == "Yes":
+        return "win" if value >= 1 else "loss"
+    diff = value - bet["point"] if bet["side"] == "Over" else bet["point"] - value
+    return "win" if diff > 0 else "loss" if diff < 0 else "push"
+
+
+def settle_prop(bet):
+    ev = espn_match(bet)
+    if not ev:
+        return False
+    path = LEAGUES[bet["sport_key"]][1]
+    summary, _ = get_json(ESPN_URL.format(path=path, endpoint="summary"), {"event": ev["id"]})
+    comp = ev["competitions"][0]
+    if bet["prop"] == "player_points":
+        stats = box_stats(summary, lambda k: k == "points")
+    elif bet["prop"] == "player_anytime_td":
+        stats = box_stats(summary, lambda k: k.endswith("Touchdowns") and k != "passingTouchdowns")
+    else:  # player_goal_scorer_anytime
+        scorers = [a.get("displayName", "") for d in comp.get("details", [])
+                   if d.get("scoringPlay") and not d.get("ownGoal") for a in d.get("athletesInvolved", [])[:1]]
+        stats = {}
+        for team in summary.get("rosters", []):
+            for p in team.get("roster", []):
+                if p.get("starter") or p.get("subbedIn"):
+                    name = p.get("athlete", {}).get("displayName", "")
+                    stats[name] = sum(find_player(s, [name]) is not None for s in scorers)
+        if not stats:
+            return False
+    bet["final_score"] = {c["team"]["displayName"]: c.get("score") for c in comp["competitors"]}
+    bet["result"] = grade_prop(bet, stats)
     return True
 
 
@@ -218,6 +292,12 @@ def cmd_place(ledger, args):
             sys.exit(f"Already have a card bet on {args.selection} in this game.")
         if len(cards) >= MAX_CARD_BETS_PER_GAME:
             sys.exit(f"Already have {MAX_CARD_BETS_PER_GAME} card bets on this game.")
+    elif args.market == "props":
+        props = [b for b in on_game if b["market"] == "props"]
+        if any(b["prop"] == args.prop and norm(b["selection"]) == norm(args.selection) for b in props):
+            sys.exit(f"Already have a {args.prop} bet on {args.selection} in this game.")
+        if len(props) >= MAX_PROP_BETS_PER_GAME:
+            sys.exit(f"Already have {MAX_PROP_BETS_PER_GAME} prop bets on this game.")
     elif any(b["market"] == args.market for b in on_game):
         sys.exit(f"Already have a {args.market} bet on this game.")
     if args.market == "cards":
@@ -225,6 +305,15 @@ def cmd_place(ledger, args):
         if not card:
             sys.exit(f"No card price for {args.selection!r} in latest scan (run scan.py with --cards-hours).")
         best = card["best"]
+    elif args.market == "props":
+        prop = game.get("props", {}).get(args.prop or "")
+        offer = prop and prop["players"].get(args.selection)
+        if not offer:
+            sys.exit(f"No {args.prop} price for {args.selection!r} in latest scan (run scan.py with --props-hours).")
+        side = args.side or "Yes"
+        if (side == "Yes") == ("line" in offer):
+            sys.exit(f"{args.prop} takes --side {'Over or Under' if 'line' in offer else 'Yes'}.")
+        best = offer["best"] if side == "Yes" else offer[side]
     else:
         best = game["market"]["best_price"].get(args.market, {}).get(args.selection)
     if not best:
@@ -254,6 +343,8 @@ def cmd_place(ledger, args):
         "stake": stake,
         "consensus_at_placement": ({"median_implied_prob": card["median_implied_prob"], "books": card["books"]}
                                    if args.market == "cards" else
+                                   {k: v for k, v in offer.items() if k not in ("best", "Over", "Under")}
+                                   if args.market == "props" else
                                    {k: m.get(k) for k in ("spread", "total", "moneyline")}),
         "projection": args.projection,
         "reason": args.reason,
@@ -261,10 +352,14 @@ def cmd_place(ledger, args):
         "result": None,
         "pnl": None,
     }
+    if args.market == "props":
+        bet.update({"prop": args.prop, "side": side, "us_proxy": prop["us_proxy"]})
     ledger["bets"].append(bet)
     save(ledger)
     pt = f" {bet['point']:+g}" if bet["point"] is not None and args.market == "spreads" else \
          f" {bet['point']:g}" if bet["point"] is not None else ""
+    if args.market == "props":
+        pt = f" {args.prop} {side}" + (f" {bet['point']:g}" if bet["point"] is not None else "")
     print(f"#{bet['id']} {bet['matchup']}: {args.selection}{pt} @ {best['price']:+d} "
           f"({best['book']}) stake £{stake:.2f}")
 
@@ -275,16 +370,16 @@ def cmd_settle(ledger, args):
         print("Nothing to settle.")
         return
     settled = 0
-    for b in [b for b in due if b["market"] == "cards"]:
+    for b in [b for b in due if b["market"] in ("cards", "props")]:
         try:
-            if settle_card(b):
+            if (settle_card if b["market"] == "cards" else settle_prop)(b):
                 b["pnl"] = round({"win": b["stake"] * (b["decimal_odds"] - 1), "loss": -b["stake"],
                                   "push": 0.0}[b["result"]], 2)
                 b["status"] = "settled"
                 settled += 1
         except Exception as e:  # ESPN is best-effort; retry next run
-            print(f"Card bet #{b['id']}: {e}")
-    match_due = [b for b in due if b["market"] != "cards"]
+            print(f"{b['market'].capitalize()} bet #{b['id']}: {e}")
+    match_due = [b for b in due if b["market"] not in ("cards", "props")]
     if not match_due:
         save(ledger)
         print(f"Settled {settled} of {len(due)} due bets. Bankroll £{bankroll(ledger):.2f}")
@@ -325,10 +420,14 @@ def summarise(ledger):
     pts = [c["clv_points"] for c in clvs if "clv_points" in c]
     beat = sum((c.get("clv_pct") or c.get("clv_points") or 0) > 0 for c in clvs)
 
+    def tier(b):
+        reason = b.get("reason", "")
+        return "A" if reason.startswith("[A]") else "B" if reason.startswith("[B") else "manual"
+
     def group(key):
         out = {}
         for b in done:
-            g = out.setdefault(b[key], {"bets": 0, "staked": 0.0, "pnl": 0.0})
+            g = out.setdefault(key(b), {"bets": 0, "staked": 0.0, "pnl": 0.0})
             g["bets"] += 1
             g["staked"] += b["stake"]
             g["pnl"] = round(g["pnl"] + b["pnl"], 2)
@@ -350,8 +449,9 @@ def summarise(ledger):
         "beat_closing_line_pct": round(beat / len(clvs) * 100, 1) if clvs else None,
         "avg_clv_pct_moneyline": round(sum(pct) / len(pct), 2) if pct else None,
         "avg_clv_points_spread_total": round(sum(pts) / len(pts), 2) if pts else None,
-        "by_league": group("league"),
-        "by_market": group("market"),
+        "by_league": group(lambda b: b["league"]),
+        "by_market": group(lambda b: b.get("prop") or b["market"]),
+        "by_tier": group(tier),
     }
 
 
@@ -365,9 +465,11 @@ def main():
     sub.add_parser("start")
     pl = sub.add_parser("place")
     pl.add_argument("--event", required=True)
-    pl.add_argument("--market", required=True, choices=["h2h", "spreads", "totals", "cards"])
+    pl.add_argument("--market", required=True, choices=["h2h", "spreads", "totals", "cards", "props"])
     pl.add_argument("--selection", required=True,
-                    help="team name, 'Draw', 'Over', 'Under', or a player name for cards")
+                    help="team name, 'Draw', 'Over', 'Under', or a player name for cards and props")
+    pl.add_argument("--prop", help="prop market key from the scan, e.g. player_points")
+    pl.add_argument("--side", choices=["Over", "Under", "Yes"], help="for props (default Yes)")
     pl.add_argument("--projection", required=True, help="your fair line or probability")
     pl.add_argument("--reason", required=True)
     sub.add_parser("settle")

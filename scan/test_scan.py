@@ -74,6 +74,56 @@ class ScanTest(unittest.TestCase):
         self.assertEqual(card["best"], {"price": 200, "book": "Paddy Power"})
         self.assertEqual(card["books"], 2)  # Betfair's 1.01 placeholder dropped
 
+    def test_over_under_prices_use_main_line(self):
+        def ou(title, point, over, under):
+            return {"title": title, "markets": [{"key": "player_points", "outcomes": [
+                {"name": "Over", "description": "Jalen Johnson", "price": over, "point": point},
+                {"name": "Under", "description": "Jalen Johnson", "price": under, "point": point}]}]}
+        ev = {"bookmakers": [ou("DraftKings", 22.5, -110, -110), ou("FanDuel", 22.5, -105, -115),
+                             ou("Bovada", 24.5, 120, -150)]}
+        p = scan.over_under_prices(ev, "player_points")["Jalen Johnson"]
+        self.assertEqual(p["line"], 22.5)  # the line two of three books offer
+        self.assertEqual(p["Over"], {"price": -105, "point": 22.5, "book": "FanDuel"})
+        self.assertEqual(p["Under"], {"price": -110, "point": 22.5, "book": "DraftKings"})
+        self.assertEqual(p["books"], 2)
+        self.assertAlmostEqual(p["median_no_vig_over_prob"], 0.4946, places=3)
+
+    def test_props_capped_per_league(self):
+        now = datetime(2026, 10, 22, tzinfo=timezone.utc)
+        games = [{"id": f"g{i}", "kickoff_utc": (now + timedelta(hours=i + 1)).isoformat()} for i in range(4)]
+        calls = []
+
+        def fake_get(url, params=None):
+            calls.append(params)
+            return {"bookmakers": []}, {"x-requests-remaining": "300"}
+
+        with mock.patch.object(scan, "get_json", fake_get):
+            scan.fetch_player_markets("basketball_nba", "k", games, now, 25, "300", timedelta(0),
+                                      timedelta(hours=24), 2)
+        self.assertEqual([c["markets"] for c in calls], ["player_points", "player_points"])
+        self.assertEqual({c["regions"] for c in calls}, {"us"})
+        self.assertEqual(games[0]["props"]["player_points"]["us_proxy"], True)
+        self.assertNotIn("props", games[3])
+
+    def test_epl_cards_and_goalscorer_share_one_request(self):
+        now = datetime(2026, 10, 22, tzinfo=timezone.utc)
+        games = [{"id": "m1", "kickoff_utc": (now + timedelta(hours=3)).isoformat()}]
+        calls = []
+
+        def fake_get(url, params=None):
+            calls.append(params)
+            return {"bookmakers": [{"title": "William Hill", "markets": [
+                {"key": "player_goal_scorer_anytime", "outcomes": [
+                    {"name": "Yes", "description": "Cole Palmer", "price": 145}]}]}]}, {}
+
+        with mock.patch.object(scan, "get_json", fake_get):
+            scan.fetch_player_markets("soccer_epl", "k", games, now, 25, None, timedelta(hours=24),
+                                      timedelta(hours=24), 3)
+        self.assertEqual(len(calls), 1)
+        self.assertEqual(calls[0]["markets"], "player_to_receive_card,player_goal_scorer_anytime")
+        prop = games[0]["props"]["player_goal_scorer_anytime"]
+        self.assertEqual((prop["us_proxy"], prop["players"]["Cole Palmer"]["best"]["price"]), (False, 145))
+
 
 class CreditBudgetTest(unittest.TestCase):
     now = datetime(2026, 10, 22, tzinfo=timezone.utc)

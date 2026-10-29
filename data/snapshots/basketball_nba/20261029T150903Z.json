@@ -1,0 +1,265 @@
+{
+ "b123d92eb8046e43fabf95a33a676634": {
+  "books": 20,
+  "best_price": {
+   "h2h": {
+    "Atlanta Hawks": {
+     "price": -105,
+     "book": "Matchbook"
+    },
+    "Cleveland Cavaliers": {
+     "price": 104,
+     "book": "Matchbook"
+    }
+   },
+   "spreads": {
+    "Atlanta Hawks": {
+     "price": -138,
+     "book": "888sport",
+     "point": 1.5
+    },
+    "Cleveland Cavaliers": {
+     "price": 100,
+     "book": "888sport",
+     "point": -1.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -102,
+     "book": "Matchbook",
+     "point": 237.5
+    },
+    "Under": {
+     "price": -103,
+     "book": "Matchbook",
+     "point": 237.5
+    }
+   }
+  },
+  "moneyline": {
+   "Atlanta Hawks": {
+    "consensus_price": -115,
+    "no_vig_prob": 0.5057
+   },
+   "Cleveland Cavaliers": {
+    "consensus_price": -110,
+    "no_vig_prob": 0.4943
+   }
+  },
+  "hold_pct": 5.98,
+  "spread": {
+   "Atlanta Hawks": 1.5,
+   "Cleveland Cavaliers": -1.5
+  },
+  "total": 237.5
+ },
+ "f91d27cc050b1b85073d745372c73833": {
+  "books": 20,
+  "best_price": {
+   "h2h": {
+    "New Orleans Pelicans": {
+     "price": -213,
+     "book": "Matchbook"
+    },
+    "Sacramento Kings": {
+     "price": 210,
+     "book": "Matchbook"
+    }
+   },
+   "spreads": {
+    "New Orleans Pelicans": {
+     "price": 100,
+     "book": "888sport",
+     "point": -6.5
+    },
+    "Sacramento Kings": {
+     "price": -138,
+     "book": "888sport",
+     "point": 6.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -109,
+     "book": "LiveScore Bet",
+     "point": 236.5
+    },
+    "Under": {
+     "price": -111,
+     "book": "LiveScore Bet",
+     "point": 236.5
+    }
+   }
+  },
+  "moneyline": {
+   "New Orleans Pelicans": {
+    "consensus_price": -245,
+    "no_vig_prob": 0.6712
+   },
+   "Sacramento Kings": {
+    "consensus_price": 187,
+    "no_vig_prob": 0.3288
+   }
+  },
+  "hold_pct": 5.79,
+  "spread": {
+   "New Orleans Pelicans": -6.5,
+   "Sacramento Kings": 6.5
+  },
+  "total": 236.5
+ },
+ "ba667ca1b0b042f0661cb9d9af56c165": {
+  "books": 20,
+  "best_price": {
+   "h2h": {
+    "Memphis Grizzlies": {
+     "price": 260,
+     "book": "Smarkets"
+    },
+    "Portland Trail Blazers": {
+     "price": -263,
+     "book": "Betfair"
+    }
+   },
+   "spreads": {
+    "Memphis Grizzlies": {
+     "price": 100,
+     "book": "Matchbook",
+     "point": 7.5
+    },
+    "Portland Trail Blazers": {
+     "price": -106,
+     "book": "Matchbook",
+     "point": -7.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -111,
+     "book": "Bet Victor",
+     "point": 232.5
+    },
+    "Under": {
+     "price": -110,
+     "book": "888sport",
+     "point": 232.5
+    }
+   }
+  },
+  "moneyline": {
+   "Memphis Grizzlies": {
+    "consensus_price": 222,
+    "no_vig_prob": 0.2936
+   },
+   "Portland Trail Blazers": {
+    "consensus_price": -294,
+    "no_vig_prob": 0.7064
+   }
+  },
+  "hold_pct": 5.63,
+  "spread": {
+   "Memphis Grizzlies": 7.5,
+   "Portland Trail Blazers": -7.5
+  },
+  "total": 233.0
+ },
+ "45ebc54751ef3e435192eaeb0470acfb": {
+  "books": 8,
+  "best_price": {
+   "h2h": {
+    "Charlotte Hornets": {
+     "price": -106,
+     "book": "Betfair"
+    },
+    "Washington Wizards": {
+     "price": -105,
+     "book": "Unibet (UK)"
+    }
+   },
+   "spreads": {
+    "Charlotte Hornets": {
+     "price": 100,
+     "book": "888sport",
+     "point": -1.5
+    },
+    "Washington Wizards": {
+     "price": -138,
+     "book": "888sport",
+     "point": 1.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -182,
+     "book": "Betano (UK)",
+     "point": 218.5
+    },
+    "Under": {
+     "price": 125,
+     "book": "Betano (UK)",
+     "point": 218.5
+    }
+   }
+  },
+  "moneyline": {
+   "Charlotte Hornets": {
+    "consensus_price": -119,
+    "no_vig_prob": 0.5092
+   },
+   "Washington Wizards": {
+    "consensus_price": -110,
+    "no_vig_prob": 0.4908
+   }
+  },
+  "hold_pct": 6.72,
+  "spread": {
+   "Charlotte Hornets": -1.5,
+   "Washington Wizards": 1.5
+  },
+  "total": 218.5
+ },
+ "64df299b882ea19ad5f8cb0ed5516a6f": {
+  "books": 5,
+  "best_price": {
+   "h2h": {
+    "Brooklyn Nets": {
+     "price": 300,
+     "book": "888sport"
+    },
+    "Detroit Pistons": {
+     "price": -385,
+     "book": "Betfair"
+    }
+   },
+   "spreads": {
+    "Brooklyn Nets": {
+     "price": -118,
+     "book": "888sport",
+     "point": 8.5
+    },
+    "Detroit Pistons": {
+     "price": -118,
+     "book": "888sport",
+     "point": -8.5
+    }
+   },
+   "totals": {}
+  },
+  "moneyline": {
+   "Brooklyn Nets": {
+    "consensus_price": 260,
+    "no_vig_prob": 0.2577
+   },
+   "Detroit Pistons": {
+    "consensus_price": -400,
+    "no_vig_prob": 0.7423
+   }
+  },
+  "hold_pct": 7.78,
+  "spread": {
+   "Brooklyn Nets": 8.5,
+   "Detroit Pistons": -8.5
+  }
+ }
+}

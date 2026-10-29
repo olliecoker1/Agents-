@@ -1,0 +1,57 @@
+{
+ "ab2865e9f2d4b012de8bc6fb6de11a7c": {
+  "books": 20,
+  "best_price": {
+   "h2h": {
+    "Carolina Panthers": {
+     "price": 178,
+     "book": "Matchbook"
+    },
+    "Green Bay Packers": {
+     "price": -182,
+     "book": "Matchbook"
+    }
+   },
+   "spreads": {
+    "Carolina Panthers": {
+     "price": -101,
+     "book": "Matchbook",
+     "point": 3.5
+    },
+    "Green Bay Packers": {
+     "price": -101,
+     "book": "Matchbook",
+     "point": -3.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -106,
+     "book": "Matchbook",
+     "point": 47.0
+    },
+    "Under": {
+     "price": -104,
+     "book": "Matchbook",
+     "point": 47.0
+    }
+   }
+  },
+  "moneyline": {
+   "Carolina Panthers": {
+    "consensus_price": 162,
+    "no_vig_prob": 0.3641
+   },
+   "Green Bay Packers": {
+    "consensus_price": -200,
+    "no_vig_prob": 0.6359
+   }
+  },
+  "hold_pct": 4.83,
+  "spread": {
+   "Carolina Panthers": 3.5,
+   "Green Bay Packers": -3.5
+  },
+  "total": 47.0
+ }
+}
