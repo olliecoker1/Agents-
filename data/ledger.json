@@ -90,9 +90,17 @@
    },
    "projection": "-13.5",
    "reason": "[B lean] JJJ out 6-8 wks (torn MCL, Jazz confirmed), Markkanen day-to-day; fair ~Spurs -13.5 vs -12.5",
-   "status": "open",
-   "result": null,
-   "pnl": null
+   "status": "settled",
+   "result": "loss",
+   "pnl": -4.0,
+   "final_score": {
+    "Utah Jazz": 111.0,
+    "San Antonio Spurs": 117.0
+   },
+   "closing_snapshot_utc": "2026-10-28T11:28:10+00:00",
+   "clv": {
+    "clv_points": 0.0
+   }
   },
   {
    "id": 3,
@@ -131,9 +139,17 @@
    },
    "projection": "+4.5",
    "reason": "[B lean] OKC's Jalen Williams left Sunday with significant injury (status unconfirmed); home dog; fair ~Thunder -4.5 vs -5.5",
-   "status": "open",
-   "result": null,
-   "pnl": null
+   "status": "settled",
+   "result": "win",
+   "pnl": 3.88,
+   "final_score": {
+    "Dallas Mavericks": 120.0,
+    "Oklahoma City Thunder": 96.0
+   },
+   "closing_snapshot_utc": "2026-10-28T11:28:10+00:00",
+   "clv": {
+    "clv_points": 0.0
+   }
   },
   {
    "id": 4,
@@ -172,6 +188,178 @@
    },
    "projection": "+2.5",
    "reason": "[B lean] Edwards out (knee surgery); Wolves -3.5 leans slightly high for a team losing its top scorer; fair ~Wolves -2.5",
+   "status": "settled",
+   "result": "win",
+   "pnl": 3.64,
+   "final_score": {
+    "Minnesota Timberwolves": 114.0,
+    "Golden State Warriors": 119.0
+   },
+   "closing_snapshot_utc": "2026-10-28T11:28:10+00:00",
+   "clv": {
+    "clv_points": 0.0
+   }
+  },
+  {
+   "id": 5,
+   "placed_utc": "2026-10-29T11:19:37+00:00",
+   "league": "NBA",
+   "sport_key": "basketball_nba",
+   "event_id": "f91d27cc050b1b85073d745372c73833",
+   "matchup": "Sacramento Kings @ New Orleans Pelicans",
+   "home": "New Orleans Pelicans",
+   "away": "Sacramento Kings",
+   "kickoff_utc": "2026-10-30T00:10:00Z",
+   "market": "spreads",
+   "selection": "Sacramento Kings",
+   "point": 5.5,
+   "price_american": -104,
+   "decimal_odds": 1.9615,
+   "implied_prob": 0.5098,
+   "book": "LiveScore Bet",
+   "stake": 4.0,
+   "consensus_at_placement": {
+    "spread": {
+     "New Orleans Pelicans": -5.5,
+     "Sacramento Kings": 5.5
+    },
+    "total": 236.5,
+    "moneyline": {
+     "New Orleans Pelicans": {
+      "consensus_price": -230,
+      "no_vig_prob": 0.6571
+     },
+     "Sacramento Kings": {
+      "consensus_price": 175,
+      "no_vig_prob": 0.3429
+     }
+    }
+   },
+   "projection": "+4",
+   "reason": "[B lean] Pelicans on a back-to-back (lost to Nuggets last night) and on a 4-game skid; Kings rested since Tuesday; fair ~Pelicans -4 vs -5.5",
+   "status": "open",
+   "result": null,
+   "pnl": null
+  },
+  {
+   "id": 6,
+   "placed_utc": "2026-10-29T11:19:37+00:00",
+   "league": "NFL",
+   "sport_key": "americanfootball_nfl",
+   "event_id": "ab2865e9f2d4b012de8bc6fb6de11a7c",
+   "matchup": "Carolina Panthers @ Green Bay Packers",
+   "home": "Green Bay Packers",
+   "away": "Carolina Panthers",
+   "kickoff_utc": "2026-10-30T00:15:00Z",
+   "market": "totals",
+   "selection": "Under",
+   "point": 47.0,
+   "price_american": 100,
+   "decimal_odds": 2.0,
+   "implied_prob": 0.5,
+   "book": "Matchbook",
+   "stake": 4.0,
+   "consensus_at_placement": {
+    "spread": {
+     "Carolina Panthers": 3.5,
+     "Green Bay Packers": -3.5
+    },
+    "total": 47.0,
+    "moneyline": {
+     "Carolina Panthers": {
+      "consensus_price": 162,
+      "no_vig_prob": 0.3641
+     },
+     "Green Bay Packers": {
+      "consensus_price": -200,
+      "no_vig_prob": 0.6359
+     }
+    }
+   },
+   "projection": "45.5",
+   "reason": "[B lean] Short-week TNF; both sides missing starting OL (Rhyan; D. Lewis), Packers WR Golden questionable; fair ~45.5 vs 47",
+   "status": "open",
+   "result": null,
+   "pnl": null
+  },
+  {
+   "id": 7,
+   "placed_utc": "2026-10-29T11:19:37+00:00",
+   "league": "NBA",
+   "sport_key": "basketball_nba",
+   "event_id": "ba667ca1b0b042f0661cb9d9af56c165",
+   "matchup": "Memphis Grizzlies @ Portland Trail Blazers",
+   "home": "Portland Trail Blazers",
+   "away": "Memphis Grizzlies",
+   "kickoff_utc": "2026-10-30T02:10:00Z",
+   "market": "spreads",
+   "selection": "Memphis Grizzlies",
+   "point": 7.5,
+   "price_american": -103,
+   "decimal_odds": 1.9709,
+   "implied_prob": 0.5074,
+   "book": "Matchbook",
+   "stake": 4.0,
+   "consensus_at_placement": {
+    "spread": {
+     "Memphis Grizzlies": 7.5,
+     "Portland Trail Blazers": -7.5
+    },
+    "total": 233.5,
+    "moneyline": {
+     "Memphis Grizzlies": {
+      "consensus_price": 225,
+      "no_vig_prob": 0.2909
+     },
+     "Portland Trail Blazers": {
+      "consensus_price": -300,
+      "no_vig_prob": 0.7091
+     }
+    }
+   },
+   "projection": "+6",
+   "reason": "[B lean] Grizzlies 3-0 on the road and in form; unbeaten Blazers priced at -7.5 on early-season hype; fair ~Blazers -6",
+   "status": "open",
+   "result": null,
+   "pnl": null
+  },
+  {
+   "id": 8,
+   "placed_utc": "2026-10-29T11:19:37+00:00",
+   "league": "NBA",
+   "sport_key": "basketball_nba",
+   "event_id": "b123d92eb8046e43fabf95a33a676634",
+   "matchup": "Cleveland Cavaliers @ Atlanta Hawks",
+   "home": "Atlanta Hawks",
+   "away": "Cleveland Cavaliers",
+   "kickoff_utc": "2026-10-30T00:10:00Z",
+   "market": "spreads",
+   "selection": "Cleveland Cavaliers",
+   "point": -0.5,
+   "price_american": -110,
+   "decimal_odds": 1.9091,
+   "implied_prob": 0.5238,
+   "book": "Virgin Bet",
+   "stake": 4.0,
+   "consensus_at_placement": {
+    "spread": {
+     "Atlanta Hawks": -0.25,
+     "Cleveland Cavaliers": 0.25
+    },
+    "total": 237.5,
+    "moneyline": {
+     "Atlanta Hawks": {
+      "consensus_price": -111,
+      "no_vig_prob": 0.5011
+     },
+     "Cleveland Cavaliers": {
+      "consensus_price": -110,
+      "no_vig_prob": 0.4989
+     }
+    }
+   },
+   "projection": "-1.5",
+   "reason": "[B lean] Hawks on a 3-game skid; Cavs the stronger roster in a pick'em; fair ~Cavs -1.5 vs -0.5",
    "status": "open",
    "result": null,
    "pnl": null

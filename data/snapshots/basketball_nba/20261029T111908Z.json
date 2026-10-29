@@ -1,0 +1,167 @@
+{
+ "b123d92eb8046e43fabf95a33a676634": {
+  "books": 20,
+  "best_price": {
+   "h2h": {
+    "Atlanta Hawks": {
+     "price": -101,
+     "book": "Betfair"
+    },
+    "Cleveland Cavaliers": {
+     "price": 100,
+     "book": "Matchbook"
+    }
+   },
+   "spreads": {
+    "Atlanta Hawks": {
+     "price": -110,
+     "book": "Virgin Bet",
+     "point": 0.5
+    },
+    "Cleveland Cavaliers": {
+     "price": -110,
+     "book": "Virgin Bet",
+     "point": -0.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -103,
+     "book": "Matchbook",
+     "point": 237.5
+    },
+    "Under": {
+     "price": -104,
+     "book": "Matchbook",
+     "point": 237.5
+    }
+   }
+  },
+  "moneyline": {
+   "Atlanta Hawks": {
+    "consensus_price": -111,
+    "no_vig_prob": 0.5011
+   },
+   "Cleveland Cavaliers": {
+    "consensus_price": -110,
+    "no_vig_prob": 0.4989
+   }
+  },
+  "hold_pct": 4.99,
+  "spread": {
+   "Atlanta Hawks": -0.25,
+   "Cleveland Cavaliers": 0.25
+  },
+  "total": 237.5
+ },
+ "f91d27cc050b1b85073d745372c73833": {
+  "books": 20,
+  "best_price": {
+   "h2h": {
+    "New Orleans Pelicans": {
+     "price": -208,
+     "book": "Matchbook"
+    },
+    "Sacramento Kings": {
+     "price": 200,
+     "book": "Matchbook"
+    }
+   },
+   "spreads": {
+    "New Orleans Pelicans": {
+     "price": -116,
+     "book": "LiveScore Bet",
+     "point": -5.5
+    },
+    "Sacramento Kings": {
+     "price": -104,
+     "book": "LiveScore Bet",
+     "point": 5.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -102,
+     "book": "Matchbook",
+     "point": 236.5
+    },
+    "Under": {
+     "price": -105,
+     "book": "Bet Victor",
+     "point": 236.5
+    }
+   }
+  },
+  "moneyline": {
+   "New Orleans Pelicans": {
+    "consensus_price": -230,
+    "no_vig_prob": 0.6571
+   },
+   "Sacramento Kings": {
+    "consensus_price": 175,
+    "no_vig_prob": 0.3429
+   }
+  },
+  "hold_pct": 6.06,
+  "spread": {
+   "New Orleans Pelicans": -5.5,
+   "Sacramento Kings": 5.5
+  },
+  "total": 236.5
+ },
+ "ba667ca1b0b042f0661cb9d9af56c165": {
+  "books": 20,
+  "best_price": {
+   "h2h": {
+    "Memphis Grizzlies": {
+     "price": 250,
+     "book": "Betfair"
+    },
+    "Portland Trail Blazers": {
+     "price": -256,
+     "book": "Betfair"
+    }
+   },
+   "spreads": {
+    "Memphis Grizzlies": {
+     "price": -103,
+     "book": "Matchbook",
+     "point": 7.5
+    },
+    "Portland Trail Blazers": {
+     "price": 100,
+     "book": "888sport",
+     "point": -7.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -106,
+     "book": "Matchbook",
+     "point": 233.5
+    },
+    "Under": {
+     "price": -105,
+     "book": "Matchbook",
+     "point": 233.5
+    }
+   }
+  },
+  "moneyline": {
+   "Memphis Grizzlies": {
+    "consensus_price": 225,
+    "no_vig_prob": 0.2909
+   },
+   "Portland Trail Blazers": {
+    "consensus_price": -300,
+    "no_vig_prob": 0.7091
+   }
+  },
+  "hold_pct": 5.77,
+  "spread": {
+   "Memphis Grizzlies": 7.5,
+   "Portland Trail Blazers": -7.5
+  },
+  "total": 233.5
+ }
+}
