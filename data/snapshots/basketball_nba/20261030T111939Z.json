@@ -1,0 +1,552 @@
+{
+ "45ebc54751ef3e435192eaeb0470acfb": {
+  "books": 19,
+  "best_price": {
+   "h2h": {
+    "Charlotte Hornets": {
+     "price": 108,
+     "book": "Betfair"
+    },
+    "Washington Wizards": {
+     "price": -110,
+     "book": "Betfair"
+    }
+   },
+   "spreads": {
+    "Charlotte Hornets": {
+     "price": -118,
+     "book": "888sport",
+     "point": 1.5
+    },
+    "Washington Wizards": {
+     "price": -118,
+     "book": "888sport",
+     "point": -1.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -105,
+     "book": "Virgin Bet",
+     "point": 220.5
+    },
+    "Under": {
+     "price": -111,
+     "book": "Betano (UK)",
+     "point": 220.5
+    }
+   }
+  },
+  "moneyline": {
+   "Charlotte Hornets": {
+    "consensus_price": -100,
+    "no_vig_prob": 0.4783
+   },
+   "Washington Wizards": {
+    "consensus_price": -120,
+    "no_vig_prob": 0.5217
+   }
+  },
+  "hold_pct": 4.55,
+  "spread": {
+   "Charlotte Hornets": 1.5,
+   "Washington Wizards": -1.5
+  },
+  "total": 220.5
+ },
+ "036a93ca33d6261c21d4bfa6e0d02568": {
+  "books": 19,
+  "best_price": {
+   "h2h": {
+    "Boston Celtics": {
+     "price": -769,
+     "book": "Betfair"
+    },
+    "Chicago Bulls": {
+     "price": 800,
+     "book": "Betway"
+    }
+   },
+   "spreads": {
+    "Boston Celtics": {
+     "price": -118,
+     "book": "William Hill",
+     "point": -15.5
+    },
+    "Chicago Bulls": {
+     "price": -118,
+     "book": "William Hill",
+     "point": 15.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -111,
+     "book": "Betano (UK)",
+     "point": 235.5
+    },
+    "Under": {
+     "price": -111,
+     "book": "Betano (UK)",
+     "point": 235.5
+    }
+   }
+  },
+  "moneyline": {
+   "Boston Celtics": {
+    "consensus_price": -1000,
+    "no_vig_prob": 0.8553
+   },
+   "Chicago Bulls": {
+    "consensus_price": 550,
+    "no_vig_prob": 0.1447
+   }
+  },
+  "hold_pct": 6.29,
+  "spread": {
+   "Boston Celtics": -15.5,
+   "Chicago Bulls": 15.5
+  },
+  "total": 235.5
+ },
+ "64df299b882ea19ad5f8cb0ed5516a6f": {
+  "books": 19,
+  "best_price": {
+   "h2h": {
+    "Brooklyn Nets": {
+     "price": 265,
+     "book": "Betfair"
+    },
+    "Detroit Pistons": {
+     "price": -278,
+     "book": "Betfair"
+    }
+   },
+   "spreads": {
+    "Brooklyn Nets": {
+     "price": -118,
+     "book": "888sport",
+     "point": 7.5
+    },
+    "Detroit Pistons": {
+     "price": -118,
+     "book": "888sport",
+     "point": -7.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -111,
+     "book": "Betano (UK)",
+     "point": 222.5
+    },
+    "Under": {
+     "price": -111,
+     "book": "Betano (UK)",
+     "point": 222.5
+    }
+   }
+  },
+  "moneyline": {
+   "Brooklyn Nets": {
+    "consensus_price": 225,
+    "no_vig_prob": 0.2904
+   },
+   "Detroit Pistons": {
+    "consensus_price": -303,
+    "no_vig_prob": 0.7096
+   }
+  },
+  "hold_pct": 5.96,
+  "spread": {
+   "Brooklyn Nets": 7.5,
+   "Detroit Pistons": -7.5
+  },
+  "total": 222.5
+ },
+ "96a166bbd49782dbd9a61c2fb9069787": {
+  "books": 19,
+  "best_price": {
+   "h2h": {
+    "New York Knicks": {
+     "price": -115,
+     "book": "Betfair"
+    },
+    "Philadelphia 76ers": {
+     "price": 112,
+     "book": "LiveScore Bet"
+    }
+   },
+   "spreads": {
+    "New York Knicks": {
+     "price": -118,
+     "book": "William Hill",
+     "point": -1.5
+    },
+    "Philadelphia 76ers": {
+     "price": -102,
+     "book": "Virgin Bet",
+     "point": 1.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -111,
+     "book": "Betano (UK)",
+     "point": 227.5
+    },
+    "Under": {
+     "price": -111,
+     "book": "Betano (UK)",
+     "point": 227.5
+    }
+   }
+  },
+  "moneyline": {
+   "New York Knicks": {
+    "consensus_price": -125,
+    "no_vig_prob": 0.5263
+   },
+   "Philadelphia 76ers": {
+    "consensus_price": -100,
+    "no_vig_prob": 0.4737
+   }
+  },
+  "hold_pct": 5.56,
+  "spread": {
+   "New York Knicks": -1.5,
+   "Philadelphia 76ers": 1.5
+  },
+  "total": 227.5
+ },
+ "a0f5d89a4fc51e52edd0e70d1e4cbaf2": {
+  "books": 19,
+  "best_price": {
+   "h2h": {
+    "Orlando Magic": {
+     "price": 200,
+     "book": "Betfair"
+    },
+    "Toronto Raptors": {
+     "price": -208,
+     "book": "Betfair"
+    }
+   },
+   "spreads": {
+    "Orlando Magic": {
+     "price": -109,
+     "book": "LiveScore Bet",
+     "point": 5.5
+    },
+    "Toronto Raptors": {
+     "price": -111,
+     "book": "LiveScore Bet",
+     "point": -5.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -111,
+     "book": "Betano (UK)",
+     "point": 226.5
+    },
+    "Under": {
+     "price": -111,
+     "book": "Betano (UK)",
+     "point": 226.5
+    }
+   }
+  },
+  "moneyline": {
+   "Orlando Magic": {
+    "consensus_price": 175,
+    "no_vig_prob": 0.3444
+   },
+   "Toronto Raptors": {
+    "consensus_price": -225,
+    "no_vig_prob": 0.6556
+   }
+  },
+  "hold_pct": 5.59,
+  "spread": {
+   "Orlando Magic": 5.5,
+   "Toronto Raptors": -5.5
+  },
+  "total": 226.5
+ },
+ "b9778d0e3a26167eb49901dcae7eeb98": {
+  "books": 19,
+  "best_price": {
+   "h2h": {
+    "Dallas Mavericks": {
+     "price": 205,
+     "book": "Betfair"
+    },
+    "Houston Rockets": {
+     "price": -213,
+     "book": "Betfair"
+    }
+   },
+   "spreads": {
+    "Dallas Mavericks": {
+     "price": 100,
+     "book": "888sport",
+     "point": 5.5
+    },
+    "Houston Rockets": {
+     "price": -133,
+     "book": "LeoVegas",
+     "point": -5.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -106,
+     "book": "Virgin Bet",
+     "point": 225.5
+    },
+    "Under": {
+     "price": -111,
+     "book": "Betano (UK)",
+     "point": 225.5
+    }
+   }
+  },
+  "moneyline": {
+   "Dallas Mavericks": {
+    "consensus_price": 175,
+    "no_vig_prob": 0.3438
+   },
+   "Houston Rockets": {
+    "consensus_price": -227,
+    "no_vig_prob": 0.6562
+   }
+  },
+  "hold_pct": 5.78,
+  "spread": {
+   "Dallas Mavericks": 5.5,
+   "Houston Rockets": -5.5
+  },
+  "total": 225.5
+ },
+ "c3a424e24d426af94a693e06a33e3037": {
+  "books": 19,
+  "best_price": {
+   "h2h": {
+    "Indiana Pacers": {
+     "price": 270,
+     "book": "Betfair"
+    },
+    "Miami Heat": {
+     "price": -286,
+     "book": "Betfair"
+    }
+   },
+   "spreads": {
+    "Indiana Pacers": {
+     "price": -118,
+     "book": "William Hill",
+     "point": 7.5
+    },
+    "Miami Heat": {
+     "price": -118,
+     "book": "William Hill",
+     "point": -7.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -111,
+     "book": "Betano (UK)",
+     "point": 237.5
+    },
+    "Under": {
+     "price": -106,
+     "book": "LiveScore Bet",
+     "point": 237.5
+    }
+   }
+  },
+  "moneyline": {
+   "Indiana Pacers": {
+    "consensus_price": 230,
+    "no_vig_prob": 0.2873
+   },
+   "Miami Heat": {
+    "consensus_price": -303,
+    "no_vig_prob": 0.7127
+   }
+  },
+  "hold_pct": 5.49,
+  "spread": {
+   "Indiana Pacers": 8.5,
+   "Miami Heat": -8.5
+  },
+  "total": 237.5
+ },
+ "cac1461f5983a88fac612685395aa897": {
+  "books": 19,
+  "best_price": {
+   "h2h": {
+    "Los Angeles Clippers": {
+     "price": 240,
+     "book": "Betfair"
+    },
+    "Minnesota Timberwolves": {
+     "price": -250,
+     "book": "Betfair"
+    }
+   },
+   "spreads": {
+    "Los Angeles Clippers": {
+     "price": -118,
+     "book": "888sport",
+     "point": 6.5
+    },
+    "Minnesota Timberwolves": {
+     "price": -118,
+     "book": "888sport",
+     "point": -6.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -111,
+     "book": "Betano (UK)",
+     "point": 223.5
+    },
+    "Under": {
+     "price": -109,
+     "book": "Virgin Bet",
+     "point": 223.5
+    }
+   }
+  },
+  "moneyline": {
+   "Los Angeles Clippers": {
+    "consensus_price": 210,
+    "no_vig_prob": 0.3049
+   },
+   "Minnesota Timberwolves": {
+    "consensus_price": -278,
+    "no_vig_prob": 0.6951
+   }
+  },
+  "hold_pct": 5.8,
+  "spread": {
+   "Los Angeles Clippers": 6.5,
+   "Minnesota Timberwolves": -6.5
+  },
+  "total": 223.5
+ },
+ "9ae108f7a23e86e8102237053dd9e58d": {
+  "books": 18,
+  "best_price": {
+   "h2h": {
+    "Denver Nuggets": {
+     "price": -164,
+     "book": "Betfair"
+    },
+    "Phoenix Suns": {
+     "price": 160,
+     "book": "Betfair"
+    }
+   },
+   "spreads": {
+    "Denver Nuggets": {
+     "price": -108,
+     "book": "Virgin Bet",
+     "point": -4.5
+    },
+    "Phoenix Suns": {
+     "price": -112,
+     "book": "Virgin Bet",
+     "point": 4.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -111,
+     "book": "Betano (UK)",
+     "point": 231.5
+    },
+    "Under": {
+     "price": -111,
+     "book": "Betano (UK)",
+     "point": 231.5
+    }
+   }
+  },
+  "moneyline": {
+   "Denver Nuggets": {
+    "consensus_price": -188,
+    "no_vig_prob": 0.6153
+   },
+   "Phoenix Suns": {
+    "consensus_price": 145,
+    "no_vig_prob": 0.3847
+   }
+  },
+  "hold_pct": 6.09,
+  "spread": {
+   "Denver Nuggets": -4.5,
+   "Phoenix Suns": 4.5
+  },
+  "total": 231.5
+ },
+ "761c15cdefb5a94e34f234e11d6e57ad": {
+  "books": 19,
+  "best_price": {
+   "h2h": {
+    "Golden State Warriors": {
+     "price": 126,
+     "book": "Betfair"
+    },
+    "Los Angeles Lakers": {
+     "price": -130,
+     "book": "Betfair"
+    }
+   },
+   "spreads": {
+    "Golden State Warriors": {
+     "price": -118,
+     "book": "William Hill",
+     "point": 2.5
+    },
+    "Los Angeles Lakers": {
+     "price": -118,
+     "book": "William Hill",
+     "point": -2.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -111,
+     "book": "Betano (UK)",
+     "point": 233.5
+    },
+    "Under": {
+     "price": -110,
+     "book": "William Hill",
+     "point": 233.5
+    }
+   }
+  },
+  "moneyline": {
+   "Golden State Warriors": {
+    "consensus_price": 110,
+    "no_vig_prob": 0.4509
+   },
+   "Los Angeles Lakers": {
+    "consensus_price": -138,
+    "no_vig_prob": 0.5491
+   }
+  },
+  "hold_pct": 5.6,
+  "spread": {
+   "Golden State Warriors": 2.5,
+   "Los Angeles Lakers": -2.5
+  },
+  "total": 235.5
+ }
+}

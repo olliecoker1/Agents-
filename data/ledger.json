@@ -237,9 +237,17 @@
    },
    "projection": "+4",
    "reason": "[B lean] Pelicans on a back-to-back (lost to Nuggets last night) and on a 4-game skid; Kings rested since Tuesday; fair ~Pelicans -4 vs -5.5",
-   "status": "open",
-   "result": null,
-   "pnl": null
+   "status": "settled",
+   "result": "loss",
+   "pnl": -4.0,
+   "final_score": {
+    "New Orleans Pelicans": 132.0,
+    "Sacramento Kings": 120.0
+   },
+   "closing_snapshot_utc": "2026-10-29T15:09:03+00:00",
+   "clv": {
+    "clv_points": -1.0
+   }
   },
   {
    "id": 6,
@@ -278,9 +286,17 @@
    },
    "projection": "45.5",
    "reason": "[B lean] Short-week TNF; both sides missing starting OL (Rhyan; D. Lewis), Packers WR Golden questionable; fair ~45.5 vs 47",
-   "status": "open",
-   "result": null,
-   "pnl": null
+   "status": "settled",
+   "result": "win",
+   "pnl": 4.0,
+   "final_score": {
+    "Green Bay Packers": 27.0,
+    "Carolina Panthers": 19.0
+   },
+   "closing_snapshot_utc": "2026-10-29T15:09:03+00:00",
+   "clv": {
+    "clv_points": 0.0
+   }
   },
   {
    "id": 7,
@@ -319,9 +335,17 @@
    },
    "projection": "+6",
    "reason": "[B lean] Grizzlies 3-0 on the road and in form; unbeaten Blazers priced at -7.5 on early-season hype; fair ~Blazers -6",
-   "status": "open",
-   "result": null,
-   "pnl": null
+   "status": "settled",
+   "result": "win",
+   "pnl": 3.88,
+   "final_score": {
+    "Portland Trail Blazers": 103.0,
+    "Memphis Grizzlies": 124.0
+   },
+   "closing_snapshot_utc": "2026-10-29T15:09:03+00:00",
+   "clv": {
+    "clv_points": 0.0
+   }
   },
   {
    "id": 8,
@@ -360,9 +384,17 @@
    },
    "projection": "-1.5",
    "reason": "[B lean] Hawks on a 3-game skid; Cavs the stronger roster in a pick'em; fair ~Cavs -1.5 vs -0.5",
-   "status": "open",
-   "result": null,
-   "pnl": null
+   "status": "settled",
+   "result": "loss",
+   "pnl": -4.0,
+   "final_score": {
+    "Atlanta Hawks": 114.0,
+    "Cleveland Cavaliers": 111.0
+   },
+   "closing_snapshot_utc": "2026-10-29T15:09:03+00:00",
+   "clv": {
+    "clv_points": 1.0
+   }
   },
   {
    "id": 9,
@@ -389,12 +421,17 @@
    },
    "projection": "19.5",
    "reason": "[B lean] Poole (ankle) left last night's game, Missi out: more shots for Murphy; Kings' D thin (Murray, Simmons out). US-book price",
-   "status": "open",
-   "result": null,
-   "pnl": null,
+   "status": "settled",
+   "result": "win",
+   "pnl": 3.64,
    "prop": "player_points",
    "side": "Over",
-   "us_proxy": true
+   "us_proxy": true,
+   "final_score": {
+    "New Orleans Pelicans": "132",
+    "Sacramento Kings": "120"
+   },
+   "actual": 19.0
   },
   {
    "id": 10,
@@ -421,12 +458,17 @@
    },
    "projection": "23",
    "reason": "[B lean] Keegan Murray and Simmons out raise LaVine's usage; Pelicans tired on a back-to-back. US-book price",
-   "status": "open",
-   "result": null,
-   "pnl": null,
+   "status": "settled",
+   "result": "loss",
+   "pnl": -4.0,
    "prop": "player_points",
    "side": "Over",
-   "us_proxy": true
+   "us_proxy": true,
+   "final_score": {
+    "New Orleans Pelicans": "132",
+    "Sacramento Kings": "120"
+   },
+   "actual": 21.0
   },
   {
    "id": 11,
@@ -453,12 +495,17 @@
    },
    "projection": "19",
    "reason": "[B lean] Hawks without bigs Gueye and Veesaar; Mobley should feast inside. US-book price",
-   "status": "open",
-   "result": null,
-   "pnl": null,
+   "status": "settled",
+   "result": "loss",
+   "pnl": -4.0,
    "prop": "player_points",
    "side": "Over",
-   "us_proxy": true
+   "us_proxy": true,
+   "final_score": {
+    "Atlanta Hawks": "114",
+    "Cleveland Cavaliers": "111"
+   },
+   "actual": 11.0
   },
   {
    "id": 12,
@@ -484,11 +531,216 @@
    },
    "projection": "0.62",
    "reason": "[B lean] Lead back at home, goal-line role; Panthers without edge rusher Phillips; fair 62% vs 57.5% implied. US-book price",
+   "status": "settled",
+   "result": "win",
+   "pnl": 2.94,
+   "prop": "player_anytime_td",
+   "side": "Yes",
+   "us_proxy": true,
+   "final_score": {
+    "Green Bay Packers": "27",
+    "Carolina Panthers": "19"
+   },
+   "actual": 2.0
+  },
+  {
+   "id": 13,
+   "placed_utc": "2026-10-30T11:20:25+00:00",
+   "league": "NBA",
+   "sport_key": "basketball_nba",
+   "event_id": "c3a424e24d426af94a693e06a33e3037",
+   "matchup": "Indiana Pacers @ Miami Heat",
+   "home": "Miami Heat",
+   "away": "Indiana Pacers",
+   "kickoff_utc": "2026-10-31T00:10:00Z",
+   "market": "spreads",
+   "selection": "Miami Heat",
+   "point": -7.5,
+   "price_american": -118,
+   "decimal_odds": 1.8475,
+   "implied_prob": 0.5413,
+   "book": "William Hill",
+   "stake": 4.0,
+   "consensus_at_placement": {
+    "spread": {
+     "Indiana Pacers": 8.5,
+     "Miami Heat": -8.5
+    },
+    "total": 237.5,
+    "moneyline": {
+     "Indiana Pacers": {
+      "consensus_price": 230,
+      "no_vig_prob": 0.2873
+     },
+     "Miami Heat": {
+      "consensus_price": -303,
+      "no_vig_prob": 0.7127
+     }
+    }
+   },
+   "projection": "-10",
+   "reason": "[B lean] Pacers without Haliburton (2+ wks), Zubac, McConnell and Sheppard; Heat at home; fair ~-10 vs best -7.5",
+   "status": "open",
+   "result": null,
+   "pnl": null
+  },
+  {
+   "id": 14,
+   "placed_utc": "2026-10-30T11:20:25+00:00",
+   "league": "NBA",
+   "sport_key": "basketball_nba",
+   "event_id": "b9778d0e3a26167eb49901dcae7eeb98",
+   "matchup": "Houston Rockets @ Dallas Mavericks",
+   "home": "Dallas Mavericks",
+   "away": "Houston Rockets",
+   "kickoff_utc": "2026-10-31T00:10:00Z",
+   "market": "spreads",
+   "selection": "Dallas Mavericks",
+   "point": 5.5,
+   "price_american": 100,
+   "decimal_odds": 2.0,
+   "implied_prob": 0.5,
+   "book": "888sport",
+   "stake": 4.0,
+   "consensus_at_placement": {
+    "spread": {
+     "Dallas Mavericks": 5.5,
+     "Houston Rockets": -5.5
+    },
+    "total": 225.5,
+    "moneyline": {
+     "Dallas Mavericks": {
+      "consensus_price": 175,
+      "no_vig_prob": 0.3438
+     },
+     "Houston Rockets": {
+      "consensus_price": -227,
+      "no_vig_prob": 0.6562
+     }
+    }
+   },
+   "projection": "+3.5",
+   "reason": "[B lean] Rockets without Reed Sheppard, Smart and Sengun questionable; Mavs in form (beat OKC); +5.5 at 2.00 is a big price",
+   "status": "open",
+   "result": null,
+   "pnl": null
+  },
+  {
+   "id": 15,
+   "placed_utc": "2026-10-30T11:20:25+00:00",
+   "league": "NBA",
+   "sport_key": "basketball_nba",
+   "event_id": "cac1461f5983a88fac612685395aa897",
+   "matchup": "Los Angeles Clippers @ Minnesota Timberwolves",
+   "home": "Minnesota Timberwolves",
+   "away": "Los Angeles Clippers",
+   "kickoff_utc": "2026-10-31T00:10:00Z",
+   "market": "spreads",
+   "selection": "Los Angeles Clippers",
+   "point": 6.5,
+   "price_american": -118,
+   "decimal_odds": 1.8475,
+   "implied_prob": 0.5413,
+   "book": "888sport",
+   "stake": 4.0,
+   "consensus_at_placement": {
+    "spread": {
+     "Los Angeles Clippers": 6.5,
+     "Minnesota Timberwolves": -6.5
+    },
+    "total": 223.5,
+    "moneyline": {
+     "Los Angeles Clippers": {
+      "consensus_price": 210,
+      "no_vig_prob": 0.3049
+     },
+     "Minnesota Timberwolves": {
+      "consensus_price": -278,
+      "no_vig_prob": 0.6951
+     }
+    }
+   },
+   "projection": "+5",
+   "reason": "[B lean] Wolves' first home game without Edwards; Warriors just beat them; fair ~Wolves -5 vs -6.5",
+   "status": "open",
+   "result": null,
+   "pnl": null
+  },
+  {
+   "id": 16,
+   "placed_utc": "2026-10-30T11:20:25+00:00",
+   "league": "EPL",
+   "sport_key": "soccer_epl",
+   "event_id": "01b17432a283eb27af86ae45602eb6dd",
+   "matchup": "Crystal Palace @ Tottenham Hotspur",
+   "home": "Tottenham Hotspur",
+   "away": "Crystal Palace",
+   "kickoff_utc": "2026-10-31T17:30:00Z",
+   "market": "spreads",
+   "selection": "Tottenham Hotspur",
+   "point": -1.0,
+   "price_american": 102,
+   "decimal_odds": 2.02,
+   "implied_prob": 0.495,
+   "book": "Matchbook",
+   "stake": 4.0,
+   "consensus_at_placement": {
+    "spread": {
+     "Crystal Palace": 1.0,
+     "Tottenham Hotspur": -1.0
+    },
+    "total": 2.5,
+    "moneyline": {
+     "Crystal Palace": {
+      "consensus_price": 450,
+      "no_vig_prob": 0.1718
+     },
+     "Tottenham Hotspur": {
+      "consensus_price": -182,
+      "no_vig_prob": 0.6099
+     },
+     "Draw": {
+      "consensus_price": 333,
+      "no_vig_prob": 0.2183
+     }
+    }
+   },
+   "projection": "-1.25",
+   "reason": "[B lean] Palace's Ismaila Sarr out for weeks (Sage confirmed); Spurs in form after winning at Chelsea; fair ~-1.25 goals vs -1",
+   "status": "open",
+   "result": null,
+   "pnl": null
+  },
+  {
+   "id": 17,
+   "placed_utc": "2026-10-30T11:20:25+00:00",
+   "league": "NBA",
+   "sport_key": "basketball_nba",
+   "event_id": "036a93ca33d6261c21d4bfa6e0d02568",
+   "matchup": "Chicago Bulls @ Boston Celtics",
+   "home": "Boston Celtics",
+   "away": "Chicago Bulls",
+   "kickoff_utc": "2026-10-30T23:40:00Z",
+   "market": "props",
+   "selection": "Jayson Tatum",
+   "point": 27.5,
+   "price_american": -102,
+   "decimal_odds": 1.9804,
+   "implied_prob": 0.505,
+   "book": "FanDuel",
+   "stake": 4.0,
+   "consensus_at_placement": {
+    "line": 27.5,
+    "books": 4,
+    "median_no_vig_over_prob": 0.502
+   },
+   "projection": "25",
+   "reason": "[B lean] Celtics -15.5 v short-handed Bulls (P. Williams out): blowout risk cuts 4th-quarter minutes. US-book price",
    "status": "open",
    "result": null,
    "pnl": null,
-   "prop": "player_anytime_td",
-   "side": "Yes",
+   "prop": "player_points",
+   "side": "Under",
    "us_proxy": true
   }
  ]
