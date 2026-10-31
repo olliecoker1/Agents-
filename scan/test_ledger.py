@@ -22,6 +22,15 @@ class GradeTest(unittest.TestCase):
         self.assertEqual(ledger.grade(bet("spreads", "Away", 3.5), 24, 20), "loss")
         self.assertEqual(ledger.grade(bet("spreads", "Away", 4.5), 24, 20), "win")
 
+    def test_quarter_goal_lines_split_the_stake(self):
+        soccer = dict(sport="soccer_epl")
+        self.assertEqual(ledger.grade(bet("spreads", "Away", 0.25, **soccer), 1, 1), "half-win")
+        self.assertEqual(ledger.grade(bet("spreads", "Home", -0.25, **soccer), 1, 1), "half-loss")
+        self.assertEqual(ledger.grade(bet("spreads", "Home", -0.75, **soccer), 2, 1), "half-win")
+        self.assertEqual(ledger.grade(bet("spreads", "Home", -0.75, **soccer), 3, 1), "win")
+        self.assertEqual(ledger.grade(bet("totals", "Over", 2.25, **soccer), 1, 1), "half-loss")
+        self.assertEqual(ledger.grade(bet("totals", "Over", 2.75, **soccer), 2, 1), "half-win")
+
     def test_totals(self):
         self.assertEqual(ledger.grade(bet("totals", "Over", 44.5), 24, 21), "win")
         self.assertEqual(ledger.grade(bet("totals", "Under", 44.5), 24, 21), "loss")

@@ -1,0 +1,387 @@
+{
+ "d47417c3b1a2cd427cce74c9d00f1046": {
+  "books": 20,
+  "best_price": {
+   "h2h": {
+    "Portland Trail Blazers": {
+     "price": -222,
+     "book": "Matchbook"
+    },
+    "Utah Jazz": {
+     "price": 220,
+     "book": "Matchbook"
+    }
+   },
+   "spreads": {
+    "Portland Trail Blazers": {
+     "price": -103,
+     "book": "Matchbook",
+     "point": -6.5
+    },
+    "Utah Jazz": {
+     "price": -106,
+     "book": "Matchbook",
+     "point": 6.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -110,
+     "book": "888sport",
+     "point": 232.5
+    },
+    "Under": {
+     "price": -111,
+     "book": "Bet Victor",
+     "point": 232.5
+    }
+   }
+  },
+  "moneyline": {
+   "Portland Trail Blazers": {
+    "consensus_price": -250,
+    "no_vig_prob": 0.6729
+   },
+   "Utah Jazz": {
+    "consensus_price": 188,
+    "no_vig_prob": 0.3271
+   }
+  },
+  "hold_pct": 6.15,
+  "spread": {
+   "Portland Trail Blazers": -6.5,
+   "Utah Jazz": 6.5
+  },
+  "total": 232.5
+ },
+ "067d97a124c10ea2d206546384500c5e": {
+  "books": 20,
+  "best_price": {
+   "h2h": {
+    "Charlotte Hornets": {
+     "price": 108,
+     "book": "Matchbook"
+    },
+    "Philadelphia 76ers": {
+     "price": -110,
+     "book": "Matchbook"
+    }
+   },
+   "spreads": {
+    "Charlotte Hornets": {
+     "price": -118,
+     "book": "William Hill",
+     "point": 1.5
+    },
+    "Philadelphia 76ers": {
+     "price": -118,
+     "book": "William Hill",
+     "point": -1.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -105,
+     "book": "Matchbook",
+     "point": 215.5
+    },
+    "Under": {
+     "price": -110,
+     "book": "Matchbook",
+     "point": 215.5
+    }
+   }
+  },
+  "moneyline": {
+   "Charlotte Hornets": {
+    "consensus_price": -100,
+    "no_vig_prob": 0.4737
+   },
+   "Philadelphia 76ers": {
+    "consensus_price": -125,
+    "no_vig_prob": 0.5263
+   }
+  },
+  "hold_pct": 5.56,
+  "spread": {
+   "Charlotte Hornets": 1.5,
+   "Philadelphia 76ers": -1.5
+  },
+  "total": 215.5
+ },
+ "77270837bc694d198c10f42937690d75": {
+  "books": 20,
+  "best_price": {
+   "h2h": {
+    "Atlanta Hawks": {
+     "price": -164,
+     "book": "LiveScore Bet"
+    },
+    "New Orleans Pelicans": {
+     "price": 162,
+     "book": "Matchbook"
+    }
+   },
+   "spreads": {
+    "Atlanta Hawks": {
+     "price": -109,
+     "book": "LiveScore Bet",
+     "point": -3.5
+    },
+    "New Orleans Pelicans": {
+     "price": -106,
+     "book": "Virgin Bet",
+     "point": 3.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -105,
+     "book": "Virgin Bet",
+     "point": 240.5
+    },
+    "Under": {
+     "price": -104,
+     "book": "Matchbook",
+     "point": 240.5
+    }
+   }
+  },
+  "moneyline": {
+   "Atlanta Hawks": {
+    "consensus_price": -182,
+    "no_vig_prob": 0.6101
+   },
+   "New Orleans Pelicans": {
+    "consensus_price": 142,
+    "no_vig_prob": 0.3899
+   }
+  },
+  "hold_pct": 5.78,
+  "spread": {
+   "Atlanta Hawks": -3.5,
+   "New Orleans Pelicans": 3.5
+  },
+  "total": 240.5
+ },
+ "6d7e1e0af6d568f4435d35a1763a3622": {
+  "books": 20,
+  "best_price": {
+   "h2h": {
+    "Cleveland Cavaliers": {
+     "price": -294,
+     "book": "Smarkets"
+    },
+    "Milwaukee Bucks": {
+     "price": 290,
+     "book": "Matchbook"
+    }
+   },
+   "spreads": {
+    "Cleveland Cavaliers": {
+     "price": -102,
+     "book": "Matchbook",
+     "point": -8.5
+    },
+    "Milwaukee Bucks": {
+     "price": -108,
+     "book": "Matchbook",
+     "point": 8.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -111,
+     "book": "Betano (UK)",
+     "point": 237.5
+    },
+    "Under": {
+     "price": -111,
+     "book": "Betano (UK)",
+     "point": 237.5
+    }
+   }
+  },
+  "moneyline": {
+   "Cleveland Cavaliers": {
+    "consensus_price": -347,
+    "no_vig_prob": 0.7338
+   },
+   "Milwaukee Bucks": {
+    "consensus_price": 255,
+    "no_vig_prob": 0.2662
+   }
+  },
+  "hold_pct": 5.83,
+  "spread": {
+   "Cleveland Cavaliers": -8.5,
+   "Milwaukee Bucks": 8.5
+  },
+  "total": 237.5
+ },
+ "863ae1092be42c6b563b2c4f099a3eb3": {
+  "books": 20,
+  "best_price": {
+   "h2h": {
+    "Memphis Grizzlies": {
+     "price": -435,
+     "book": "Matchbook"
+    },
+    "Sacramento Kings": {
+     "price": 400,
+     "book": "Smarkets"
+    }
+   },
+   "spreads": {
+    "Memphis Grizzlies": {
+     "price": -110,
+     "book": "Virgin Bet",
+     "point": -10.5
+    },
+    "Sacramento Kings": {
+     "price": -110,
+     "book": "Virgin Bet",
+     "point": 10.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -106,
+     "book": "Matchbook",
+     "point": 233.5
+    },
+    "Under": {
+     "price": -109,
+     "book": "Matchbook",
+     "point": 233.5
+    }
+   }
+  },
+  "moneyline": {
+   "Memphis Grizzlies": {
+    "consensus_price": -500,
+    "no_vig_prob": 0.7876
+   },
+   "Sacramento Kings": {
+    "consensus_price": 345,
+    "no_vig_prob": 0.2124
+   }
+  },
+  "hold_pct": 5.81,
+  "spread": {
+   "Memphis Grizzlies": -10.5,
+   "Sacramento Kings": 10.5
+  },
+  "total": 233.0
+ },
+ "06a03fb0ce0f81a970c6000fb71fdc6d": {
+  "books": 20,
+  "best_price": {
+   "h2h": {
+    "Minnesota Timberwolves": {
+     "price": 480,
+     "book": "Matchbook"
+    },
+    "San Antonio Spurs": {
+     "price": -500,
+     "book": "Betfair"
+    }
+   },
+   "spreads": {
+    "Minnesota Timberwolves": {
+     "price": -118,
+     "book": "888sport",
+     "point": 12.5
+    },
+    "San Antonio Spurs": {
+     "price": -114,
+     "book": "LeoVegas",
+     "point": -12.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -106,
+     "book": "Virgin Bet",
+     "point": 226.5
+    },
+    "Under": {
+     "price": -104,
+     "book": "Matchbook",
+     "point": 226.5
+    }
+   }
+  },
+  "moneyline": {
+   "Minnesota Timberwolves": {
+    "consensus_price": 400,
+    "no_vig_prob": 0.1883
+   },
+   "San Antonio Spurs": {
+    "consensus_price": -625,
+    "no_vig_prob": 0.8117
+   }
+  },
+  "hold_pct": 6.21,
+  "spread": {
+   "Minnesota Timberwolves": 12.5,
+   "San Antonio Spurs": -12.5
+  },
+  "total": 226.5
+ },
+ "c30d3bdf126e98ced5b9389db8617926": {
+  "books": 20,
+  "best_price": {
+   "h2h": {
+    "Houston Rockets": {
+     "price": -159,
+     "book": "Matchbook"
+    },
+    "Oklahoma City Thunder": {
+     "price": 154,
+     "book": "Matchbook"
+    }
+   },
+   "spreads": {
+    "Houston Rockets": {
+     "price": -118,
+     "book": "888sport",
+     "point": -3.5
+    },
+    "Oklahoma City Thunder": {
+     "price": -118,
+     "book": "888sport",
+     "point": 3.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -104,
+     "book": "Virgin Bet",
+     "point": 218.5
+    },
+    "Under": {
+     "price": -104,
+     "book": "Matchbook",
+     "point": 218.5
+    }
+   }
+  },
+  "moneyline": {
+   "Houston Rockets": {
+    "consensus_price": -175,
+    "no_vig_prob": 0.6023
+   },
+   "Oklahoma City Thunder": {
+    "consensus_price": 138,
+    "no_vig_prob": 0.3977
+   }
+  },
+  "hold_pct": 5.65,
+  "spread": {
+   "Houston Rockets": -3.5,
+   "Oklahoma City Thunder": 3.5
+  },
+  "total": 218.5
+ }
+}

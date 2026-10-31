@@ -580,9 +580,17 @@
    },
    "projection": "-10",
    "reason": "[B lean] Pacers without Haliburton (2+ wks), Zubac, McConnell and Sheppard; Heat at home; fair ~-10 vs best -7.5",
-   "status": "open",
-   "result": null,
-   "pnl": null
+   "status": "settled",
+   "result": "win",
+   "pnl": 3.39,
+   "final_score": {
+    "Miami Heat": 145.0,
+    "Indiana Pacers": 125.0
+   },
+   "closing_snapshot_utc": "2026-10-30T11:19:39+00:00",
+   "clv": {
+    "clv_points": 1.0
+   }
   },
   {
    "id": 14,
@@ -621,9 +629,17 @@
    },
    "projection": "+3.5",
    "reason": "[B lean] Rockets without Reed Sheppard, Smart and Sengun questionable; Mavs in form (beat OKC); +5.5 at 2.00 is a big price",
-   "status": "open",
-   "result": null,
-   "pnl": null
+   "status": "settled",
+   "result": "win",
+   "pnl": 4.0,
+   "final_score": {
+    "Dallas Mavericks": 116.0,
+    "Houston Rockets": 111.0
+   },
+   "closing_snapshot_utc": "2026-10-30T11:19:39+00:00",
+   "clv": {
+    "clv_points": 0.0
+   }
   },
   {
    "id": 15,
@@ -662,9 +678,17 @@
    },
    "projection": "+5",
    "reason": "[B lean] Wolves' first home game without Edwards; Warriors just beat them; fair ~Wolves -5 vs -6.5",
-   "status": "open",
-   "result": null,
-   "pnl": null
+   "status": "settled",
+   "result": "loss",
+   "pnl": -4.0,
+   "final_score": {
+    "Minnesota Timberwolves": 127.0,
+    "Los Angeles Clippers": 101.0
+   },
+   "closing_snapshot_utc": "2026-10-30T11:19:39+00:00",
+   "clv": {
+    "clv_points": 0.0
+   }
   },
   {
    "id": 16,
@@ -736,11 +760,244 @@
    },
    "projection": "25",
    "reason": "[B lean] Celtics -15.5 v short-handed Bulls (P. Williams out): blowout risk cuts 4th-quarter minutes. US-book price",
+   "status": "settled",
+   "result": "win",
+   "pnl": 3.92,
+   "prop": "player_points",
+   "side": "Under",
+   "us_proxy": true,
+   "final_score": {
+    "Boston Celtics": "125",
+    "Chicago Bulls": "111"
+   },
+   "actual": 26.0
+  },
+  {
+   "id": 18,
+   "placed_utc": "2026-10-31T11:17:29+00:00",
+   "league": "NFL",
+   "sport_key": "americanfootball_nfl",
+   "event_id": "2ff84d3f6053d083c8c0a5bebf7cdd4c",
+   "matchup": "Los Angeles Chargers @ Los Angeles Rams",
+   "home": "Los Angeles Rams",
+   "away": "Los Angeles Chargers",
+   "kickoff_utc": "2026-11-01T21:05:00Z",
+   "market": "spreads",
+   "selection": "Los Angeles Rams",
+   "point": -6.5,
+   "price_american": 102,
+   "decimal_odds": 2.02,
+   "implied_prob": 0.495,
+   "book": "Matchbook",
+   "stake": 4.5,
+   "consensus_at_placement": {
+    "spread": {
+     "Los Angeles Chargers": 6.5,
+     "Los Angeles Rams": -6.5
+    },
+    "total": 45.0,
+    "moneyline": {
+     "Los Angeles Chargers": {
+      "consensus_price": 230,
+      "no_vig_prob": 0.289
+     },
+     "Los Angeles Rams": {
+      "consensus_price": -293,
+      "no_vig_prob": 0.711
+     }
+    }
+   },
+   "projection": "-8",
+   "reason": "[B lean] Winless Chargers without Derwin James, Deane Leonard, Awosika and Thompson in the secondary; Stafford in record form; fair ~-8 vs -6.5",
+   "status": "open",
+   "result": null,
+   "pnl": null
+  },
+  {
+   "id": 19,
+   "placed_utc": "2026-10-31T11:17:29+00:00",
+   "league": "NFL",
+   "sport_key": "americanfootball_nfl",
+   "event_id": "c93c421e5fa46031a43162d111d981d0",
+   "matchup": "Baltimore Ravens @ Buffalo Bills",
+   "home": "Buffalo Bills",
+   "away": "Baltimore Ravens",
+   "kickoff_utc": "2026-11-01T18:00:00Z",
+   "market": "spreads",
+   "selection": "Baltimore Ravens",
+   "point": 3.5,
+   "price_american": -125,
+   "decimal_odds": 1.8,
+   "implied_prob": 0.5556,
+   "book": "888sport",
+   "stake": 4.5,
+   "consensus_at_placement": {
+    "spread": {
+     "Baltimore Ravens": 3.0,
+     "Buffalo Bills": -3.0
+    },
+    "total": 54.5,
+    "moneyline": {
+     "Baltimore Ravens": {
+      "consensus_price": 147,
+      "no_vig_prob": 0.3884
+     },
+     "Buffalo Bills": {
+      "consensus_price": -175,
+      "no_vig_prob": 0.6116
+     }
+    }
+   },
+   "projection": "+2",
+   "reason": "[B lean] Lamar Jackson listed full participant (return expected); Bills' DJ Moore and Kincaid questionable; fair ~Bills -2 vs -3.5",
+   "status": "open",
+   "result": null,
+   "pnl": null
+  },
+  {
+   "id": 20,
+   "placed_utc": "2026-10-31T11:17:30+00:00",
+   "league": "NFL",
+   "sport_key": "americanfootball_nfl",
+   "event_id": "9c5d8f57e0ba0fbd9ef436c1f0898f99",
+   "matchup": "Tennessee Titans @ Cincinnati Bengals",
+   "home": "Cincinnati Bengals",
+   "away": "Tennessee Titans",
+   "kickoff_utc": "2026-11-01T18:00:00Z",
+   "market": "spreads",
+   "selection": "Cincinnati Bengals",
+   "point": -12.5,
+   "price_american": -103,
+   "decimal_odds": 1.9709,
+   "implied_prob": 0.5074,
+   "book": "Matchbook",
+   "stake": 4.5,
+   "consensus_at_placement": {
+    "spread": {
+     "Cincinnati Bengals": -12.5,
+     "Tennessee Titans": 12.5
+    },
+    "total": 46.0,
+    "moneyline": {
+     "Cincinnati Bengals": {
+      "consensus_price": -833,
+      "no_vig_prob": 0.853
+     },
+     "Tennessee Titans": {
+      "consensus_price": 550,
+      "no_vig_prob": 0.147
+     }
+    }
+   },
+   "projection": "-14",
+   "reason": "[B lean] Titans without Spears and Tate, Ridley questionable; Burrow-Higgins rolling; fair ~-14 vs -12.5",
+   "status": "open",
+   "result": null,
+   "pnl": null
+  },
+  {
+   "id": 21,
+   "placed_utc": "2026-10-31T11:17:30+00:00",
+   "league": "EPL",
+   "sport_key": "soccer_epl",
+   "event_id": "6601f69175a02f03fb7065aacb538e01",
+   "matchup": "Manchester United @ Chelsea",
+   "home": "Chelsea",
+   "away": "Manchester United",
+   "kickoff_utc": "2026-10-31T12:30:00Z",
+   "market": "spreads",
+   "selection": "Manchester United",
+   "point": 0.25,
+   "price_american": 106,
+   "decimal_odds": 2.06,
+   "implied_prob": 0.4854,
+   "book": "Matchbook",
+   "stake": 4.5,
+   "consensus_at_placement": {
+    "spread": {
+     "Chelsea": -0.25,
+     "Manchester United": 0.25
+    },
+    "total": 2.5,
+    "moneyline": {
+     "Chelsea": {
+      "consensus_price": 110,
+      "no_vig_prob": 0.4501
+     },
+     "Manchester United": {
+      "consensus_price": 225,
+      "no_vig_prob": 0.2909
+     },
+     "Draw": {
+      "consensus_price": 265,
+      "no_vig_prob": 0.259
+     }
+    }
+   },
+   "projection": "+0.25",
+   "reason": "[B lean] Chelsea without Cole Palmer (sent off v Spurs; ban unconfirmed) and Joao Pedro (Alonso: not ready); fair ~Chelsea -0.25 vs -0.5",
+   "status": "open",
+   "result": null,
+   "pnl": null
+  },
+  {
+   "id": 22,
+   "placed_utc": "2026-10-31T11:17:30+00:00",
+   "league": "EPL",
+   "sport_key": "soccer_epl",
+   "event_id": "6601f69175a02f03fb7065aacb538e01",
+   "matchup": "Manchester United @ Chelsea",
+   "home": "Chelsea",
+   "away": "Manchester United",
+   "kickoff_utc": "2026-10-31T12:30:00Z",
+   "market": "cards",
+   "selection": "Moises Caicedo",
+   "point": null,
+   "price_american": 230,
+   "decimal_odds": 3.3,
+   "implied_prob": 0.303,
+   "book": "Betfair",
+   "stake": 4.5,
+   "consensus_at_placement": {
+    "median_implied_prob": 0.3571,
+    "books": 3
+   },
+   "projection": "0.38",
+   "reason": "[B lean] High-foul holding mid in a big game v United's runners; fair ~38% vs 30.3% implied at 3.30. Referee unconfirmed",
+   "status": "open",
+   "result": null,
+   "pnl": null
+  },
+  {
+   "id": 23,
+   "placed_utc": "2026-10-31T11:17:30+00:00",
+   "league": "NBA",
+   "sport_key": "basketball_nba",
+   "event_id": "d47417c3b1a2cd427cce74c9d00f1046",
+   "matchup": "Portland Trail Blazers @ Utah Jazz",
+   "home": "Utah Jazz",
+   "away": "Portland Trail Blazers",
+   "kickoff_utc": "2026-10-31T19:10:00Z",
+   "market": "props",
+   "selection": "Lauri Markkanen",
+   "point": 22.5,
+   "price_american": -102,
+   "decimal_odds": 1.9804,
+   "implied_prob": 0.505,
+   "book": "FanDuel",
+   "stake": 4.5,
+   "consensus_at_placement": {
+    "line": 22.5,
+    "books": 5,
+    "median_no_vig_over_prob": 0.5083
+   },
+   "projection": "24.5",
+   "reason": "[B lean] Jaren Jackson Jr. out (MCL): more usage for Markkanen v Blazers without Morant (hamstring). US-book price",
    "status": "open",
    "result": null,
    "pnl": null,
    "prop": "player_points",
-   "side": "Under",
+   "side": "Over",
    "us_proxy": true
   }
  ]

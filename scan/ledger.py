@@ -76,8 +76,22 @@ def stake_for(ledger):
     return min(stake, bankroll(ledger) - open_exposure(ledger))
 
 
+def payout(bet):
+    """Profit or loss on a graded bet; a half result settles half the stake and refunds the rest."""
+    win = bet["stake"] * (bet["decimal_odds"] - 1)
+    return round({"win": win, "half-win": win / 2, "push": 0.0, "half-loss": -bet["stake"] / 2,
+                  "loss": -bet["stake"]}[bet["result"]], 2)
+
+
 def grade(bet, home_score, away_score):
-    """Return 'win', 'loss' or 'push' for a settled game."""
+    """Return 'win', 'loss', 'push', or for quarter-goal Asian lines 'half-win'/'half-loss'."""
+    point = bet.get("point")
+    if bet["market"] in ("spreads", "totals") and point is not None and (point * 4) % 2 == 1:
+        # a quarter line (e.g. +0.25) is half the stake on each neighbouring line (0 and +0.5)
+        halves = {grade({**bet, "point": point + d}, home_score, away_score) for d in (-0.25, 0.25)}
+        if len(halves) == 1:
+            return halves.pop()
+        return "half-win" if "win" in halves else "half-loss"
     sel = bet["selection"]
     if bet["market"] == "totals":
         diff = (home_score + away_score) - bet["point"]
@@ -373,8 +387,7 @@ def cmd_settle(ledger, args):
     for b in [b for b in due if b["market"] in ("cards", "props")]:
         try:
             if (settle_card if b["market"] == "cards" else settle_prop)(b):
-                b["pnl"] = round({"win": b["stake"] * (b["decimal_odds"] - 1), "loss": -b["stake"],
-                                  "push": 0.0}[b["result"]], 2)
+                b["pnl"] = payout(b)
                 b["status"] = "settled"
                 settled += 1
         except Exception as e:  # ESPN is best-effort; retry next run
@@ -396,8 +409,7 @@ def cmd_settle(ledger, args):
         pts = {s["name"]: float(s["score"]) for s in ev.get("scores") or []}
         b["final_score"] = {b["home"]: pts.get(b["home"]), b["away"]: pts.get(b["away"])}
         b["result"] = grade(b, pts[b["home"]], pts[b["away"]])
-        b["pnl"] = round({"win": b["stake"] * (b["decimal_odds"] - 1), "loss": -b["stake"],
-                          "push": 0.0}[b["result"]], 2)
+        b["pnl"] = payout(b)
         taken, close = closing_line(b)
         if close:
             b["closing_snapshot_utc"] = taken.isoformat(timespec="seconds")
@@ -413,8 +425,8 @@ def summarise(ledger):
     done = [b for b in bets if b["status"] == "settled"]
     staked = sum(b["stake"] for b in done)
     pnl = sum(b["pnl"] for b in done)
-    wins = sum(b["result"] == "win" for b in done)
-    losses = sum(b["result"] == "loss" for b in done)
+    wins = sum(b["result"] in ("win", "half-win") for b in done)
+    losses = sum(b["result"] in ("loss", "half-loss") for b in done)
     clvs = [b["clv"] for b in done if b.get("clv")]
     pct = [c["clv_pct"] for c in clvs if "clv_pct" in c]
     pts = [c["clv_points"] for c in clvs if "clv_points" in c]
