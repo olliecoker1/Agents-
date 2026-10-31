@@ -107,7 +107,7 @@ class FlowTest(unittest.TestCase):
         self.tmp.cleanup()
 
     def args(self, **kw):
-        return mock.Mock(**kw)
+        return mock.Mock(**{"stake": None, **kw})
 
     def test_place_and_settle(self):
         led = ledger.load()
@@ -133,6 +133,16 @@ class FlowTest(unittest.TestCase):
         s = ledger.summarise(led)
         self.assertEqual(s["record"], "1-0-0")
         self.assertEqual(s["beat_closing_line_pct"], 100.0)
+
+    def test_raised_stake_is_capped(self):
+        led = ledger.load()
+        ledger.cmd_start(led, None)
+        with self.assertRaises(SystemExit):
+            ledger.cmd_place(led, self.args(event="ev1", market="spreads", selection="Home",
+                                            projection="-5", reason="too big", stake=25.0))
+        ledger.cmd_place(led, self.args(event="ev1", market="spreads", selection="Home",
+                                        projection="-5", reason="confident", stake=10.0))
+        self.assertEqual(led["bets"][0]["stake"], 10.0)
 
     def test_one_bet_per_market(self):
         led = ledger.load()

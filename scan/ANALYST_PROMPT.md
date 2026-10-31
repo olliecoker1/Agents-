@@ -83,6 +83,12 @@ Run every scan, in this order:
    (`--projection` is your probability).
    The script fills in the best available price and the stake (flat 2% of
    bankroll). Never edit `ledger.json` by hand.
+   Raised stakes (owner's rule): for a bet you are confident in, add
+   `--stake 10` (any amount from £5 to £10). Use it only when the edge is Tier A,
+   or a Tier B edge backed by confirmed news that the market has not yet priced,
+   and at most two raised stakes per run. Say why in the reason, starting it
+   with `[A] CONFIDENT` or `[B lean] CONFIDENT`. Never raise a stake on
+   unconfirmed news or a US-book stand-in price.
 4. `python3 scan/ledger.py summary` and show the result at the top of the report
    page: bankroll, record, ROI, % of bets that beat the closing line (match bets
    only; card bets have no closing line), and the `by_market` split so card bets

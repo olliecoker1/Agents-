@@ -35,6 +35,7 @@ SCORES_URL = "https://api.the-odds-api.com/v4/sports/{sport}/scores"
 STARTING_BANKROLL = 200.0
 TRIAL_DAYS = 30
 STAKE_PCT = 0.02  # flat 2% of current bankroll per bet
+MAX_STAKE = 10.0  # owner's cap for a raised stake on a high-confidence bet
 MAX_CARD_BETS_PER_GAME = 2  # match bets: one per market (h2h, spreads, totals) per game
 MAX_PROP_BETS_PER_GAME = 3
 
@@ -333,6 +334,10 @@ def cmd_place(ledger, args):
     if not best:
         sys.exit(f"No price for {args.market}/{args.selection}.")
     stake = stake_for(ledger)
+    if args.stake is not None:
+        if not 1 <= args.stake <= MAX_STAKE:
+            sys.exit(f"--stake must be between £1 and £{MAX_STAKE:.0f}.")
+        stake = min(args.stake, bankroll(ledger) - open_exposure(ledger))
     if stake < 1:
         sys.exit("Insufficient available bankroll.")
 
@@ -482,6 +487,8 @@ def main():
                     help="team name, 'Draw', 'Over', 'Under', or a player name for cards and props")
     pl.add_argument("--prop", help="prop market key from the scan, e.g. player_points")
     pl.add_argument("--side", choices=["Over", "Under", "Yes"], help="for props (default Yes)")
+    pl.add_argument("--stake", type=float,
+                    help=f"raise the stake on a high-confidence bet (£1-£{MAX_STAKE:.0f}); default 2%% of bankroll")
     pl.add_argument("--projection", required=True, help="your fair line or probability")
     pl.add_argument("--reason", required=True)
     sub.add_parser("settle")
