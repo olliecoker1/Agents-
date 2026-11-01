@@ -999,6 +999,82 @@
    "prop": "player_points",
    "side": "Over",
    "us_proxy": true
+  },
+  {
+   "id": 24,
+   "placed_utc": "2026-10-31T13:22:25+00:00",
+   "league": "EPL",
+   "sport_key": "soccer_epl",
+   "event_id": "b9254b648ca25ce7831988b53ed17c3c",
+   "matchup": "Nottingham Forest @ Brentford",
+   "home": "Brentford",
+   "away": "Nottingham Forest",
+   "kickoff_utc": "2026-10-31T15:00:00Z",
+   "market": "props",
+   "selection": "Igor Thiago Nascimento Rodrigues",
+   "point": null,
+   "price_american": 124,
+   "decimal_odds": 2.24,
+   "implied_prob": 0.4464,
+   "book": "Betfair",
+   "stake": 4.5,
+   "consensus_at_placement": {
+    "books": 2,
+    "median_implied_prob": 0.4505
+   },
+   "projection": "0.48",
+   "reason": "[B lean] Brentford's penalty-taking No. 9 at home v a Forest side that drew at Ipswich; fair ~48% vs 44.6% implied at 2.24",
+   "status": "open",
+   "result": null,
+   "pnl": null,
+   "prop": "player_goal_scorer_anytime",
+   "side": "Yes",
+   "us_proxy": false
+  },
+  {
+   "id": 25,
+   "placed_utc": "2026-10-31T13:22:25+00:00",
+   "league": "EPL",
+   "sport_key": "soccer_epl",
+   "event_id": "a6c06eabdf4e6710354b6098d39449e7",
+   "matchup": "Leeds United @ Bournemouth",
+   "home": "Bournemouth",
+   "away": "Leeds United",
+   "kickoff_utc": "2026-10-31T15:00:00Z",
+   "market": "totals",
+   "selection": "Over",
+   "point": 2.5,
+   "price_american": 106,
+   "decimal_odds": 2.06,
+   "implied_prob": 0.4854,
+   "book": "Matchbook",
+   "stake": 4.5,
+   "consensus_at_placement": {
+    "spread": {
+     "Bournemouth": -0.25,
+     "Leeds United": 0.25
+    },
+    "total": 2.5,
+    "moneyline": {
+     "Bournemouth": {
+      "consensus_price": 105,
+      "no_vig_prob": 0.4565
+     },
+     "Leeds United": {
+      "consensus_price": 260,
+      "no_vig_prob": 0.2599
+     },
+     "Draw": {
+      "consensus_price": 230,
+      "no_vig_prob": 0.2836
+     }
+    }
+   },
+   "projection": "2.75",
+   "reason": "[B lean] Kroupi back in Bournemouth's attack; both sides concede freely; fair total ~2.75 vs 2.5 at 2.06",
+   "status": "open",
+   "result": null,
+   "pnl": null
   }
  ]
 }
