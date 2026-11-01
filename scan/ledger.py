@@ -133,7 +133,13 @@ def find_player(name, players):
         return exact[0]
     first, last = target.split()[0], target.split()[-1]
     close = [p for p in players if key(p).split()[-1] == last and key(p)[0] == first[0]]
-    return close[0] if len(close) == 1 else None
+    if len(close) == 1:
+        return close[0]
+    # full legal names vs. playing names: "Igor Thiago Nascimento Rodrigues" is ESPN's "Igor Thiago"
+    words = set(target.split())
+    within = [p for p in players if len(key(p).split()) >= 2 and
+              (set(key(p).split()) <= words or words <= set(key(p).split()))]
+    return within[0] if len(within) == 1 else None
 
 
 def espn_match(bet):
@@ -472,6 +478,22 @@ def summarise(ledger):
     }
 
 
+def cmd_regrade(ledger, args):
+    """Re-settle a settled card or prop bet, e.g. after a player-name matching fix."""
+    bet = next((b for b in ledger["bets"] if b["id"] == args.id), None)
+    if not bet or bet["status"] != "settled" or bet["market"] not in ("cards", "props"):
+        sys.exit(f"Bet #{args.id} is not a settled card or prop bet.")
+    before = (bet["result"], bet["pnl"])
+    if not (settle_card if bet["market"] == "cards" else settle_prop)(bet):
+        sys.exit(f"Bet #{args.id}: match data not available.")
+    bet["pnl"] = payout(bet)
+    bet.setdefault("regraded", []).append({"utc": now_utc().isoformat(timespec="seconds"),
+                                           "from": before[0], "to": bet["result"]})
+    save(ledger)
+    print(f"#{bet['id']}: {before[0]} ({before[1]:+.2f}) -> {bet['result']} ({bet['pnl']:+.2f}). "
+          f"Bankroll £{bankroll(ledger):.2f}")
+
+
 def cmd_summary(ledger, args):
     print(json.dumps(summarise(ledger), indent=1))
 
@@ -493,9 +515,12 @@ def main():
     pl.add_argument("--reason", required=True)
     sub.add_parser("settle")
     sub.add_parser("summary")
+    rg = sub.add_parser("regrade")
+    rg.add_argument("--id", type=int, required=True)
     args = p.parse_args()
     ledger = load()
-    {"start": cmd_start, "place": cmd_place, "settle": cmd_settle, "summary": cmd_summary}[args.cmd](ledger, args)
+    {"start": cmd_start, "place": cmd_place, "settle": cmd_settle, "summary": cmd_summary,
+     "regrade": cmd_regrade}[args.cmd](ledger, args)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,128 @@
+{
+ "6a3819cdbe2ba2fe5a3d8f9b4b459965": {
+  "books": 21,
+  "best_price": {
+   "h2h": {
+    "Arsenal": {
+     "price": 166,
+     "book": "Betfair"
+    },
+    "Liverpool": {
+     "price": 198,
+     "book": "Matchbook"
+    },
+    "Draw": {
+     "price": 250,
+     "book": "BoyleSports"
+    }
+   },
+   "spreads": {
+    "Arsenal": {
+     "price": -112,
+     "book": "Matchbook",
+     "point": 0.0
+    },
+    "Liverpool": {
+     "price": 110,
+     "book": "Matchbook",
+     "point": 0.0
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -106,
+     "book": "Matchbook",
+     "point": 2.5
+    },
+    "Under": {
+     "price": 104,
+     "book": "Matchbook",
+     "point": 2.5
+    }
+   }
+  },
+  "moneyline": {
+   "Arsenal": {
+    "consensus_price": 150,
+    "no_vig_prob": 0.3766
+   },
+   "Liverpool": {
+    "consensus_price": 175,
+    "no_vig_prob": 0.3424
+   },
+   "Draw": {
+    "consensus_price": 235,
+    "no_vig_prob": 0.281
+   }
+  },
+  "hold_pct": 6.21,
+  "spread": {
+   "Arsenal": 0.0,
+   "Liverpool": 0.0
+  },
+  "total": 2.5
+ },
+ "0f552d9c6990c69474f50ff2fb54e9a3": {
+  "books": 21,
+  "best_price": {
+   "h2h": {
+    "Everton": {
+     "price": 210,
+     "book": "Betfair"
+    },
+    "Newcastle United": {
+     "price": 146,
+     "book": "Betfair"
+    },
+    "Draw": {
+     "price": 260,
+     "book": "Unibet (UK)"
+    }
+   },
+   "spreads": {
+    "Everton": {
+     "price": -115,
+     "book": "Matchbook",
+     "point": 0.25
+    },
+    "Newcastle United": {
+     "price": 112,
+     "book": "Matchbook",
+     "point": -0.25
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -139,
+     "book": "Grosvenor",
+     "point": 2.5
+    },
+    "Under": {
+     "price": 115,
+     "book": "William Hill",
+     "point": 2.5
+    }
+   }
+  },
+  "moneyline": {
+   "Everton": {
+    "consensus_price": 190,
+    "no_vig_prob": 0.3237
+   },
+   "Newcastle United": {
+    "consensus_price": 130,
+    "no_vig_prob": 0.4081
+   },
+   "Draw": {
+    "consensus_price": 250,
+    "no_vig_prob": 0.2682
+   }
+  },
+  "hold_pct": 6.53,
+  "spread": {
+   "Everton": 0.25,
+   "Newcastle United": -0.25
+  },
+  "total": 2.5
+ }
+}

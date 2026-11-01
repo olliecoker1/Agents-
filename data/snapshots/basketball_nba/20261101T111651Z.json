@@ -1,0 +1,222 @@
+{
+ "e8559eaac12af915cfe6597644620c13": {
+  "books": 20,
+  "best_price": {
+   "h2h": {
+    "Boston Celtics": {
+     "price": -233,
+     "book": "Matchbook"
+    },
+    "Orlando Magic": {
+     "price": 220,
+     "book": "Matchbook"
+    }
+   },
+   "spreads": {
+    "Boston Celtics": {
+     "price": -102,
+     "book": "LiveScore Bet",
+     "point": -6.5
+    },
+    "Orlando Magic": {
+     "price": -105,
+     "book": "Matchbook",
+     "point": 6.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -108,
+     "book": "Matchbook",
+     "point": 222.5
+    },
+    "Under": {
+     "price": -108,
+     "book": "Matchbook",
+     "point": 222.5
+    }
+   }
+  },
+  "moneyline": {
+   "Boston Celtics": {
+    "consensus_price": -250,
+    "no_vig_prob": 0.6744
+   },
+   "Orlando Magic": {
+    "consensus_price": 190,
+    "no_vig_prob": 0.3256
+   }
+  },
+  "hold_pct": 5.91,
+  "spread": {
+   "Boston Celtics": -6.5,
+   "Orlando Magic": 6.5
+  },
+  "total": 222.5
+ },
+ "fc3e945a5be88d3f933456bc512c956d": {
+  "books": 20,
+  "best_price": {
+   "h2h": {
+    "Brooklyn Nets": {
+     "price": 145,
+     "book": "Paddy Power"
+    },
+    "Indiana Pacers": {
+     "price": -154,
+     "book": "Betfair"
+    }
+   },
+   "spreads": {
+    "Brooklyn Nets": {
+     "price": -106,
+     "book": "Matchbook",
+     "point": 3.5
+    },
+    "Indiana Pacers": {
+     "price": -109,
+     "book": "Matchbook",
+     "point": -3.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -106,
+     "book": "Matchbook",
+     "point": 230.5
+    },
+    "Under": {
+     "price": -109,
+     "book": "Matchbook",
+     "point": 230.5
+    }
+   }
+  },
+  "moneyline": {
+   "Brooklyn Nets": {
+    "consensus_price": 138,
+    "no_vig_prob": 0.3977
+   },
+   "Indiana Pacers": {
+    "consensus_price": -175,
+    "no_vig_prob": 0.6023
+   }
+  },
+  "hold_pct": 5.65,
+  "spread": {
+   "Brooklyn Nets": 3.5,
+   "Indiana Pacers": -3.5
+  },
+  "total": 230.5
+ },
+ "094b083ace229ca31ff360a80e35a1a8": {
+  "books": 20,
+  "best_price": {
+   "h2h": {
+    "Golden State Warriors": {
+     "price": -125,
+     "book": "Matchbook"
+    },
+    "Los Angeles Clippers": {
+     "price": 122,
+     "book": "Betfair"
+    }
+   },
+   "spreads": {
+    "Golden State Warriors": {
+     "price": -108,
+     "book": "Matchbook",
+     "point": -2.5
+    },
+    "Los Angeles Clippers": {
+     "price": -106,
+     "book": "Matchbook",
+     "point": 2.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -111,
+     "book": "Virgin Bet",
+     "point": 218.5
+    },
+    "Under": {
+     "price": 100,
+     "book": "Matchbook",
+     "point": 218.5
+    }
+   }
+  },
+  "moneyline": {
+   "Golden State Warriors": {
+    "consensus_price": -137,
+    "no_vig_prob": 0.5483
+   },
+   "Los Angeles Clippers": {
+    "consensus_price": 110,
+    "no_vig_prob": 0.4517
+   }
+  },
+  "hold_pct": 5.42,
+  "spread": {
+   "Golden State Warriors": -2.5,
+   "Los Angeles Clippers": 2.5
+  },
+  "total": 218.5
+ },
+ "31fc89cbf3846e545e8e41a543a71d24": {
+  "books": 20,
+  "best_price": {
+   "h2h": {
+    "Los Angeles Lakers": {
+     "price": -167,
+     "book": "Betfair"
+    },
+    "Toronto Raptors": {
+     "price": 166,
+     "book": "Matchbook"
+    }
+   },
+   "spreads": {
+    "Los Angeles Lakers": {
+     "price": -106,
+     "book": "Matchbook",
+     "point": -4.5
+    },
+    "Toronto Raptors": {
+     "price": -105,
+     "book": "Matchbook",
+     "point": 4.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -127,
+     "book": "Virgin Bet",
+     "point": 226.5
+    },
+    "Under": {
+     "price": 105,
+     "book": "Virgin Bet",
+     "point": 226.5
+    }
+   }
+  },
+  "moneyline": {
+   "Los Angeles Lakers": {
+    "consensus_price": -200,
+    "no_vig_prob": 0.6273
+   },
+   "Toronto Raptors": {
+    "consensus_price": 152,
+    "no_vig_prob": 0.3727
+   }
+  },
+  "hold_pct": 6.27,
+  "spread": {
+   "Los Angeles Lakers": -4.5,
+   "Toronto Raptors": 4.5
+  },
+  "total": 226.5
+ }
+}

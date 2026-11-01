@@ -228,6 +228,9 @@ class FlowTest(unittest.TestCase):
         b = {"selection": "Bench Guy", "side": "Over", "point": 10.5}
         self.assertEqual(ledger.grade_prop(b, {"Starter": 20}), "push")
         self.assertEqual(ledger.find_player("Kyle Pitts", ["Kyle Pitts Sr.", "Drake London"]), "Kyle Pitts Sr.")
+        self.assertEqual(ledger.find_player("Igor Thiago Nascimento Rodrigues", ["Igor Thiago", "Igor Jesus"]),
+                         "Igor Thiago")
+        self.assertIsNone(ledger.find_player("Igor Thiago Nascimento Rodrigues", ["Igor Jesus"]))
 
 
 if __name__ == "__main__":

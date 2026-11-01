@@ -731,9 +731,17 @@
    },
    "projection": "-1.25",
    "reason": "[B lean] Palace's Ismaila Sarr out for weeks (Sage confirmed); Spurs in form after winning at Chelsea; fair ~-1.25 goals vs -1",
-   "status": "open",
-   "result": null,
-   "pnl": null
+   "status": "settled",
+   "result": "win",
+   "pnl": 4.08,
+   "final_score": {
+    "Tottenham Hotspur": 2.0,
+    "Crystal Palace": 0.0
+   },
+   "closing_snapshot_utc": "2026-10-31T13:21:09+00:00",
+   "clv": {
+    "clv_points": -0.25
+   }
   },
   {
    "id": 17,
@@ -936,9 +944,17 @@
    },
    "projection": "+0.25",
    "reason": "[B lean] Chelsea without Cole Palmer (sent off v Spurs; ban unconfirmed) and Joao Pedro (Alonso: not ready); fair ~Chelsea -0.25 vs -0.5",
-   "status": "open",
-   "result": null,
-   "pnl": null
+   "status": "settled",
+   "result": "loss",
+   "pnl": -4.5,
+   "final_score": {
+    "Chelsea": 2.0,
+    "Manchester United": 0.0
+   },
+   "closing_snapshot_utc": "2026-10-31T11:16:36+00:00",
+   "clv": {
+    "clv_points": 0.0
+   }
   },
   {
    "id": 22,
@@ -964,9 +980,13 @@
    },
    "projection": "0.38",
    "reason": "[B lean] High-foul holding mid in a big game v United's runners; fair ~38% vs 30.3% implied at 3.30. Referee unconfirmed",
-   "status": "open",
-   "result": null,
-   "pnl": null
+   "status": "settled",
+   "result": "loss",
+   "pnl": -4.5,
+   "final_score": {
+    "Chelsea": "2",
+    "Manchester United": "0"
+   }
   },
   {
    "id": 23,
@@ -993,12 +1013,17 @@
    },
    "projection": "24.5",
    "reason": "[B lean] Jaren Jackson Jr. out (MCL): more usage for Markkanen v Blazers without Morant (hamstring). US-book price",
-   "status": "open",
-   "result": null,
-   "pnl": null,
+   "status": "settled",
+   "result": "loss",
+   "pnl": -4.5,
    "prop": "player_points",
    "side": "Over",
-   "us_proxy": true
+   "us_proxy": true,
+   "final_score": {
+    "Utah Jazz": "90",
+    "Portland Trail Blazers": "112"
+   },
+   "actual": 13.0
   },
   {
    "id": 24,
@@ -1024,12 +1049,24 @@
    },
    "projection": "0.48",
    "reason": "[B lean] Brentford's penalty-taking No. 9 at home v a Forest side that drew at Ipswich; fair ~48% vs 44.6% implied at 2.24",
-   "status": "open",
-   "result": null,
-   "pnl": null,
+   "status": "settled",
+   "result": "win",
+   "pnl": 5.58,
    "prop": "player_goal_scorer_anytime",
    "side": "Yes",
-   "us_proxy": false
+   "us_proxy": false,
+   "final_score": {
+    "Brentford": "2",
+    "Nottingham Forest": "0"
+   },
+   "actual": 1,
+   "regraded": [
+    {
+     "utc": "2026-11-01T11:17:25+00:00",
+     "from": "push",
+     "to": "win"
+    }
+   ]
   },
   {
    "id": 25,
@@ -1072,6 +1109,191 @@
    },
    "projection": "2.75",
    "reason": "[B lean] Kroupi back in Bournemouth's attack; both sides concede freely; fair total ~2.75 vs 2.5 at 2.06",
+   "status": "settled",
+   "result": "loss",
+   "pnl": -4.5,
+   "final_score": {
+    "Bournemouth": 2.0,
+    "Leeds United": 0.0
+   },
+   "closing_snapshot_utc": "2026-10-31T13:21:09+00:00",
+   "clv": {
+    "clv_points": 0.0
+   }
+  },
+  {
+   "id": 26,
+   "placed_utc": "2026-11-01T11:18:00+00:00",
+   "league": "EPL",
+   "sport_key": "soccer_epl",
+   "event_id": "6a3819cdbe2ba2fe5a3d8f9b4b459965",
+   "matchup": "Arsenal @ Liverpool",
+   "home": "Liverpool",
+   "away": "Arsenal",
+   "kickoff_utc": "2026-11-01T16:30:00Z",
+   "market": "spreads",
+   "selection": "Liverpool",
+   "point": 0.0,
+   "price_american": 110,
+   "decimal_odds": 2.1,
+   "implied_prob": 0.4762,
+   "book": "Matchbook",
+   "stake": 4.0,
+   "consensus_at_placement": {
+    "spread": {
+     "Arsenal": 0.0,
+     "Liverpool": 0.0
+    },
+    "total": 2.5,
+    "moneyline": {
+     "Arsenal": {
+      "consensus_price": 150,
+      "no_vig_prob": 0.3766
+     },
+     "Liverpool": {
+      "consensus_price": 175,
+      "no_vig_prob": 0.3424
+     },
+     "Draw": {
+      "consensus_price": 235,
+      "no_vig_prob": 0.281
+     }
+    }
+   },
+   "projection": "-0.25",
+   "reason": "[B lean] Arsenal without Saka, Saliba, Madueke and suspended Dowman; Liverpool at home priced as underdogs; Liverpool draw-no-bet fair ~54% vs 47.6% implied",
+   "status": "open",
+   "result": null,
+   "pnl": null
+  },
+  {
+   "id": 27,
+   "placed_utc": "2026-11-01T11:18:00+00:00",
+   "league": "EPL",
+   "sport_key": "soccer_epl",
+   "event_id": "6a3819cdbe2ba2fe5a3d8f9b4b459965",
+   "matchup": "Arsenal @ Liverpool",
+   "home": "Liverpool",
+   "away": "Arsenal",
+   "kickoff_utc": "2026-11-01T16:30:00Z",
+   "market": "cards",
+   "selection": "Mikel Merino",
+   "point": null,
+   "price_american": 245,
+   "decimal_odds": 3.45,
+   "implied_prob": 0.2899,
+   "book": "Betfair",
+   "stake": 4.0,
+   "consensus_at_placement": {
+    "median_implied_prob": 0.3116,
+    "books": 2
+   },
+   "projection": "0.34",
+   "reason": "[B lean] Combative Arsenal midfielder in the biggest game of the weekend; fair ~34% vs 29% implied at 3.45. Referee unconfirmed",
+   "status": "open",
+   "result": null,
+   "pnl": null
+  },
+  {
+   "id": 28,
+   "placed_utc": "2026-11-01T11:18:00+00:00",
+   "league": "NBA",
+   "sport_key": "basketball_nba",
+   "event_id": "fc3e945a5be88d3f933456bc512c956d",
+   "matchup": "Brooklyn Nets @ Indiana Pacers",
+   "home": "Indiana Pacers",
+   "away": "Brooklyn Nets",
+   "kickoff_utc": "2026-11-01T22:10:00Z",
+   "market": "props",
+   "selection": "Pascal Siakam",
+   "point": 23.5,
+   "price_american": -109,
+   "decimal_odds": 1.9174,
+   "implied_prob": 0.5215,
+   "book": "DraftKings",
+   "stake": 4.0,
+   "consensus_at_placement": {
+    "line": 23.5,
+    "books": 3,
+    "median_no_vig_over_prob": 0.4917
+   },
+   "projection": "26",
+   "reason": "[B lean] Pacers without Haliburton and Zubac put more of the offence on Siakam v winless Nets. US-book price",
+   "status": "open",
+   "result": null,
+   "pnl": null,
+   "prop": "player_points",
+   "side": "Over",
+   "us_proxy": true
+  },
+  {
+   "id": 29,
+   "placed_utc": "2026-11-01T11:18:00+00:00",
+   "league": "NFL",
+   "sport_key": "americanfootball_nfl",
+   "event_id": "921859689f5f8b3b8b1caf4248bdb1ec",
+   "matchup": "Atlanta Falcons @ Tampa Bay Buccaneers",
+   "home": "Tampa Bay Buccaneers",
+   "away": "Atlanta Falcons",
+   "kickoff_utc": "2026-11-01T18:00:00Z",
+   "market": "props",
+   "selection": "Bijan Robinson",
+   "point": null,
+   "price_american": -186,
+   "decimal_odds": 1.5376,
+   "implied_prob": 0.6503,
+   "book": "BetRivers",
+   "stake": 4.0,
+   "consensus_at_placement": {
+    "books": 6,
+    "median_implied_prob": 0.6552
+   },
+   "projection": "0.70",
+   "reason": "[B lean] Brian Robinson Jr. ruled out, so Bijan gets the goal-line work; fair ~70% vs 65% implied. US-book price",
+   "status": "open",
+   "result": null,
+   "pnl": null,
+   "prop": "player_anytime_td",
+   "side": "Yes",
+   "us_proxy": true
+  },
+  {
+   "id": 30,
+   "placed_utc": "2026-11-01T11:18:00+00:00",
+   "league": "NBA",
+   "sport_key": "basketball_nba",
+   "event_id": "e8559eaac12af915cfe6597644620c13",
+   "matchup": "Boston Celtics @ Orlando Magic",
+   "home": "Orlando Magic",
+   "away": "Boston Celtics",
+   "kickoff_utc": "2026-11-01T20:40:00Z",
+   "market": "spreads",
+   "selection": "Boston Celtics",
+   "point": -6.5,
+   "price_american": -102,
+   "decimal_odds": 1.9804,
+   "implied_prob": 0.505,
+   "book": "LiveScore Bet",
+   "stake": 4.0,
+   "consensus_at_placement": {
+    "spread": {
+     "Boston Celtics": -6.5,
+     "Orlando Magic": 6.5
+    },
+    "total": 222.5,
+    "moneyline": {
+     "Boston Celtics": {
+      "consensus_price": -250,
+      "no_vig_prob": 0.6744
+     },
+     "Orlando Magic": {
+      "consensus_price": 190,
+      "no_vig_prob": 0.3256
+     }
+    }
+   },
+   "projection": "-8",
+   "reason": "[B lean] Celtics on a 4-game win streak; Magic without Jonathan Isaac; fair ~-8 vs -6.5",
    "status": "open",
    "result": null,
    "pnl": null
