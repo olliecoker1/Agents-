@@ -1351,6 +1351,202 @@
    "clv": {
     "clv_points": 0.0
    }
+  },
+  {
+   "id": 31,
+   "placed_utc": "2026-11-02T11:29:26+00:00",
+   "league": "NFL",
+   "sport_key": "americanfootball_nfl",
+   "event_id": "7d664fbcd39350e559d83c0068ba7169",
+   "matchup": "Chicago Bears @ Seattle Seahawks",
+   "home": "Seattle Seahawks",
+   "away": "Chicago Bears",
+   "kickoff_utc": "2026-11-03T01:20:00Z",
+   "market": "spreads",
+   "selection": "Chicago Bears",
+   "point": 3.5,
+   "price_american": -125,
+   "decimal_odds": 1.8,
+   "implied_prob": 0.5556,
+   "book": "888sport",
+   "stake": 4.0,
+   "consensus_at_placement": {
+    "spread": {
+     "Chicago Bears": 3.0,
+     "Seattle Seahawks": -3.0
+    },
+    "total": 46.5,
+    "moneyline": {
+     "Chicago Bears": {
+      "consensus_price": 147,
+      "no_vig_prob": 0.3867
+     },
+     "Seattle Seahawks": {
+      "consensus_price": -178,
+      "no_vig_prob": 0.6133
+     }
+    }
+   },
+   "projection": "+2.5",
+   "reason": "[B lean] Seahawks without LT Charles Cross (ankle) v the Bears' pass rush; fair ~Seahawks -2.5 vs -3.5",
+   "status": "open",
+   "result": null,
+   "pnl": null
+  },
+  {
+   "id": 32,
+   "placed_utc": "2026-11-02T11:29:26+00:00",
+   "league": "NBA",
+   "sport_key": "basketball_nba",
+   "event_id": "6579d9162df09172d12f48eecc5220fb",
+   "matchup": "New Orleans Pelicans @ Memphis Grizzlies",
+   "home": "Memphis Grizzlies",
+   "away": "New Orleans Pelicans",
+   "kickoff_utc": "2026-11-03T01:10:00Z",
+   "market": "spreads",
+   "selection": "Memphis Grizzlies",
+   "point": -6.5,
+   "price_american": 100,
+   "decimal_odds": 2.0,
+   "implied_prob": 0.5,
+   "book": "888sport",
+   "stake": 4.0,
+   "consensus_at_placement": {
+    "spread": {
+     "Memphis Grizzlies": -6.5,
+     "New Orleans Pelicans": 6.5
+    },
+    "total": 234.5,
+    "moneyline": {
+     "Memphis Grizzlies": {
+      "consensus_price": -227,
+      "no_vig_prob": 0.6562
+     },
+     "New Orleans Pelicans": {
+      "consensus_price": 175,
+      "no_vig_prob": 0.3438
+     }
+    }
+   },
+   "projection": "-8",
+   "reason": "[B lean] Unbeaten Grizzlies at home; Pelicans without Jordan Poole (ankle) and Missi; -6.5 at 2.00 is a big price; fair ~-8",
+   "status": "open",
+   "result": null,
+   "pnl": null
+  },
+  {
+   "id": 33,
+   "placed_utc": "2026-11-02T11:29:26+00:00",
+   "league": "NBA",
+   "sport_key": "basketball_nba",
+   "event_id": "0a12a55607db0bd7eeafee050c45988e",
+   "matchup": "Oklahoma City Thunder @ Cleveland Cavaliers",
+   "home": "Cleveland Cavaliers",
+   "away": "Oklahoma City Thunder",
+   "kickoff_utc": "2026-11-03T00:10:00Z",
+   "market": "spreads",
+   "selection": "Cleveland Cavaliers",
+   "point": -4.5,
+   "price_american": 100,
+   "decimal_odds": 2.0,
+   "implied_prob": 0.5,
+   "book": "Matchbook",
+   "stake": 4.0,
+   "consensus_at_placement": {
+    "spread": {
+     "Cleveland Cavaliers": -4.5,
+     "Oklahoma City Thunder": 4.5
+    },
+    "total": 228.5,
+    "moneyline": {
+     "Cleveland Cavaliers": {
+      "consensus_price": -188,
+      "no_vig_prob": 0.6153
+     },
+     "Oklahoma City Thunder": {
+      "consensus_price": 145,
+      "no_vig_prob": 0.3847
+     }
+    }
+   },
+   "projection": "-6",
+   "reason": "[B lean] Depleted Thunder (Jalen Williams out) lost by 21 at Houston; Cavs in form (136-111 at Milwaukee); fair ~-6 vs -4.5",
+   "status": "open",
+   "result": null,
+   "pnl": null
+  },
+  {
+   "id": 34,
+   "placed_utc": "2026-11-02T11:29:26+00:00",
+   "league": "NBA",
+   "sport_key": "basketball_nba",
+   "event_id": "afde8462706839f30115ea9d5f761066",
+   "matchup": "Toronto Raptors @ Los Angeles Clippers",
+   "home": "Los Angeles Clippers",
+   "away": "Toronto Raptors",
+   "kickoff_utc": "2026-11-03T03:10:00Z",
+   "market": "spreads",
+   "selection": "Los Angeles Clippers",
+   "point": 4.5,
+   "price_american": 100,
+   "decimal_odds": 2.0,
+   "implied_prob": 0.5,
+   "book": "Virgin Bet",
+   "stake": 4.0,
+   "consensus_at_placement": {
+    "spread": {
+     "Los Angeles Clippers": 4.5,
+     "Toronto Raptors": -4.5
+    },
+    "total": 220.5,
+    "moneyline": {
+     "Los Angeles Clippers": {
+      "consensus_price": 160,
+      "no_vig_prob": 0.3659
+     },
+     "Toronto Raptors": {
+      "consensus_price": -200,
+      "no_vig_prob": 0.6341
+     }
+    }
+   },
+   "projection": "+3",
+   "reason": "[B lean] Raptors without Kawhi Leonard (3-4 weeks); Clippers at home due a bounce after 5 straight losses; fair ~Raptors -3 vs -4.5",
+   "status": "open",
+   "result": null,
+   "pnl": null
+  },
+  {
+   "id": 35,
+   "placed_utc": "2026-11-02T11:29:26+00:00",
+   "league": "NBA",
+   "sport_key": "basketball_nba",
+   "event_id": "0a12a55607db0bd7eeafee050c45988e",
+   "matchup": "Oklahoma City Thunder @ Cleveland Cavaliers",
+   "home": "Cleveland Cavaliers",
+   "away": "Oklahoma City Thunder",
+   "kickoff_utc": "2026-11-03T00:10:00Z",
+   "market": "props",
+   "selection": "Shai Gilgeous-Alexander",
+   "point": 29.5,
+   "price_american": -104,
+   "decimal_odds": 1.9615,
+   "implied_prob": 0.5098,
+   "book": "FanDuel",
+   "stake": 4.0,
+   "consensus_at_placement": {
+    "line": 29.5,
+    "books": 5,
+    "median_no_vig_over_prob": 0.4948
+   },
+   "projection": "32",
+   "reason": "[B lean] With Jalen Williams out, SGA carries more of OKC's offence. US-book price",
+   "status": "open",
+   "result": null,
+   "pnl": null,
+   "prop": "player_points",
+   "side": "Over",
+   "us_proxy": true
   }
  ]
 }
