@@ -1,0 +1,57 @@
+{
+ "7d664fbcd39350e559d83c0068ba7169": {
+  "books": 20,
+  "best_price": {
+   "h2h": {
+    "Chicago Bears": {
+     "price": 158,
+     "book": "Betfair"
+    },
+    "Seattle Seahawks": {
+     "price": -161,
+     "book": "Smarkets"
+    }
+   },
+   "spreads": {
+    "Chicago Bears": {
+     "price": -125,
+     "book": "888sport",
+     "point": 3.5
+    },
+    "Seattle Seahawks": {
+     "price": 100,
+     "book": "888sport",
+     "point": -3.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -101,
+     "book": "Matchbook",
+     "point": 46.5
+    },
+    "Under": {
+     "price": -105,
+     "book": "Matchbook",
+     "point": 46.5
+    }
+   }
+  },
+  "moneyline": {
+   "Chicago Bears": {
+    "consensus_price": 147,
+    "no_vig_prob": 0.3867
+   },
+   "Seattle Seahawks": {
+    "consensus_price": -178,
+    "no_vig_prob": 0.6133
+   }
+  },
+  "hold_pct": 4.5,
+  "spread": {
+   "Chicago Bears": 3.0,
+   "Seattle Seahawks": -3.0
+  },
+  "total": 46.5
+ }
+}

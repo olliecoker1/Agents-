@@ -1,0 +1,65 @@
+{
+ "0f552d9c6990c69474f50ff2fb54e9a3": {
+  "books": 21,
+  "best_price": {
+   "h2h": {
+    "Everton": {
+     "price": 250,
+     "book": "Betfair"
+    },
+    "Newcastle United": {
+     "price": 122,
+     "book": "Betfair"
+    },
+    "Draw": {
+     "price": 275,
+     "book": "Betfair"
+    }
+   },
+   "spreads": {
+    "Everton": {
+     "price": 106,
+     "book": "Matchbook",
+     "point": 0.25
+    },
+    "Newcastle United": {
+     "price": -109,
+     "book": "Matchbook",
+     "point": -0.25
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -147,
+     "book": "LeoVegas",
+     "point": 2.5
+    },
+    "Under": {
+     "price": 115,
+     "book": "William Hill",
+     "point": 2.5
+    }
+   }
+  },
+  "moneyline": {
+   "Everton": {
+    "consensus_price": 225,
+    "no_vig_prob": 0.2889
+   },
+   "Newcastle United": {
+    "consensus_price": 112,
+    "no_vig_prob": 0.4429
+   },
+   "Draw": {
+    "consensus_price": 250,
+    "no_vig_prob": 0.2682
+   }
+  },
+  "hold_pct": 6.51,
+  "spread": {
+   "Everton": 0.25,
+   "Newcastle United": -0.25
+  },
+  "total": 2.5
+ }
+}

@@ -817,9 +817,17 @@
    },
    "projection": "-8",
    "reason": "[B lean] Winless Chargers without Derwin James, Deane Leonard, Awosika and Thompson in the secondary; Stafford in record form; fair ~-8 vs -6.5",
-   "status": "open",
-   "result": null,
-   "pnl": null
+   "status": "settled",
+   "result": "win",
+   "pnl": 4.59,
+   "final_score": {
+    "Los Angeles Rams": 24.0,
+    "Los Angeles Chargers": 9.0
+   },
+   "closing_snapshot_utc": "2026-11-01T11:16:51+00:00",
+   "clv": {
+    "clv_points": 0.0
+   }
   },
   {
    "id": 19,
@@ -858,9 +866,17 @@
    },
    "projection": "+2",
    "reason": "[B lean] Lamar Jackson listed full participant (return expected); Bills' DJ Moore and Kincaid questionable; fair ~Bills -2 vs -3.5",
-   "status": "open",
-   "result": null,
-   "pnl": null
+   "status": "settled",
+   "result": "loss",
+   "pnl": -4.5,
+   "final_score": {
+    "Buffalo Bills": 36.0,
+    "Baltimore Ravens": 10.0
+   },
+   "closing_snapshot_utc": "2026-11-01T11:16:51+00:00",
+   "clv": {
+    "clv_points": 0.5
+   }
   },
   {
    "id": 20,
@@ -899,9 +915,17 @@
    },
    "projection": "-14",
    "reason": "[B lean] Titans without Spears and Tate, Ridley questionable; Burrow-Higgins rolling; fair ~-14 vs -12.5",
-   "status": "open",
-   "result": null,
-   "pnl": null
+   "status": "settled",
+   "result": "loss",
+   "pnl": -4.5,
+   "final_score": {
+    "Cincinnati Bengals": 43.0,
+    "Tennessee Titans": 36.0
+   },
+   "closing_snapshot_utc": "2026-11-01T11:16:51+00:00",
+   "clv": {
+    "clv_points": 1.0
+   }
   },
   {
    "id": 21,
@@ -1162,9 +1186,17 @@
    },
    "projection": "-0.25",
    "reason": "[B lean] Arsenal without Saka, Saliba, Madueke and suspended Dowman; Liverpool at home priced as underdogs; Liverpool draw-no-bet fair ~54% vs 47.6% implied",
-   "status": "open",
-   "result": null,
-   "pnl": null
+   "status": "settled",
+   "result": "loss",
+   "pnl": -4.0,
+   "final_score": {
+    "Liverpool": 0.0,
+    "Arsenal": 1.0
+   },
+   "closing_snapshot_utc": "2026-11-01T11:16:51+00:00",
+   "clv": {
+    "clv_points": 0.0
+   }
   },
   {
    "id": 27,
@@ -1190,9 +1222,13 @@
    },
    "projection": "0.34",
    "reason": "[B lean] Combative Arsenal midfielder in the biggest game of the weekend; fair ~34% vs 29% implied at 3.45. Referee unconfirmed",
-   "status": "open",
-   "result": null,
-   "pnl": null
+   "status": "settled",
+   "result": "loss",
+   "pnl": -4.0,
+   "final_score": {
+    "Liverpool": "0",
+    "Arsenal": "1"
+   }
   },
   {
    "id": 28,
@@ -1219,12 +1255,17 @@
    },
    "projection": "26",
    "reason": "[B lean] Pacers without Haliburton and Zubac put more of the offence on Siakam v winless Nets. US-book price",
-   "status": "open",
-   "result": null,
-   "pnl": null,
+   "status": "settled",
+   "result": "loss",
+   "pnl": -4.0,
    "prop": "player_points",
    "side": "Over",
-   "us_proxy": true
+   "us_proxy": true,
+   "final_score": {
+    "Indiana Pacers": "90",
+    "Brooklyn Nets": "98"
+   },
+   "actual": 17.0
   },
   {
    "id": 29,
@@ -1250,12 +1291,17 @@
    },
    "projection": "0.70",
    "reason": "[B lean] Brian Robinson Jr. ruled out, so Bijan gets the goal-line work; fair ~70% vs 65% implied. US-book price",
-   "status": "open",
-   "result": null,
-   "pnl": null,
+   "status": "settled",
+   "result": "loss",
+   "pnl": -4.0,
    "prop": "player_anytime_td",
    "side": "Yes",
-   "us_proxy": true
+   "us_proxy": true,
+   "final_score": {
+    "Tampa Bay Buccaneers": "16",
+    "Atlanta Falcons": "0"
+   },
+   "actual": 0.0
   },
   {
    "id": 30,
@@ -1294,9 +1340,17 @@
    },
    "projection": "-8",
    "reason": "[B lean] Celtics on a 4-game win streak; Magic without Jonathan Isaac; fair ~-8 vs -6.5",
-   "status": "open",
-   "result": null,
-   "pnl": null
+   "status": "settled",
+   "result": "win",
+   "pnl": 3.92,
+   "final_score": {
+    "Orlando Magic": 97.0,
+    "Boston Celtics": 108.0
+   },
+   "closing_snapshot_utc": "2026-11-01T11:16:51+00:00",
+   "clv": {
+    "clv_points": 0.0
+   }
   }
  ]
 }
