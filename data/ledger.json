@@ -1389,9 +1389,17 @@
    },
    "projection": "+2.5",
    "reason": "[B lean] Seahawks without LT Charles Cross (ankle) v the Bears' pass rush; fair ~Seahawks -2.5 vs -3.5",
-   "status": "open",
-   "result": null,
-   "pnl": null
+   "status": "settled",
+   "result": "win",
+   "pnl": 3.2,
+   "final_score": {
+    "Seattle Seahawks": 17.0,
+    "Chicago Bears": 34.0
+   },
+   "closing_snapshot_utc": "2026-11-02T11:28:51+00:00",
+   "clv": {
+    "clv_points": 0.5
+   }
   },
   {
    "id": 32,
@@ -1430,9 +1438,17 @@
    },
    "projection": "-8",
    "reason": "[B lean] Unbeaten Grizzlies at home; Pelicans without Jordan Poole (ankle) and Missi; -6.5 at 2.00 is a big price; fair ~-8",
-   "status": "open",
-   "result": null,
-   "pnl": null
+   "status": "settled",
+   "result": "loss",
+   "pnl": -4.0,
+   "final_score": {
+    "Memphis Grizzlies": 134.0,
+    "New Orleans Pelicans": 135.0
+   },
+   "closing_snapshot_utc": "2026-11-02T11:28:51+00:00",
+   "clv": {
+    "clv_points": 0.0
+   }
   },
   {
    "id": 33,
@@ -1471,9 +1487,17 @@
    },
    "projection": "-6",
    "reason": "[B lean] Depleted Thunder (Jalen Williams out) lost by 21 at Houston; Cavs in form (136-111 at Milwaukee); fair ~-6 vs -4.5",
-   "status": "open",
-   "result": null,
-   "pnl": null
+   "status": "settled",
+   "result": "loss",
+   "pnl": -4.0,
+   "final_score": {
+    "Cleveland Cavaliers": 112.0,
+    "Oklahoma City Thunder": 117.0
+   },
+   "closing_snapshot_utc": "2026-11-02T11:28:51+00:00",
+   "clv": {
+    "clv_points": 0.0
+   }
   },
   {
    "id": 34,
@@ -1512,9 +1536,17 @@
    },
    "projection": "+3",
    "reason": "[B lean] Raptors without Kawhi Leonard (3-4 weeks); Clippers at home due a bounce after 5 straight losses; fair ~Raptors -3 vs -4.5",
-   "status": "open",
-   "result": null,
-   "pnl": null
+   "status": "settled",
+   "result": "loss",
+   "pnl": -4.0,
+   "final_score": {
+    "Los Angeles Clippers": 118.0,
+    "Toronto Raptors": 125.0
+   },
+   "closing_snapshot_utc": "2026-11-02T11:28:51+00:00",
+   "clv": {
+    "clv_points": 0.0
+   }
   },
   {
    "id": 35,
@@ -1541,12 +1573,17 @@
    },
    "projection": "32",
    "reason": "[B lean] With Jalen Williams out, SGA carries more of OKC's offence. US-book price",
-   "status": "open",
-   "result": null,
-   "pnl": null,
+   "status": "settled",
+   "result": "win",
+   "pnl": 3.85,
    "prop": "player_points",
    "side": "Over",
-   "us_proxy": true
+   "us_proxy": true,
+   "final_score": {
+    "Cleveland Cavaliers": "112",
+    "Oklahoma City Thunder": "117"
+   },
+   "actual": 43.0
   }
  ]
 }
