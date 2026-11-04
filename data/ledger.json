@@ -1584,6 +1584,193 @@
     "Oklahoma City Thunder": "117"
    },
    "actual": 43.0
+  },
+  {
+   "id": 36,
+   "placed_utc": "2026-11-04T11:17:30+00:00",
+   "league": "NBA",
+   "sport_key": "basketball_nba",
+   "event_id": "72c786e70ad9360fdc41e4c2a50fa788",
+   "matchup": "Miami Heat @ Los Angeles Clippers",
+   "home": "Los Angeles Clippers",
+   "away": "Miami Heat",
+   "kickoff_utc": "2026-11-05T03:40:00Z",
+   "market": "spreads",
+   "selection": "Miami Heat",
+   "point": -4.5,
+   "price_american": -115,
+   "decimal_odds": 1.8696,
+   "implied_prob": 0.5349,
+   "book": "Virgin Bet",
+   "stake": 3.5,
+   "consensus_at_placement": {
+    "spread": {
+     "Los Angeles Clippers": 4.75,
+     "Miami Heat": -4.75
+    },
+    "total": 233.5,
+    "moneyline": {
+     "Los Angeles Clippers": {
+      "consensus_price": 162,
+      "no_vig_prob": 0.3611
+     },
+     "Miami Heat": {
+      "consensus_price": -208,
+      "no_vig_prob": 0.6389
+     }
+    }
+   },
+   "projection": "-6",
+   "reason": "[B lean] Clippers on a 6-game slide; Heat in form (145-125 v Pacers); fair ~Heat -6 vs -4.5",
+   "status": "open",
+   "result": null,
+   "pnl": null
+  },
+  {
+   "id": 37,
+   "placed_utc": "2026-11-04T11:17:30+00:00",
+   "league": "NBA",
+   "sport_key": "basketball_nba",
+   "event_id": "6b25f3932db93d4c5ad7658def2645bf",
+   "matchup": "Dallas Mavericks @ San Antonio Spurs",
+   "home": "San Antonio Spurs",
+   "away": "Dallas Mavericks",
+   "kickoff_utc": "2026-11-05T02:30:00Z",
+   "market": "spreads",
+   "selection": "San Antonio Spurs",
+   "point": -11.5,
+   "price_american": -102,
+   "decimal_odds": 1.9804,
+   "implied_prob": 0.505,
+   "book": "Matchbook",
+   "stake": 3.5,
+   "consensus_at_placement": {
+    "spread": {
+     "Dallas Mavericks": 11.5,
+     "San Antonio Spurs": -11.5
+    },
+    "total": 227.5,
+    "moneyline": {
+     "Dallas Mavericks": {
+      "consensus_price": 380,
+      "no_vig_prob": 0.196
+     },
+     "San Antonio Spurs": {
+      "consensus_price": -588,
+      "no_vig_prob": 0.804
+     }
+    }
+   },
+   "projection": "-13",
+   "reason": "[B lean] Mavericks without Christie and Lively, Aldama questionable; Wembanyama averaging 40 in his last two; fair ~-13 vs -11.5",
+   "status": "open",
+   "result": null,
+   "pnl": null
+  },
+  {
+   "id": 38,
+   "placed_utc": "2026-11-04T11:17:30+00:00",
+   "league": "NBA",
+   "sport_key": "basketball_nba",
+   "event_id": "3469f522ffcacb13f88e6cd297adc110",
+   "matchup": "Indiana Pacers @ Memphis Grizzlies",
+   "home": "Memphis Grizzlies",
+   "away": "Indiana Pacers",
+   "kickoff_utc": "2026-11-05T01:10:00Z",
+   "market": "spreads",
+   "selection": "Memphis Grizzlies",
+   "point": -7.5,
+   "price_american": 100,
+   "decimal_odds": 2.0,
+   "implied_prob": 0.5,
+   "book": "Coral",
+   "stake": 3.5,
+   "consensus_at_placement": {
+    "spread": {
+     "Indiana Pacers": 7.5,
+     "Memphis Grizzlies": -7.5
+    },
+    "total": 229.0,
+    "moneyline": {
+     "Indiana Pacers": {
+      "consensus_price": 210,
+      "no_vig_prob": 0.3041
+     },
+     "Memphis Grizzlies": {
+      "consensus_price": -282,
+      "no_vig_prob": 0.6959
+     }
+    }
+   },
+   "projection": "-9",
+   "reason": "[B lean] Pacers without Haliburton, Zubac and Toppin questionable; Grizzlies at home after a 1-point loss; fair ~-9 vs -7.5 at 2.00",
+   "status": "open",
+   "result": null,
+   "pnl": null
+  },
+  {
+   "id": 39,
+   "placed_utc": "2026-11-04T11:17:30+00:00",
+   "league": "NBA",
+   "sport_key": "basketball_nba",
+   "event_id": "91df86557819598ca270ba35410cfcfa",
+   "matchup": "Philadelphia 76ers @ Detroit Pistons",
+   "home": "Detroit Pistons",
+   "away": "Philadelphia 76ers",
+   "kickoff_utc": "2026-11-05T00:00:00Z",
+   "market": "props",
+   "selection": "Cade Cunningham",
+   "point": 24.5,
+   "price_american": -105,
+   "decimal_odds": 1.9524,
+   "implied_prob": 0.5122,
+   "book": "BetOnline.ag",
+   "stake": 3.5,
+   "consensus_at_placement": {
+    "line": 24.5,
+    "books": 2,
+    "median_no_vig_over_prob": 0.4862
+   },
+   "projection": "26.5",
+   "reason": "[B lean] Pistons without Isaiah Joe (hip): more of the scoring on Cunningham v 76ers. US-book price",
+   "status": "open",
+   "result": null,
+   "pnl": null,
+   "prop": "player_points",
+   "side": "Over",
+   "us_proxy": true
+  },
+  {
+   "id": 40,
+   "placed_utc": "2026-11-04T11:17:30+00:00",
+   "league": "NBA",
+   "sport_key": "basketball_nba",
+   "event_id": "05200821a78e4f6db8131cff1652550f",
+   "matchup": "Atlanta Hawks @ Washington Wizards",
+   "home": "Washington Wizards",
+   "away": "Atlanta Hawks",
+   "kickoff_utc": "2026-11-05T00:10:00Z",
+   "market": "props",
+   "selection": "Anthony Davis",
+   "point": 23.5,
+   "price_american": -107,
+   "decimal_odds": 1.9346,
+   "implied_prob": 0.5169,
+   "book": "BetRivers",
+   "stake": 3.5,
+   "consensus_at_placement": {
+    "line": 23.5,
+    "books": 3,
+    "median_no_vig_over_prob": 0.5
+   },
+   "projection": "25.5",
+   "reason": "[B lean] Hawks without centre Jock Landale: Davis has the size edge inside. US-book price",
+   "status": "open",
+   "result": null,
+   "pnl": null,
+   "prop": "player_points",
+   "side": "Over",
+   "us_proxy": true
   }
  ]
 }
