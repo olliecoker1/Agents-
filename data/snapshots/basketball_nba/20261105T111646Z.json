@@ -1,0 +1,112 @@
+{
+ "2a76b31e02d1416de069a995589515fc": {
+  "books": 20,
+  "best_price": {
+   "h2h": {
+    "Orlando Magic": {
+     "price": 106,
+     "book": "Matchbook"
+    },
+    "Phoenix Suns": {
+     "price": -109,
+     "book": "Matchbook"
+    }
+   },
+   "spreads": {
+    "Orlando Magic": {
+     "price": -105,
+     "book": "Matchbook",
+     "point": 1.5
+    },
+    "Phoenix Suns": {
+     "price": 100,
+     "book": "Matchbook",
+     "point": -1.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -102,
+     "book": "Matchbook",
+     "point": 223.5
+    },
+    "Under": {
+     "price": -105,
+     "book": "Virgin Bet",
+     "point": 223.5
+    }
+   }
+  },
+  "moneyline": {
+   "Orlando Magic": {
+    "consensus_price": -105,
+    "no_vig_prob": 0.4843
+   },
+   "Phoenix Suns": {
+    "consensus_price": -120,
+    "no_vig_prob": 0.5157
+   }
+  },
+  "hold_pct": 5.76,
+  "spread": {
+   "Orlando Magic": 1.5,
+   "Phoenix Suns": -1.5
+  },
+  "total": 223.5
+ },
+ "ac38449dd3dfbe1c9b48164b6a41aa83": {
+  "books": 20,
+  "best_price": {
+   "h2h": {
+    "Golden State Warriors": {
+     "price": -256,
+     "book": "Matchbook"
+    },
+    "Miami Heat": {
+     "price": 255,
+     "book": "LiveScore Bet"
+    }
+   },
+   "spreads": {
+    "Golden State Warriors": {
+     "price": 100,
+     "book": "888sport",
+     "point": -7.5
+    },
+    "Miami Heat": {
+     "price": -106,
+     "book": "Matchbook",
+     "point": 7.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -102,
+     "book": "Matchbook",
+     "point": 235.5
+    },
+    "Under": {
+     "price": -110,
+     "book": "888sport",
+     "point": 235.5
+    }
+   }
+  },
+  "moneyline": {
+   "Golden State Warriors": {
+    "consensus_price": -294,
+    "no_vig_prob": 0.708
+   },
+   "Miami Heat": {
+    "consensus_price": 225,
+    "no_vig_prob": 0.292
+   }
+  },
+  "hold_pct": 5.39,
+  "spread": {
+   "Golden State Warriors": -7.5,
+   "Miami Heat": 7.5
+  },
+  "total": 235.5
+ }
+}

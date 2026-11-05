@@ -1,0 +1,57 @@
+{
+ "c75744790b7acf6260c78ba5e739c0e5": {
+  "books": 20,
+  "best_price": {
+   "h2h": {
+    "Baltimore Ravens": {
+     "price": 430,
+     "book": "Smarkets"
+    },
+    "Jacksonville Jaguars": {
+     "price": -455,
+     "book": "Betfair"
+    }
+   },
+   "spreads": {
+    "Baltimore Ravens": {
+     "price": 100,
+     "book": "888sport",
+     "point": 9.5
+    },
+    "Jacksonville Jaguars": {
+     "price": -125,
+     "book": "888sport",
+     "point": -9.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -101,
+     "book": "Matchbook",
+     "point": 39.5
+    },
+    "Under": {
+     "price": -104,
+     "book": "Matchbook",
+     "point": 39.5
+    }
+   }
+  },
+  "moneyline": {
+   "Baltimore Ravens": {
+    "consensus_price": 380,
+    "no_vig_prob": 0.1976
+   },
+   "Jacksonville Jaguars": {
+    "consensus_price": -549,
+    "no_vig_prob": 0.8024
+   }
+  },
+  "hold_pct": 5.44,
+  "spread": {
+   "Baltimore Ravens": 10.0,
+   "Jacksonville Jaguars": -10.0
+  },
+  "total": 39.5
+ }
+}

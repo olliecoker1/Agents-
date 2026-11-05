@@ -1,0 +1,65 @@
+{
+ "586bec023ee8ac2f0645d963bd2c9d25": {
+  "books": 19,
+  "best_price": {
+   "h2h": {
+    "Coventry City": {
+     "price": 410,
+     "book": "Betfair"
+    },
+    "Everton": {
+     "price": -130,
+     "book": "Betfair"
+    },
+    "Draw": {
+     "price": 310,
+     "book": "Betfair"
+    }
+   },
+   "spreads": {
+    "Coventry City": {
+     "price": 100,
+     "book": "Matchbook",
+     "point": 0.75
+    },
+    "Everton": {
+     "price": -103,
+     "book": "Matchbook",
+     "point": -0.75
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -127,
+     "book": "Matchbook",
+     "point": 2.5
+    },
+    "Under": {
+     "price": 122,
+     "book": "Matchbook",
+     "point": 2.5
+    }
+   }
+  },
+  "moneyline": {
+   "Coventry City": {
+    "consensus_price": 360,
+    "no_vig_prob": 0.2053
+   },
+   "Everton": {
+    "consensus_price": -143,
+    "no_vig_prob": 0.5557
+   },
+   "Draw": {
+    "consensus_price": 295,
+    "no_vig_prob": 0.2391
+   }
+  },
+  "hold_pct": 5.9,
+  "spread": {
+   "Coventry City": 0.75,
+   "Everton": -0.75
+  },
+  "total": 2.5
+ }
+}

@@ -1622,9 +1622,17 @@
    },
    "projection": "-6",
    "reason": "[B lean] Clippers on a 6-game slide; Heat in form (145-125 v Pacers); fair ~Heat -6 vs -4.5",
-   "status": "open",
-   "result": null,
-   "pnl": null
+   "status": "settled",
+   "result": "loss",
+   "pnl": -3.5,
+   "final_score": {
+    "Los Angeles Clippers": 116.0,
+    "Miami Heat": 117.0
+   },
+   "closing_snapshot_utc": "2026-11-04T11:17:12+00:00",
+   "clv": {
+    "clv_points": 0.25
+   }
   },
   {
    "id": 37,
@@ -1663,9 +1671,17 @@
    },
    "projection": "-13",
    "reason": "[B lean] Mavericks without Christie and Lively, Aldama questionable; Wembanyama averaging 40 in his last two; fair ~-13 vs -11.5",
-   "status": "open",
-   "result": null,
-   "pnl": null
+   "status": "settled",
+   "result": "loss",
+   "pnl": -3.5,
+   "final_score": {
+    "San Antonio Spurs": 112.0,
+    "Dallas Mavericks": 111.0
+   },
+   "closing_snapshot_utc": "2026-11-04T11:17:12+00:00",
+   "clv": {
+    "clv_points": 0.0
+   }
   },
   {
    "id": 38,
@@ -1704,9 +1720,17 @@
    },
    "projection": "-9",
    "reason": "[B lean] Pacers without Haliburton, Zubac and Toppin questionable; Grizzlies at home after a 1-point loss; fair ~-9 vs -7.5 at 2.00",
-   "status": "open",
-   "result": null,
-   "pnl": null
+   "status": "settled",
+   "result": "loss",
+   "pnl": -3.5,
+   "final_score": {
+    "Memphis Grizzlies": 103.0,
+    "Indiana Pacers": 107.0
+   },
+   "closing_snapshot_utc": "2026-11-04T11:17:12+00:00",
+   "clv": {
+    "clv_points": 0.0
+   }
   },
   {
    "id": 39,
@@ -1733,12 +1757,17 @@
    },
    "projection": "26.5",
    "reason": "[B lean] Pistons without Isaiah Joe (hip): more of the scoring on Cunningham v 76ers. US-book price",
-   "status": "open",
-   "result": null,
-   "pnl": null,
+   "status": "settled",
+   "result": "win",
+   "pnl": 3.33,
    "prop": "player_points",
    "side": "Over",
-   "us_proxy": true
+   "us_proxy": true,
+   "final_score": {
+    "Detroit Pistons": "106",
+    "Philadelphia 76ers": "112"
+   },
+   "actual": 26.0
   },
   {
    "id": 40,
@@ -1765,12 +1794,17 @@
    },
    "projection": "25.5",
    "reason": "[B lean] Hawks without centre Jock Landale: Davis has the size edge inside. US-book price",
-   "status": "open",
-   "result": null,
-   "pnl": null,
+   "status": "settled",
+   "result": "win",
+   "pnl": 3.27,
    "prop": "player_points",
    "side": "Over",
-   "us_proxy": true
+   "us_proxy": true,
+   "final_score": {
+    "Washington Wizards": "105",
+    "Atlanta Hawks": "120"
+   },
+   "actual": 26.0
   }
  ]
 }
