@@ -1805,6 +1805,160 @@
     "Atlanta Hawks": "120"
    },
    "actual": 26.0
+  },
+  {
+   "id": 41,
+   "placed_utc": "2026-11-05T11:17:26+00:00",
+   "league": "NFL",
+   "sport_key": "americanfootball_nfl",
+   "event_id": "c75744790b7acf6260c78ba5e739c0e5",
+   "matchup": "Jacksonville Jaguars @ Baltimore Ravens",
+   "home": "Baltimore Ravens",
+   "away": "Jacksonville Jaguars",
+   "kickoff_utc": "2026-11-06T01:15:00Z",
+   "market": "totals",
+   "selection": "Under",
+   "point": 39.5,
+   "price_american": -104,
+   "decimal_odds": 1.9615,
+   "implied_prob": 0.5098,
+   "book": "Matchbook",
+   "stake": 3.5,
+   "consensus_at_placement": {
+    "spread": {
+     "Baltimore Ravens": 10.0,
+     "Jacksonville Jaguars": -10.0
+    },
+    "total": 39.5,
+    "moneyline": {
+     "Baltimore Ravens": {
+      "consensus_price": 380,
+      "no_vig_prob": 0.1976
+     },
+     "Jacksonville Jaguars": {
+      "consensus_price": -549,
+      "no_vig_prob": 0.8024
+     }
+    }
+   },
+   "projection": "38",
+   "reason": "[B lean] Short-week TNF; Ravens down to Jacoby Brissett at QB (Huntley season-ending toe) and will lean on the run; fair ~38 vs 39.5",
+   "status": "open",
+   "result": null,
+   "pnl": null
+  },
+  {
+   "id": 42,
+   "placed_utc": "2026-11-05T11:17:27+00:00",
+   "league": "NFL",
+   "sport_key": "americanfootball_nfl",
+   "event_id": "c75744790b7acf6260c78ba5e739c0e5",
+   "matchup": "Jacksonville Jaguars @ Baltimore Ravens",
+   "home": "Baltimore Ravens",
+   "away": "Jacksonville Jaguars",
+   "kickoff_utc": "2026-11-06T01:15:00Z",
+   "market": "props",
+   "selection": "Derrick Henry",
+   "point": null,
+   "price_american": 130,
+   "decimal_odds": 2.3,
+   "implied_prob": 0.4348,
+   "book": "DraftKings",
+   "stake": 3.5,
+   "consensus_at_placement": {
+    "books": 6,
+    "median_implied_prob": 0.4348
+   },
+   "projection": "0.48",
+   "reason": "[B lean] With a backup QB the Ravens' offence runs through Henry, at home; fair ~48% vs 43.5% implied. US-book price",
+   "status": "open",
+   "result": null,
+   "pnl": null,
+   "prop": "player_anytime_td",
+   "side": "Yes",
+   "us_proxy": true
+  },
+  {
+   "id": 43,
+   "placed_utc": "2026-11-05T11:17:27+00:00",
+   "league": "NBA",
+   "sport_key": "basketball_nba",
+   "event_id": "ac38449dd3dfbe1c9b48164b6a41aa83",
+   "matchup": "Miami Heat @ Golden State Warriors",
+   "home": "Golden State Warriors",
+   "away": "Miami Heat",
+   "kickoff_utc": "2026-11-06T03:10:00Z",
+   "market": "spreads",
+   "selection": "Miami Heat",
+   "point": 7.5,
+   "price_american": -106,
+   "decimal_odds": 1.9434,
+   "implied_prob": 0.5146,
+   "book": "Matchbook",
+   "stake": 3.5,
+   "consensus_at_placement": {
+    "spread": {
+     "Golden State Warriors": -7.5,
+     "Miami Heat": 7.5
+    },
+    "total": 235.5,
+    "moneyline": {
+     "Golden State Warriors": {
+      "consensus_price": -294,
+      "no_vig_prob": 0.708
+     },
+     "Miami Heat": {
+      "consensus_price": 225,
+      "no_vig_prob": 0.292
+     }
+    }
+   },
+   "projection": "+6",
+   "reason": "[B lean] Heat in form (beat Pacers by 20, won at Clippers); Warriors without Santos and Porzingis; fair ~Warriors -6 vs -7.5",
+   "status": "open",
+   "result": null,
+   "pnl": null
+  },
+  {
+   "id": 44,
+   "placed_utc": "2026-11-05T11:17:27+00:00",
+   "league": "NBA",
+   "sport_key": "basketball_nba",
+   "event_id": "2a76b31e02d1416de069a995589515fc",
+   "matchup": "Orlando Magic @ Phoenix Suns",
+   "home": "Phoenix Suns",
+   "away": "Orlando Magic",
+   "kickoff_utc": "2026-11-06T02:10:00Z",
+   "market": "spreads",
+   "selection": "Orlando Magic",
+   "point": 1.5,
+   "price_american": -105,
+   "decimal_odds": 1.9524,
+   "implied_prob": 0.5122,
+   "book": "Matchbook",
+   "stake": 3.5,
+   "consensus_at_placement": {
+    "spread": {
+     "Orlando Magic": 1.5,
+     "Phoenix Suns": -1.5
+    },
+    "total": 223.5,
+    "moneyline": {
+     "Orlando Magic": {
+      "consensus_price": -105,
+      "no_vig_prob": 0.4843
+     },
+     "Phoenix Suns": {
+      "consensus_price": -120,
+      "no_vig_prob": 0.5157
+     }
+    }
+   },
+   "projection": "0",
+   "reason": "[B lean] Suns on a 4-game skid and without Jordan Goodwin; fair ~pick'em vs Magic +1.5",
+   "status": "open",
+   "result": null,
+   "pnl": null
   }
  ]
 }
