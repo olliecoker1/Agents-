@@ -1988,6 +1988,151 @@
    "clv": {
     "clv_points": 0.0
    }
+  },
+  {
+   "id": 45,
+   "placed_utc": "2026-11-06T11:16:44+00:00",
+   "league": "NBA",
+   "sport_key": "basketball_nba",
+   "event_id": "9246c91f746732472c13e94bd8e7be85",
+   "matchup": "Washington Wizards @ Atlanta Hawks",
+   "home": "Atlanta Hawks",
+   "away": "Washington Wizards",
+   "kickoff_utc": "2026-11-07T00:10:00Z",
+   "market": "spreads",
+   "selection": "Washington Wizards",
+   "point": 6.5,
+   "price_american": -109,
+   "decimal_odds": 1.9174,
+   "implied_prob": 0.5215,
+   "book": "Virgin Bet",
+   "stake": 3.5,
+   "consensus_at_placement": {
+    "spread": {
+     "Atlanta Hawks": -6.5,
+     "Washington Wizards": 6.5
+    },
+    "total": 228.5,
+    "moneyline": {
+     "Atlanta Hawks": {
+      "consensus_price": -275,
+      "no_vig_prob": 0.6875
+     },
+     "Washington Wizards": {
+      "consensus_price": 200,
+      "no_vig_prob": 0.3125
+     }
+    }
+   },
+   "projection": "+5",
+   "reason": "[B lean] Hawks without three bigs (Landale, Newell) and Gilbert; Wizards' Davis scored 26 v them on Wednesday; fair ~Hawks -5 vs -6.5",
+   "status": "open",
+   "result": null,
+   "pnl": null
+  },
+  {
+   "id": 46,
+   "placed_utc": "2026-11-06T11:16:44+00:00",
+   "league": "NBA",
+   "sport_key": "basketball_nba",
+   "event_id": "9246c91f746732472c13e94bd8e7be85",
+   "matchup": "Washington Wizards @ Atlanta Hawks",
+   "home": "Atlanta Hawks",
+   "away": "Washington Wizards",
+   "kickoff_utc": "2026-11-07T00:10:00Z",
+   "market": "props",
+   "selection": "Anthony Davis",
+   "point": 22.5,
+   "price_american": -102,
+   "decimal_odds": 1.9804,
+   "implied_prob": 0.505,
+   "book": "DraftKings",
+   "stake": 3.5,
+   "consensus_at_placement": {
+    "line": 22.5,
+    "books": 4,
+    "median_no_vig_over_prob": 0.4847
+   },
+   "projection": "25",
+   "reason": "[B lean] Same opponent as Wednesday (26 pts), now also without Asa Newell inside. US-book price",
+   "status": "open",
+   "result": null,
+   "pnl": null,
+   "prop": "player_points",
+   "side": "Over",
+   "us_proxy": true
+  },
+  {
+   "id": 47,
+   "placed_utc": "2026-11-06T11:16:45+00:00",
+   "league": "EPL",
+   "sport_key": "soccer_epl",
+   "event_id": "586bec023ee8ac2f0645d963bd2c9d25",
+   "matchup": "Coventry City @ Everton",
+   "home": "Everton",
+   "away": "Coventry City",
+   "kickoff_utc": "2026-11-06T20:00:00Z",
+   "market": "props",
+   "selection": "Thierno Barry",
+   "point": null,
+   "price_american": 130,
+   "decimal_odds": 2.3,
+   "implied_prob": 0.4348,
+   "book": "Betfair",
+   "stake": 3.5,
+   "consensus_at_placement": {
+    "books": 3,
+    "median_implied_prob": 0.4762
+   },
+   "projection": "0.48",
+   "reason": "[B lean] Everton's striker at home v Coventry, with Grealish out so more goes through him; fair ~48% vs 43.5% at 2.30",
+   "status": "open",
+   "result": null,
+   "pnl": null,
+   "prop": "player_goal_scorer_anytime",
+   "side": "Yes",
+   "us_proxy": false
+  },
+  {
+   "id": 48,
+   "placed_utc": "2026-11-06T11:16:45+00:00",
+   "league": "NBA",
+   "sport_key": "basketball_nba",
+   "event_id": "1c60a090180de530cfe273a5d6a381e6",
+   "matchup": "Toronto Raptors @ Milwaukee Bucks",
+   "home": "Milwaukee Bucks",
+   "away": "Toronto Raptors",
+   "kickoff_utc": "2026-11-07T01:10:00Z",
+   "market": "spreads",
+   "selection": "Milwaukee Bucks",
+   "point": 6.5,
+   "price_american": 100,
+   "decimal_odds": 2.0,
+   "implied_prob": 0.5,
+   "book": "888sport",
+   "stake": 3.5,
+   "consensus_at_placement": {
+    "spread": {
+     "Milwaukee Bucks": 6.5,
+     "Toronto Raptors": -6.5
+    },
+    "total": 231.5,
+    "moneyline": {
+     "Milwaukee Bucks": {
+      "consensus_price": 200,
+      "no_vig_prob": 0.3125
+     },
+     "Toronto Raptors": {
+      "consensus_price": -275,
+      "no_vig_prob": 0.6875
+     }
+    }
+   },
+   "projection": "+5",
+   "reason": "[B lean] Raptors still without Kawhi Leonard (only started his return process); -6.5 away is steep; fair ~Raptors -5 vs +6.5 at 2.00",
+   "status": "open",
+   "result": null,
+   "pnl": null
   }
  ]
 }
