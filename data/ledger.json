@@ -1843,9 +1843,17 @@
    },
    "projection": "38",
    "reason": "[B lean] Short-week TNF; Ravens down to Jacoby Brissett at QB (Huntley season-ending toe) and will lean on the run; fair ~38 vs 39.5",
-   "status": "open",
-   "result": null,
-   "pnl": null
+   "status": "settled",
+   "result": "loss",
+   "pnl": -3.5,
+   "final_score": {
+    "Baltimore Ravens": 10.0,
+    "Jacksonville Jaguars": 33.0
+   },
+   "closing_snapshot_utc": "2026-11-05T11:16:46+00:00",
+   "clv": {
+    "clv_points": 0.0
+   }
   },
   {
    "id": 42,
@@ -1871,12 +1879,17 @@
    },
    "projection": "0.48",
    "reason": "[B lean] With a backup QB the Ravens' offence runs through Henry, at home; fair ~48% vs 43.5% implied. US-book price",
-   "status": "open",
-   "result": null,
-   "pnl": null,
+   "status": "settled",
+   "result": "loss",
+   "pnl": -3.5,
    "prop": "player_anytime_td",
    "side": "Yes",
-   "us_proxy": true
+   "us_proxy": true,
+   "final_score": {
+    "Baltimore Ravens": "10",
+    "Jacksonville Jaguars": "33"
+   },
+   "actual": 0.0
   },
   {
    "id": 43,
@@ -1915,9 +1928,17 @@
    },
    "projection": "+6",
    "reason": "[B lean] Heat in form (beat Pacers by 20, won at Clippers); Warriors without Santos and Porzingis; fair ~Warriors -6 vs -7.5",
-   "status": "open",
-   "result": null,
-   "pnl": null
+   "status": "settled",
+   "result": "loss",
+   "pnl": -3.5,
+   "final_score": {
+    "Golden State Warriors": 120.0,
+    "Miami Heat": 100.0
+   },
+   "closing_snapshot_utc": "2026-11-05T11:16:46+00:00",
+   "clv": {
+    "clv_points": 0.0
+   }
   },
   {
    "id": 44,
@@ -1956,9 +1977,17 @@
    },
    "projection": "0",
    "reason": "[B lean] Suns on a 4-game skid and without Jordan Goodwin; fair ~pick'em vs Magic +1.5",
-   "status": "open",
-   "result": null,
-   "pnl": null
+   "status": "settled",
+   "result": "loss",
+   "pnl": -3.5,
+   "final_score": {
+    "Phoenix Suns": 117.0,
+    "Orlando Magic": 104.0
+   },
+   "closing_snapshot_utc": "2026-11-05T11:16:46+00:00",
+   "clv": {
+    "clv_points": 0.0
+   }
   }
  ]
 }
