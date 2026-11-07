@@ -2026,9 +2026,17 @@
    },
    "projection": "+5",
    "reason": "[B lean] Hawks without three bigs (Landale, Newell) and Gilbert; Wizards' Davis scored 26 v them on Wednesday; fair ~Hawks -5 vs -6.5",
-   "status": "open",
-   "result": null,
-   "pnl": null
+   "status": "settled",
+   "result": "loss",
+   "pnl": -3.5,
+   "final_score": {
+    "Atlanta Hawks": 139.0,
+    "Washington Wizards": 132.0
+   },
+   "closing_snapshot_utc": "2026-11-06T11:16:13+00:00",
+   "clv": {
+    "clv_points": 0.0
+   }
   },
   {
    "id": 46,
@@ -2055,12 +2063,16 @@
    },
    "projection": "25",
    "reason": "[B lean] Same opponent as Wednesday (26 pts), now also without Asa Newell inside. US-book price",
-   "status": "open",
-   "result": null,
-   "pnl": null,
+   "status": "settled",
+   "result": "push",
+   "pnl": 0.0,
    "prop": "player_points",
    "side": "Over",
-   "us_proxy": true
+   "us_proxy": true,
+   "final_score": {
+    "Atlanta Hawks": "139",
+    "Washington Wizards": "132"
+   }
   },
   {
    "id": 47,
@@ -2086,12 +2098,17 @@
    },
    "projection": "0.48",
    "reason": "[B lean] Everton's striker at home v Coventry, with Grealish out so more goes through him; fair ~48% vs 43.5% at 2.30",
-   "status": "open",
-   "result": null,
-   "pnl": null,
+   "status": "settled",
+   "result": "win",
+   "pnl": 4.55,
    "prop": "player_goal_scorer_anytime",
    "side": "Yes",
-   "us_proxy": false
+   "us_proxy": false,
+   "final_score": {
+    "Everton": "3",
+    "Coventry City": "1"
+   },
+   "actual": 2
   },
   {
    "id": 48,
@@ -2130,9 +2147,17 @@
    },
    "projection": "+5",
    "reason": "[B lean] Raptors still without Kawhi Leonard (only started his return process); -6.5 away is steep; fair ~Raptors -5 vs +6.5 at 2.00",
-   "status": "open",
-   "result": null,
-   "pnl": null
+   "status": "settled",
+   "result": "loss",
+   "pnl": -3.5,
+   "final_score": {
+    "Milwaukee Bucks": 107.0,
+    "Toronto Raptors": 121.0
+   },
+   "closing_snapshot_utc": "2026-11-06T11:16:13+00:00",
+   "clv": {
+    "clv_points": 0.0
+   }
   }
  ]
 }
