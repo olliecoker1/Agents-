@@ -2158,6 +2158,142 @@
    "clv": {
     "clv_points": 0.0
    }
+  },
+  {
+   "id": 49,
+   "placed_utc": "2026-11-07T11:16:53+00:00",
+   "league": "NFL",
+   "sport_key": "americanfootball_nfl",
+   "event_id": "240e23b02b1e3fef655d04a286b5a623",
+   "matchup": "Arizona Cardinals @ Seattle Seahawks",
+   "home": "Seattle Seahawks",
+   "away": "Arizona Cardinals",
+   "kickoff_utc": "2026-11-08T21:25:00Z",
+   "market": "spreads",
+   "selection": "Arizona Cardinals",
+   "point": 8.5,
+   "price_american": -105,
+   "decimal_odds": 1.9524,
+   "implied_prob": 0.5122,
+   "book": "Matchbook",
+   "stake": 3.5,
+   "consensus_at_placement": {
+    "spread": {
+     "Arizona Cardinals": 8.5,
+     "Seattle Seahawks": -8.5
+    },
+    "total": 39.5,
+    "moneyline": {
+     "Arizona Cardinals": {
+      "consensus_price": 320,
+      "no_vig_prob": 0.2254
+     },
+     "Seattle Seahawks": {
+      "consensus_price": -450,
+      "no_vig_prob": 0.7746
+     }
+    }
+   },
+   "projection": "+5",
+   "reason": "[B lean] Seahawks rule out QB Sam Darnold, G Quenton Nelson, LT Charles Cross, WR Shaheed and DL Williams/Nwosu (ESPN); -8.5 with a backup QB looks high; fair ~-5",
+   "status": "open",
+   "result": null,
+   "pnl": null
+  },
+  {
+   "id": 50,
+   "placed_utc": "2026-11-07T11:16:53+00:00",
+   "league": "NBA",
+   "sport_key": "basketball_nba",
+   "event_id": "e76682ca6c25a37b0a53cec226b91aab",
+   "matchup": "Denver Nuggets @ Indiana Pacers",
+   "home": "Indiana Pacers",
+   "away": "Denver Nuggets",
+   "kickoff_utc": "2026-11-07T22:10:00Z",
+   "market": "props",
+   "selection": "Nikola Jokic",
+   "point": 26.5,
+   "price_american": -102,
+   "decimal_odds": 1.9804,
+   "implied_prob": 0.505,
+   "book": "FanDuel",
+   "stake": 3.5,
+   "consensus_at_placement": {
+    "line": 26.5,
+    "books": 4,
+    "median_no_vig_over_prob": 0.4785
+   },
+   "projection": "29",
+   "reason": "[B lean] Pacers thin inside (Zubac out, McConnell questionable); Jokic in form. US-book price",
+   "status": "open",
+   "result": null,
+   "pnl": null,
+   "prop": "player_points",
+   "side": "Over",
+   "us_proxy": true
+  },
+  {
+   "id": 51,
+   "placed_utc": "2026-11-07T11:16:53+00:00",
+   "league": "NBA",
+   "sport_key": "basketball_nba",
+   "event_id": "ee45341df802cfb42dd48f1ad60c8b81",
+   "matchup": "Brooklyn Nets @ Atlanta Hawks",
+   "home": "Atlanta Hawks",
+   "away": "Brooklyn Nets",
+   "kickoff_utc": "2026-11-08T00:40:00Z",
+   "market": "props",
+   "selection": "Michael Porter Jr",
+   "point": 21.5,
+   "price_american": -117,
+   "decimal_odds": 1.8547,
+   "implied_prob": 0.5392,
+   "book": "DraftKings",
+   "stake": 3.5,
+   "consensus_at_placement": {
+    "line": 21.5,
+    "books": 5,
+    "median_no_vig_over_prob": 0.5123
+   },
+   "projection": "23.5",
+   "reason": "[B lean] Hawks without forward Jalen Johnson (ankle) and their backup bigs: easier matchup for Porter Jr. US-book price",
+   "status": "open",
+   "result": null,
+   "pnl": null,
+   "prop": "player_points",
+   "side": "Over",
+   "us_proxy": true
+  },
+  {
+   "id": 52,
+   "placed_utc": "2026-11-07T11:16:53+00:00",
+   "league": "EPL",
+   "sport_key": "soccer_epl",
+   "event_id": "842fcc5b9feb8c63054a661ad1fc8926",
+   "matchup": "Hull City @ Arsenal",
+   "home": "Arsenal",
+   "away": "Hull City",
+   "kickoff_utc": "2026-11-07T15:00:00Z",
+   "market": "props",
+   "selection": "Viktor Gyokeres",
+   "point": null,
+   "price_american": 104,
+   "decimal_odds": 2.04,
+   "implied_prob": 0.4902,
+   "book": "Betfair",
+   "stake": 3.5,
+   "consensus_at_placement": {
+    "books": 3,
+    "median_implied_prob": 0.5238
+   },
+   "projection": "0.56",
+   "reason": "[B lean] Arsenal are 83% favourites at home v promoted Hull; Gyokeres is the No. 9 and took the last penalty; fair ~56% vs 49% at 2.04",
+   "status": "open",
+   "result": null,
+   "pnl": null,
+   "prop": "player_goal_scorer_anytime",
+   "side": "Yes",
+   "us_proxy": false
   }
  ]
 }
