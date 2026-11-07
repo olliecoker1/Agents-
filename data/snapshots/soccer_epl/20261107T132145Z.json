@@ -1,0 +1,191 @@
+{
+ "842fcc5b9feb8c63054a661ad1fc8926": {
+  "books": 19,
+  "best_price": {
+   "h2h": {
+    "Arsenal": {
+     "price": -588,
+     "book": "Betfair"
+    },
+    "Hull City": {
+     "price": 2400,
+     "book": "Betfair"
+    },
+    "Draw": {
+     "price": 800,
+     "book": "Betfair"
+    }
+   },
+   "spreads": {
+    "Arsenal": {
+     "price": 102,
+     "book": "Matchbook",
+     "point": -2.25
+    },
+    "Hull City": {
+     "price": -112,
+     "book": "Matchbook",
+     "point": 2.25
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": 120,
+     "book": "LeoVegas",
+     "point": 3.5
+    },
+    "Under": {
+     "price": -152,
+     "book": "Grosvenor",
+     "point": 3.5
+    }
+   }
+  },
+  "moneyline": {
+   "Arsenal": {
+    "consensus_price": -667,
+    "no_vig_prob": 0.8304
+   },
+   "Hull City": {
+    "consensus_price": 1800,
+    "no_vig_prob": 0.0503
+   },
+   "Draw": {
+    "consensus_price": 700,
+    "no_vig_prob": 0.1194
+   }
+  },
+  "hold_pct": 4.73,
+  "spread": {
+   "Arsenal": -2.25,
+   "Hull City": 2.25
+  },
+  "total": 3.5
+ },
+ "3903e98a54db0f2cc23095407fe9dad8": {
+  "books": 19,
+  "best_price": {
+   "h2h": {
+    "Fulham": {
+     "price": 106,
+     "book": "Betfair"
+    },
+    "Newcastle United": {
+     "price": 285,
+     "book": "Betfair"
+    },
+    "Draw": {
+     "price": 285,
+     "book": "Betfair"
+    }
+   },
+   "spreads": {
+    "Fulham": {
+     "price": 104,
+     "book": "Matchbook",
+     "point": -0.5
+    },
+    "Newcastle United": {
+     "price": -106,
+     "book": "Matchbook",
+     "point": 0.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -148,
+     "book": "Casumo",
+     "point": 2.5
+    },
+    "Under": {
+     "price": 116,
+     "book": "Casumo",
+     "point": 2.5
+    }
+   }
+  },
+  "moneyline": {
+   "Fulham": {
+    "consensus_price": -100,
+    "no_vig_prob": 0.4736
+   },
+   "Newcastle United": {
+    "consensus_price": 255,
+    "no_vig_prob": 0.2668
+   },
+   "Draw": {
+    "consensus_price": 265,
+    "no_vig_prob": 0.2595
+   }
+  },
+  "hold_pct": 5.57,
+  "spread": {
+   "Fulham": -0.5,
+   "Newcastle United": 0.5
+  },
+  "total": 2.5
+ },
+ "59c5f635cfe11613c07e9a5520ced5c1": {
+  "books": 19,
+  "best_price": {
+   "h2h": {
+    "Manchester City": {
+     "price": -130,
+     "book": "Matchbook"
+    },
+    "Nottingham Forest": {
+     "price": 400,
+     "book": "Betfair"
+    },
+    "Draw": {
+     "price": 320,
+     "book": "Betfair"
+    }
+   },
+   "spreads": {
+    "Manchester City": {
+     "price": -105,
+     "book": "Matchbook",
+     "point": -0.75
+    },
+    "Nottingham Forest": {
+     "price": -104,
+     "book": "Matchbook",
+     "point": 0.75
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -161,
+     "book": "LeoVegas",
+     "point": 2.5
+    },
+    "Under": {
+     "price": 133,
+     "book": "Grosvenor",
+     "point": 2.5
+    }
+   }
+  },
+  "moneyline": {
+   "Manchester City": {
+    "consensus_price": -143,
+    "no_vig_prob": 0.5548
+   },
+   "Nottingham Forest": {
+    "consensus_price": 350,
+    "no_vig_prob": 0.2095
+   },
+   "Draw": {
+    "consensus_price": 300,
+    "no_vig_prob": 0.2357
+   }
+  },
+  "hold_pct": 6.07,
+  "spread": {
+   "Manchester City": -0.75,
+   "Nottingham Forest": 0.75
+  },
+  "total": 2.5
+ }
+}
