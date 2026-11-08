@@ -2225,12 +2225,17 @@
    },
    "projection": "29",
    "reason": "[B lean] Pacers thin inside (Zubac out, McConnell questionable); Jokic in form. US-book price",
-   "status": "open",
-   "result": null,
-   "pnl": null,
+   "status": "settled",
+   "result": "loss",
+   "pnl": -3.5,
    "prop": "player_points",
    "side": "Over",
-   "us_proxy": true
+   "us_proxy": true,
+   "final_score": {
+    "Indiana Pacers": "102",
+    "Denver Nuggets": "114"
+   },
+   "actual": 19.0
   },
   {
    "id": 51,
@@ -2257,12 +2262,17 @@
    },
    "projection": "23.5",
    "reason": "[B lean] Hawks without forward Jalen Johnson (ankle) and their backup bigs: easier matchup for Porter Jr. US-book price",
-   "status": "open",
-   "result": null,
-   "pnl": null,
+   "status": "settled",
+   "result": "win",
+   "pnl": 2.99,
    "prop": "player_points",
    "side": "Over",
-   "us_proxy": true
+   "us_proxy": true,
+   "final_score": {
+    "Atlanta Hawks": "124",
+    "Brooklyn Nets": "121"
+   },
+   "actual": 25.0
   },
   {
    "id": 52,
@@ -2288,12 +2298,17 @@
    },
    "projection": "0.56",
    "reason": "[B lean] Arsenal are 83% favourites at home v promoted Hull; Gyokeres is the No. 9 and took the last penalty; fair ~56% vs 49% at 2.04",
-   "status": "open",
-   "result": null,
-   "pnl": null,
+   "status": "settled",
+   "result": "loss",
+   "pnl": -3.5,
    "prop": "player_goal_scorer_anytime",
    "side": "Yes",
-   "us_proxy": false
+   "us_proxy": false,
+   "final_score": {
+    "Arsenal": "1",
+    "Hull City": "0"
+   },
+   "actual": 0
   }
  ]
 }
