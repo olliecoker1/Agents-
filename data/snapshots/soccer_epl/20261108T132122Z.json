@@ -1,0 +1,317 @@
+{
+ "79ed3df594d7b352ef027128b1ba5d0a": {
+  "books": 19,
+  "best_price": {
+   "h2h": {
+    "Bournemouth": {
+     "price": 104,
+     "book": "Betfair"
+    },
+    "Ipswich Town": {
+     "price": 290,
+     "book": "Betfair"
+    },
+    "Draw": {
+     "price": 285,
+     "book": "Betfair"
+    }
+   },
+   "spreads": {
+    "Bournemouth": {
+     "price": 102,
+     "book": "Matchbook",
+     "point": -0.5
+    },
+    "Ipswich Town": {
+     "price": -108,
+     "book": "Matchbook",
+     "point": 0.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -141,
+     "book": "Casumo",
+     "point": 2.5
+    },
+    "Under": {
+     "price": 115,
+     "book": "LeoVegas",
+     "point": 2.5
+    }
+   }
+  },
+  "moneyline": {
+   "Bournemouth": {
+    "consensus_price": -100,
+    "no_vig_prob": 0.4737
+   },
+   "Ipswich Town": {
+    "consensus_price": 260,
+    "no_vig_prob": 0.2632
+   },
+   "Draw": {
+    "consensus_price": 260,
+    "no_vig_prob": 0.2632
+   }
+  },
+  "hold_pct": 5.56,
+  "spread": {
+   "Bournemouth": -0.5,
+   "Ipswich Town": 0.5
+  },
+  "total": 2.5
+ },
+ "8e3ca98e29be84dd4a882ed05f50fa79": {
+  "books": 19,
+  "best_price": {
+   "h2h": {
+    "Brentford": {
+     "price": 320,
+     "book": "Betfair"
+    },
+    "Brighton and Hove Albion": {
+     "price": -106,
+     "book": "Betfair"
+    },
+    "Draw": {
+     "price": 300,
+     "book": "Betfred (UK)"
+    }
+   },
+   "spreads": {
+    "Brentford": {
+     "price": -101,
+     "book": "Matchbook",
+     "point": 0.5
+    },
+    "Brighton and Hove Albion": {
+     "price": -111,
+     "book": "Matchbook",
+     "point": -0.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -161,
+     "book": "LeoVegas",
+     "point": 2.5
+    },
+    "Under": {
+     "price": 133,
+     "book": "Grosvenor",
+     "point": 2.5
+    }
+   }
+  },
+  "moneyline": {
+   "Brentford": {
+    "consensus_price": 290,
+    "no_vig_prob": 0.2417
+   },
+   "Brighton and Hove Albion": {
+    "consensus_price": -118,
+    "no_vig_prob": 0.5102
+   },
+   "Draw": {
+    "consensus_price": 280,
+    "no_vig_prob": 0.2481
+   }
+  },
+  "hold_pct": 6.09,
+  "spread": {
+   "Brentford": 0.5,
+   "Brighton and Hove Albion": -0.5
+  },
+  "total": 2.5
+ },
+ "3a4608abdf257d2a0024b944757d9dc9": {
+  "books": 19,
+  "best_price": {
+   "h2h": {
+    "Chelsea": {
+     "price": 130,
+     "book": "Betfair"
+    },
+    "Sunderland": {
+     "price": 255,
+     "book": "Casumo"
+    },
+    "Draw": {
+     "price": 275,
+     "book": "Betfred (UK)"
+    }
+   },
+   "spreads": {
+    "Chelsea": {
+     "price": -103,
+     "book": "Matchbook",
+     "point": -0.25
+    },
+    "Sunderland": {
+     "price": -108,
+     "book": "Matchbook",
+     "point": 0.25
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -105,
+     "book": "Matchbook",
+     "point": 2.5
+    },
+    "Under": {
+     "price": 102,
+     "book": "Casumo",
+     "point": 2.5
+    }
+   }
+  },
+  "moneyline": {
+   "Chelsea": {
+    "consensus_price": 110,
+    "no_vig_prob": 0.4508
+   },
+   "Sunderland": {
+    "consensus_price": 235,
+    "no_vig_prob": 0.2826
+   },
+   "Draw": {
+    "consensus_price": 255,
+    "no_vig_prob": 0.2667
+   }
+  },
+  "hold_pct": 5.64,
+  "spread": {
+   "Chelsea": -0.25,
+   "Sunderland": 0.25
+  },
+  "total": 2.5
+ },
+ "0cfbab01e152f81e34f9014e02c7eb79": {
+  "books": 19,
+  "best_price": {
+   "h2h": {
+    "Crystal Palace": {
+     "price": 520,
+     "book": "Betfair"
+    },
+    "Liverpool": {
+     "price": -172,
+     "book": "Matchbook"
+    },
+    "Draw": {
+     "price": 380,
+     "book": "Betfair"
+    }
+   },
+   "spreads": {
+    "Crystal Palace": {
+     "price": 104,
+     "book": "Matchbook",
+     "point": 1.0
+    },
+    "Liverpool": {
+     "price": -112,
+     "book": "Matchbook",
+     "point": -1.0
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": 130,
+     "book": "Matchbook",
+     "point": 3.5
+    },
+    "Under": {
+     "price": -133,
+     "book": "Matchbook",
+     "point": 3.5
+    }
+   }
+  },
+  "moneyline": {
+   "Crystal Palace": {
+    "consensus_price": 450,
+    "no_vig_prob": 0.172
+   },
+   "Liverpool": {
+    "consensus_price": -188,
+    "no_vig_prob": 0.6177
+   },
+   "Draw": {
+    "consensus_price": 350,
+    "no_vig_prob": 0.2103
+   }
+  },
+  "hold_pct": 5.68,
+  "spread": {
+   "Crystal Palace": 1.0,
+   "Liverpool": -1.0
+  },
+  "total": 3.5
+ },
+ "b0a4b5448a7e02d9ad1eaa817599fff0": {
+  "books": 19,
+  "best_price": {
+   "h2h": {
+    "Aston Villa": {
+     "price": 225,
+     "book": "Betfair"
+    },
+    "Manchester United": {
+     "price": 124,
+     "book": "Betfair"
+    },
+    "Draw": {
+     "price": 295,
+     "book": "Betfair"
+    }
+   },
+   "spreads": {
+    "Aston Villa": {
+     "price": 102,
+     "book": "Matchbook",
+     "point": 0.25
+    },
+    "Manchester United": {
+     "price": -110,
+     "book": "Matchbook",
+     "point": -0.25
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -200,
+     "book": "William Hill",
+     "point": 2.5
+    },
+    "Under": {
+     "price": 155,
+     "book": "Grosvenor",
+     "point": 2.5
+    }
+   }
+  },
+  "moneyline": {
+   "Aston Villa": {
+    "consensus_price": 210,
+    "no_vig_prob": 0.3053
+   },
+   "Manchester United": {
+    "consensus_price": 114,
+    "no_vig_prob": 0.4423
+   },
+   "Draw": {
+    "consensus_price": 275,
+    "no_vig_prob": 0.2524
+   }
+  },
+  "hold_pct": 5.65,
+  "spread": {
+   "Aston Villa": 0.25,
+   "Manchester United": -0.25
+  },
+  "total": 2.5
+ }
+}
