@@ -2309,6 +2309,155 @@
     "Hull City": "0"
    },
    "actual": 0
+  },
+  {
+   "id": 53,
+   "placed_utc": "2026-11-08T11:16:45+00:00",
+   "league": "NBA",
+   "sport_key": "basketball_nba",
+   "event_id": "182e2b5349fa0ff4ad3c0e8359c1a9a0",
+   "matchup": "Los Angeles Lakers @ Detroit Pistons",
+   "home": "Detroit Pistons",
+   "away": "Los Angeles Lakers",
+   "kickoff_utc": "2026-11-08T23:10:00Z",
+   "market": "props",
+   "selection": "Luka Doncic",
+   "point": 33.5,
+   "price_american": -116,
+   "decimal_odds": 1.8621,
+   "implied_prob": 0.537,
+   "book": "DraftKings",
+   "stake": 3.0,
+   "consensus_at_placement": {
+    "line": 33.5,
+    "books": 6,
+    "median_no_vig_over_prob": 0.5112
+   },
+   "projection": "37",
+   "reason": "[B lean] Doncic has scored 53, 45 and 40 in his last three and averages over 40; line 33.5. US-book price",
+   "status": "open",
+   "result": null,
+   "pnl": null,
+   "prop": "player_points",
+   "side": "Over",
+   "us_proxy": true
+  },
+  {
+   "id": 54,
+   "placed_utc": "2026-11-08T11:16:45+00:00",
+   "league": "EPL",
+   "sport_key": "soccer_epl",
+   "event_id": "b0a4b5448a7e02d9ad1eaa817599fff0",
+   "matchup": "Aston Villa @ Manchester United",
+   "home": "Manchester United",
+   "away": "Aston Villa",
+   "kickoff_utc": "2026-11-08T16:30:00Z",
+   "market": "spreads",
+   "selection": "Aston Villa",
+   "point": 0.25,
+   "price_american": 100,
+   "decimal_odds": 2.0,
+   "implied_prob": 0.5,
+   "book": "Matchbook",
+   "stake": 3.0,
+   "consensus_at_placement": {
+    "spread": {
+     "Aston Villa": 0.25,
+     "Manchester United": -0.25
+    },
+    "total": 2.5,
+    "moneyline": {
+     "Aston Villa": {
+      "consensus_price": 210,
+      "no_vig_prob": 0.3059
+     },
+     "Manchester United": {
+      "consensus_price": 115,
+      "no_vig_prob": 0.4411
+     },
+     "Draw": {
+      "consensus_price": 275,
+      "no_vig_prob": 0.2529
+     }
+    }
+   },
+   "projection": "+0",
+   "reason": "[B lean] Man United dropped into the relegation zone; Villa in form (beat Man City); United priced at 44% at home looks rich; fair ~level",
+   "status": "open",
+   "result": null,
+   "pnl": null
+  },
+  {
+   "id": 55,
+   "placed_utc": "2026-11-08T11:16:45+00:00",
+   "league": "EPL",
+   "sport_key": "soccer_epl",
+   "event_id": "79ed3df594d7b352ef027128b1ba5d0a",
+   "matchup": "Bournemouth @ Ipswich Town",
+   "home": "Ipswich Town",
+   "away": "Bournemouth",
+   "kickoff_utc": "2026-11-08T14:00:00Z",
+   "market": "props",
+   "selection": "Eli Junior Kroupi",
+   "point": null,
+   "price_american": 145,
+   "decimal_odds": 2.45,
+   "implied_prob": 0.4082,
+   "book": "William Hill",
+   "stake": 3.0,
+   "consensus_at_placement": {
+    "books": 1,
+    "median_implied_prob": 0.4082
+   },
+   "projection": "0.45",
+   "reason": "[B lean] Bournemouth on seven straight wins; Kroupi back fit and leading their line at Ipswich; fair ~45% vs 40.8% at 2.45",
+   "status": "open",
+   "result": null,
+   "pnl": null,
+   "prop": "player_goal_scorer_anytime",
+   "side": "Yes",
+   "us_proxy": false
+  },
+  {
+   "id": 56,
+   "placed_utc": "2026-11-08T11:16:45+00:00",
+   "league": "NFL",
+   "sport_key": "americanfootball_nfl",
+   "event_id": "dc56d980f527ffeef89940133b211b13",
+   "matchup": "Cincinnati Bengals @ Atlanta Falcons",
+   "home": "Atlanta Falcons",
+   "away": "Cincinnati Bengals",
+   "kickoff_utc": "2026-11-08T14:30:00Z",
+   "market": "spreads",
+   "selection": "Cincinnati Bengals",
+   "point": -3.5,
+   "price_american": 104,
+   "decimal_odds": 2.04,
+   "implied_prob": 0.4902,
+   "book": "Matchbook",
+   "stake": 3.0,
+   "consensus_at_placement": {
+    "spread": {
+     "Atlanta Falcons": 3.5,
+     "Cincinnati Bengals": -3.5
+    },
+    "total": 52.5,
+    "moneyline": {
+     "Atlanta Falcons": {
+      "consensus_price": 145,
+      "no_vig_prob": 0.3896
+     },
+     "Cincinnati Bengals": {
+      "consensus_price": -177,
+      "no_vig_prob": 0.6104
+     }
+    }
+   },
+   "projection": "-5",
+   "reason": "[B lean] Falcons shut out 16-0 last week and without RB Brian Robinson Jr.; Bengals' passing game in form; fair ~-5 vs -3.5 at 2.04",
+   "status": "open",
+   "result": null,
+   "pnl": null
   }
  ]
 }
