@@ -1,0 +1,57 @@
+{
+ "17ad7eff2f7875e20a8109abe40470e3": {
+  "books": 19,
+  "best_price": {
+   "h2h": {
+    "Buffalo Bills": {
+     "price": -164,
+     "book": "Smarkets"
+    },
+    "Minnesota Vikings": {
+     "price": 160,
+     "book": "Smarkets"
+    }
+   },
+   "spreads": {
+    "Buffalo Bills": {
+     "price": 100,
+     "book": "888sport",
+     "point": -3.5
+    },
+    "Minnesota Vikings": {
+     "price": -125,
+     "book": "888sport",
+     "point": 3.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -108,
+     "book": "Matchbook",
+     "point": 44.0
+    },
+    "Under": {
+     "price": -103,
+     "book": "Matchbook",
+     "point": 44.0
+    }
+   }
+  },
+  "moneyline": {
+   "Buffalo Bills": {
+    "consensus_price": -182,
+    "no_vig_prob": 0.615
+   },
+   "Minnesota Vikings": {
+    "consensus_price": 147,
+    "no_vig_prob": 0.385
+   }
+  },
+  "hold_pct": 4.95,
+  "spread": {
+   "Buffalo Bills": -3.5,
+   "Minnesota Vikings": 3.5
+  },
+  "total": 44.0
+ }
+}

@@ -2196,9 +2196,17 @@
    },
    "projection": "+5",
    "reason": "[B lean] Seahawks rule out QB Sam Darnold, G Quenton Nelson, LT Charles Cross, WR Shaheed and DL Williams/Nwosu (ESPN); -8.5 with a backup QB looks high; fair ~-5",
-   "status": "open",
-   "result": null,
-   "pnl": null
+   "status": "settled",
+   "result": "loss",
+   "pnl": -3.5,
+   "final_score": {
+    "Seattle Seahawks": 17.0,
+    "Arizona Cardinals": 3.0
+   },
+   "closing_snapshot_utc": "2026-11-08T11:16:17+00:00",
+   "clv": {
+    "clv_points": 0.0
+   }
   },
   {
    "id": 50,
@@ -2335,12 +2343,16 @@
    },
    "projection": "37",
    "reason": "[B lean] Doncic has scored 53, 45 and 40 in his last three and averages over 40; line 33.5. US-book price",
-   "status": "open",
-   "result": null,
-   "pnl": null,
+   "status": "settled",
+   "result": "push",
+   "pnl": 0.0,
    "prop": "player_points",
    "side": "Over",
-   "us_proxy": true
+   "us_proxy": true,
+   "final_score": {
+    "Detroit Pistons": "116",
+    "Los Angeles Lakers": "121"
+   }
   },
   {
    "id": 54,
@@ -2383,9 +2395,17 @@
    },
    "projection": "+0",
    "reason": "[B lean] Man United dropped into the relegation zone; Villa in form (beat Man City); United priced at 44% at home looks rich; fair ~level",
-   "status": "open",
-   "result": null,
-   "pnl": null
+   "status": "settled",
+   "result": "half-win",
+   "pnl": 1.5,
+   "final_score": {
+    "Manchester United": 4.0,
+    "Aston Villa": 4.0
+   },
+   "closing_snapshot_utc": "2026-11-08T13:21:22+00:00",
+   "clv": {
+    "clv_points": 0.0
+   }
   },
   {
    "id": 55,
@@ -2411,12 +2431,17 @@
    },
    "projection": "0.45",
    "reason": "[B lean] Bournemouth on seven straight wins; Kroupi back fit and leading their line at Ipswich; fair ~45% vs 40.8% at 2.45",
-   "status": "open",
-   "result": null,
-   "pnl": null,
+   "status": "settled",
+   "result": "loss",
+   "pnl": -3.0,
    "prop": "player_goal_scorer_anytime",
    "side": "Yes",
-   "us_proxy": false
+   "us_proxy": false,
+   "final_score": {
+    "Ipswich Town": "1",
+    "AFC Bournemouth": "2"
+   },
+   "actual": 0
   },
   {
    "id": 56,
@@ -2455,9 +2480,17 @@
    },
    "projection": "-5",
    "reason": "[B lean] Falcons shut out 16-0 last week and without RB Brian Robinson Jr.; Bengals' passing game in form; fair ~-5 vs -3.5 at 2.04",
-   "status": "open",
-   "result": null,
-   "pnl": null
+   "status": "settled",
+   "result": "win",
+   "pnl": 3.12,
+   "final_score": {
+    "Atlanta Falcons": 17.0,
+    "Cincinnati Bengals": 34.0
+   },
+   "closing_snapshot_utc": "2026-11-08T11:16:17+00:00",
+   "clv": {
+    "clv_points": 0.0
+   }
   }
  ]
 }
