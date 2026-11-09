@@ -2491,6 +2491,161 @@
    "clv": {
     "clv_points": 0.0
    }
+  },
+  {
+   "id": 57,
+   "placed_utc": "2026-11-09T11:22:28+00:00",
+   "league": "NBA",
+   "sport_key": "basketball_nba",
+   "event_id": "1df5ff8fe9c6d2dbff1d0ae176063b37",
+   "matchup": "Cleveland Cavaliers @ Charlotte Hornets",
+   "home": "Charlotte Hornets",
+   "away": "Cleveland Cavaliers",
+   "kickoff_utc": "2026-11-10T00:10:00Z",
+   "market": "spreads",
+   "selection": "Cleveland Cavaliers",
+   "point": -9.5,
+   "price_american": 100,
+   "decimal_odds": 2.0,
+   "implied_prob": 0.5,
+   "book": "888sport",
+   "stake": 3.0,
+   "consensus_at_placement": {
+    "spread": {
+     "Charlotte Hornets": 8.75,
+     "Cleveland Cavaliers": -8.75
+    },
+    "total": 214.5,
+    "moneyline": {
+     "Charlotte Hornets": {
+      "consensus_price": 280,
+      "no_vig_prob": 0.2475
+     },
+     "Cleveland Cavaliers": {
+      "consensus_price": -400,
+      "no_vig_prob": 0.7525
+     }
+    }
+   },
+   "projection": "-12",
+   "reason": "[B lean] Hornets without Brandon Miller, Kon Knueppel, Dennis Schroder and Grant Williams (all confirmed out) on a 6-game slide; fair ~-12 vs -9.5 at 2.00",
+   "status": "open",
+   "result": null,
+   "pnl": null
+  },
+  {
+   "id": 58,
+   "placed_utc": "2026-11-09T11:22:28+00:00",
+   "league": "NBA",
+   "sport_key": "basketball_nba",
+   "event_id": "1df5ff8fe9c6d2dbff1d0ae176063b37",
+   "matchup": "Cleveland Cavaliers @ Charlotte Hornets",
+   "home": "Charlotte Hornets",
+   "away": "Cleveland Cavaliers",
+   "kickoff_utc": "2026-11-10T00:10:00Z",
+   "market": "props",
+   "selection": "Naz Reid",
+   "point": 18.5,
+   "price_american": -118,
+   "decimal_odds": 1.8475,
+   "implied_prob": 0.5413,
+   "book": "DraftKings",
+   "stake": 3.0,
+   "consensus_at_placement": {
+    "line": 18.5,
+    "books": 4,
+    "median_no_vig_over_prob": 0.5134
+   },
+   "projection": "21",
+   "reason": "[B lean] With Miller, Knueppel and Schroder all out, Reid is Charlotte's main scoring option. US-book price",
+   "status": "open",
+   "result": null,
+   "pnl": null,
+   "prop": "player_points",
+   "side": "Over",
+   "us_proxy": true
+  },
+  {
+   "id": 59,
+   "placed_utc": "2026-11-09T11:22:28+00:00",
+   "league": "NBA",
+   "sport_key": "basketball_nba",
+   "event_id": "dc4eb6ae9979b3d3418c35b4210f0c72",
+   "matchup": "San Antonio Spurs @ Phoenix Suns",
+   "home": "Phoenix Suns",
+   "away": "San Antonio Spurs",
+   "kickoff_utc": "2026-11-10T02:10:00Z",
+   "market": "spreads",
+   "selection": "San Antonio Spurs",
+   "point": -8.5,
+   "price_american": -118,
+   "decimal_odds": 1.8475,
+   "implied_prob": 0.5413,
+   "book": "888sport",
+   "stake": 3.0,
+   "consensus_at_placement": {
+    "spread": {
+     "Phoenix Suns": 8.5,
+     "San Antonio Spurs": -8.5
+    },
+    "total": 227.5,
+    "moneyline": {
+     "Phoenix Suns": {
+      "consensus_price": 272,
+      "no_vig_prob": 0.2513
+     },
+     "San Antonio Spurs": {
+      "consensus_price": -400,
+      "no_vig_prob": 0.7487
+     }
+    }
+   },
+   "projection": "-10",
+   "reason": "[B lean] Spurs on an 8-game win streak (5 straight on the road); Suns without Jordan Goodwin; fair ~-10 vs -8.5",
+   "status": "open",
+   "result": null,
+   "pnl": null
+  },
+  {
+   "id": 60,
+   "placed_utc": "2026-11-09T11:22:28+00:00",
+   "league": "NFL",
+   "sport_key": "americanfootball_nfl",
+   "event_id": "17ad7eff2f7875e20a8109abe40470e3",
+   "matchup": "Buffalo Bills @ Minnesota Vikings",
+   "home": "Minnesota Vikings",
+   "away": "Buffalo Bills",
+   "kickoff_utc": "2026-11-10T01:15:00Z",
+   "market": "totals",
+   "selection": "Under",
+   "point": 44.0,
+   "price_american": -103,
+   "decimal_odds": 1.9709,
+   "implied_prob": 0.5074,
+   "book": "Matchbook",
+   "stake": 3.0,
+   "consensus_at_placement": {
+    "spread": {
+     "Buffalo Bills": -3.5,
+     "Minnesota Vikings": 3.5
+    },
+    "total": 44.0,
+    "moneyline": {
+     "Buffalo Bills": {
+      "consensus_price": -182,
+      "no_vig_prob": 0.615
+     },
+     "Minnesota Vikings": {
+      "consensus_price": 147,
+      "no_vig_prob": 0.385
+     }
+    }
+   },
+   "projection": "42.5",
+   "reason": "[B lean] Bills' LT Dion Dawkins and G Alec Anderson questionable v a Vikings defence that blitzes 70% of the time; fair total ~42.5 vs 44",
+   "status": "open",
+   "result": null,
+   "pnl": null
   }
  ]
 }
