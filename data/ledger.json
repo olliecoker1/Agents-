@@ -2675,6 +2675,152 @@
    "clv": {
     "clv_points": 0.0
    }
+  },
+  {
+   "id": 61,
+   "placed_utc": "2026-11-10T11:18:02+00:00",
+   "league": "NBA",
+   "sport_key": "basketball_nba",
+   "event_id": "9ac02cb22adf276b325b1e9c9c6c588e",
+   "matchup": "Miami Heat @ Utah Jazz",
+   "home": "Utah Jazz",
+   "away": "Miami Heat",
+   "kickoff_utc": "2026-11-11T02:10:00Z",
+   "market": "spreads",
+   "selection": "Miami Heat",
+   "point": -9.5,
+   "price_american": -114,
+   "decimal_odds": 1.8772,
+   "implied_prob": 0.5327,
+   "book": "LeoVegas",
+   "stake": 3.0,
+   "consensus_at_placement": {
+    "spread": {
+     "Miami Heat": -9.25,
+     "Utah Jazz": 9.25
+    },
+    "total": 228.5,
+    "moneyline": {
+     "Miami Heat": {
+      "consensus_price": -400,
+      "no_vig_prob": 0.7619
+     },
+     "Utah Jazz": {
+      "consensus_price": 300,
+      "no_vig_prob": 0.2381
+     }
+    }
+   },
+   "projection": "-12",
+   "reason": "[B lean] Jazz on an 8-game slide and without Keyonte George (ankle) and Jaren Jackson Jr.; fair ~Heat -12 vs -9.5",
+   "status": "open",
+   "result": null,
+   "pnl": null
+  },
+  {
+   "id": 62,
+   "placed_utc": "2026-11-10T11:18:02+00:00",
+   "league": "NBA",
+   "sport_key": "basketball_nba",
+   "event_id": "78ab42ddb22b68903fd53a384d0fc616",
+   "matchup": "Orlando Magic @ Sacramento Kings",
+   "home": "Sacramento Kings",
+   "away": "Orlando Magic",
+   "kickoff_utc": "2026-11-11T03:10:00Z",
+   "market": "spreads",
+   "selection": "Sacramento Kings",
+   "point": 5.5,
+   "price_american": -111,
+   "decimal_odds": 1.9009,
+   "implied_prob": 0.5261,
+   "book": "Virgin Bet",
+   "stake": 3.0,
+   "consensus_at_placement": {
+    "spread": {
+     "Orlando Magic": -5.5,
+     "Sacramento Kings": 5.5
+    },
+    "total": 222.5,
+    "moneyline": {
+     "Orlando Magic": {
+      "consensus_price": -240,
+      "no_vig_prob": 0.664
+     },
+     "Sacramento Kings": {
+      "consensus_price": 180,
+      "no_vig_prob": 0.336
+     }
+    }
+   },
+   "projection": "+4",
+   "reason": "[B lean] Magic without Jalen Suggs and Jonathan Isaac; Kings at home; fair ~Magic -4 vs -5.5",
+   "status": "open",
+   "result": null,
+   "pnl": null
+  },
+  {
+   "id": 63,
+   "placed_utc": "2026-11-10T11:18:03+00:00",
+   "league": "NBA",
+   "sport_key": "basketball_nba",
+   "event_id": "cfa503c66cd505776a910921875ef7dd",
+   "matchup": "Boston Celtics @ Philadelphia 76ers",
+   "home": "Philadelphia 76ers",
+   "away": "Boston Celtics",
+   "kickoff_utc": "2026-11-11T01:10:00Z",
+   "market": "props",
+   "selection": "Jayson Tatum",
+   "point": 26.5,
+   "price_american": -110,
+   "decimal_odds": 1.9091,
+   "implied_prob": 0.5238,
+   "book": "FanDuel",
+   "stake": 3.0,
+   "consensus_at_placement": {
+    "line": 26.5,
+    "books": 6,
+    "median_no_vig_over_prob": 0.499
+   },
+   "projection": "28.5",
+   "reason": "[B lean] Pick'em game in Philadelphia means full minutes, and the 76ers are without big Adem Bona; Tatum scored 40 v Brooklyn recently. US-book price",
+   "status": "open",
+   "result": null,
+   "pnl": null,
+   "prop": "player_points",
+   "side": "Over",
+   "us_proxy": true
+  },
+  {
+   "id": 64,
+   "placed_utc": "2026-11-10T11:18:03+00:00",
+   "league": "NBA",
+   "sport_key": "basketball_nba",
+   "event_id": "cfa503c66cd505776a910921875ef7dd",
+   "matchup": "Boston Celtics @ Philadelphia 76ers",
+   "home": "Philadelphia 76ers",
+   "away": "Boston Celtics",
+   "kickoff_utc": "2026-11-11T01:10:00Z",
+   "market": "props",
+   "selection": "Joel Embiid",
+   "point": 19.5,
+   "price_american": -108,
+   "decimal_odds": 1.9259,
+   "implied_prob": 0.5192,
+   "book": "FanDuel",
+   "stake": 3.0,
+   "consensus_at_placement": {
+    "line": 19.5,
+    "books": 6,
+    "median_no_vig_over_prob": 0.4985
+   },
+   "projection": "21.5",
+   "reason": "[B lean] With Adem Bona out, Embiid takes more of the frontcourt minutes in a close game. US-book price",
+   "status": "open",
+   "result": null,
+   "pnl": null,
+   "prop": "player_points",
+   "side": "Over",
+   "us_proxy": true
   }
  ]
 }
