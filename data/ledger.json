@@ -2529,9 +2529,17 @@
    },
    "projection": "-12",
    "reason": "[B lean] Hornets without Brandon Miller, Kon Knueppel, Dennis Schroder and Grant Williams (all confirmed out) on a 6-game slide; fair ~-12 vs -9.5 at 2.00",
-   "status": "open",
-   "result": null,
-   "pnl": null
+   "status": "settled",
+   "result": "loss",
+   "pnl": -3.0,
+   "final_score": {
+    "Charlotte Hornets": 124.0,
+    "Cleveland Cavaliers": 112.0
+   },
+   "closing_snapshot_utc": "2026-11-09T11:21:51+00:00",
+   "clv": {
+    "clv_points": -0.75
+   }
   },
   {
    "id": 58,
@@ -2558,12 +2566,17 @@
    },
    "projection": "21",
    "reason": "[B lean] With Miller, Knueppel and Schroder all out, Reid is Charlotte's main scoring option. US-book price",
-   "status": "open",
-   "result": null,
-   "pnl": null,
+   "status": "settled",
+   "result": "win",
+   "pnl": 2.54,
    "prop": "player_points",
    "side": "Over",
-   "us_proxy": true
+   "us_proxy": true,
+   "final_score": {
+    "Charlotte Hornets": "124",
+    "Cleveland Cavaliers": "112"
+   },
+   "actual": 25.0
   },
   {
    "id": 59,
@@ -2602,9 +2615,17 @@
    },
    "projection": "-10",
    "reason": "[B lean] Spurs on an 8-game win streak (5 straight on the road); Suns without Jordan Goodwin; fair ~-10 vs -8.5",
-   "status": "open",
-   "result": null,
-   "pnl": null
+   "status": "settled",
+   "result": "win",
+   "pnl": 2.54,
+   "final_score": {
+    "Phoenix Suns": 96.0,
+    "San Antonio Spurs": 122.0
+   },
+   "closing_snapshot_utc": "2026-11-09T11:21:51+00:00",
+   "clv": {
+    "clv_points": 0.0
+   }
   },
   {
    "id": 60,
@@ -2643,9 +2664,17 @@
    },
    "projection": "42.5",
    "reason": "[B lean] Bills' LT Dion Dawkins and G Alec Anderson questionable v a Vikings defence that blitzes 70% of the time; fair total ~42.5 vs 44",
-   "status": "open",
-   "result": null,
-   "pnl": null
+   "status": "settled",
+   "result": "win",
+   "pnl": 2.91,
+   "final_score": {
+    "Minnesota Vikings": 6.0,
+    "Buffalo Bills": 23.0
+   },
+   "closing_snapshot_utc": "2026-11-09T11:21:51+00:00",
+   "clv": {
+    "clv_points": 0.0
+   }
   }
  ]
 }
