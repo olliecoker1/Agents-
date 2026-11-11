@@ -2713,9 +2713,17 @@
    },
    "projection": "-12",
    "reason": "[B lean] Jazz on an 8-game slide and without Keyonte George (ankle) and Jaren Jackson Jr.; fair ~Heat -12 vs -9.5",
-   "status": "open",
-   "result": null,
-   "pnl": null
+   "status": "settled",
+   "result": "loss",
+   "pnl": -3.0,
+   "final_score": {
+    "Utah Jazz": 109.0,
+    "Miami Heat": 115.0
+   },
+   "closing_snapshot_utc": "2026-11-10T11:17:37+00:00",
+   "clv": {
+    "clv_points": -0.25
+   }
   },
   {
    "id": 62,
@@ -2754,9 +2762,17 @@
    },
    "projection": "+4",
    "reason": "[B lean] Magic without Jalen Suggs and Jonathan Isaac; Kings at home; fair ~Magic -4 vs -5.5",
-   "status": "open",
-   "result": null,
-   "pnl": null
+   "status": "settled",
+   "result": "loss",
+   "pnl": -3.0,
+   "final_score": {
+    "Sacramento Kings": 100.0,
+    "Orlando Magic": 107.0
+   },
+   "closing_snapshot_utc": "2026-11-10T11:17:37+00:00",
+   "clv": {
+    "clv_points": 0.0
+   }
   },
   {
    "id": 63,
@@ -2783,12 +2799,17 @@
    },
    "projection": "28.5",
    "reason": "[B lean] Pick'em game in Philadelphia means full minutes, and the 76ers are without big Adem Bona; Tatum scored 40 v Brooklyn recently. US-book price",
-   "status": "open",
-   "result": null,
-   "pnl": null,
+   "status": "settled",
+   "result": "loss",
+   "pnl": -3.0,
    "prop": "player_points",
    "side": "Over",
-   "us_proxy": true
+   "us_proxy": true,
+   "final_score": {
+    "Philadelphia 76ers": "101",
+    "Boston Celtics": "123"
+   },
+   "actual": 21.0
   },
   {
    "id": 64,
@@ -2815,12 +2836,17 @@
    },
    "projection": "21.5",
    "reason": "[B lean] With Adem Bona out, Embiid takes more of the frontcourt minutes in a close game. US-book price",
-   "status": "open",
-   "result": null,
-   "pnl": null,
+   "status": "settled",
+   "result": "loss",
+   "pnl": -3.0,
    "prop": "player_points",
    "side": "Over",
-   "us_proxy": true
+   "us_proxy": true,
+   "final_score": {
+    "Philadelphia 76ers": "101",
+    "Boston Celtics": "123"
+   },
+   "actual": 16.0
   }
  ]
 }
