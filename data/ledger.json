@@ -2847,6 +2847,152 @@
     "Boston Celtics": "123"
    },
    "actual": 16.0
+  },
+  {
+   "id": 65,
+   "placed_utc": "2026-11-11T11:23:04+00:00",
+   "league": "NBA",
+   "sport_key": "basketball_nba",
+   "event_id": "37f4c00ff7ec01d5aa7c33dd1ac84bbc",
+   "matchup": "Boston Celtics @ Toronto Raptors",
+   "home": "Toronto Raptors",
+   "away": "Boston Celtics",
+   "kickoff_utc": "2026-11-12T00:10:00Z",
+   "market": "spreads",
+   "selection": "Boston Celtics",
+   "point": -7.5,
+   "price_american": -104,
+   "decimal_odds": 1.9615,
+   "implied_prob": 0.5098,
+   "book": "Matchbook",
+   "stake": 3.0,
+   "consensus_at_placement": {
+    "spread": {
+     "Boston Celtics": -7.5,
+     "Toronto Raptors": 7.5
+    },
+    "total": 216.5,
+    "moneyline": {
+     "Boston Celtics": {
+      "consensus_price": -300,
+      "no_vig_prob": 0.7091
+     },
+     "Toronto Raptors": {
+      "consensus_price": 225,
+      "no_vig_prob": 0.2909
+     }
+    }
+   },
+   "projection": "-10",
+   "reason": "[B lean] Raptors without Scottie Barnes (groin) and Kawhi Leonard; Celtics on a road win streak; fair ~-10 vs -7.5",
+   "status": "open",
+   "result": null,
+   "pnl": null
+  },
+  {
+   "id": 66,
+   "placed_utc": "2026-11-11T11:23:04+00:00",
+   "league": "NBA",
+   "sport_key": "basketball_nba",
+   "event_id": "37f4c00ff7ec01d5aa7c33dd1ac84bbc",
+   "matchup": "Boston Celtics @ Toronto Raptors",
+   "home": "Toronto Raptors",
+   "away": "Boston Celtics",
+   "kickoff_utc": "2026-11-12T00:10:00Z",
+   "market": "props",
+   "selection": "R.J. Barrett",
+   "point": 24.5,
+   "price_american": -107,
+   "decimal_odds": 1.9346,
+   "implied_prob": 0.5169,
+   "book": "DraftKings",
+   "stake": 3.0,
+   "consensus_at_placement": {
+    "line": 24.5,
+    "books": 3,
+    "median_no_vig_over_prob": 0.4877
+   },
+   "projection": "26.5",
+   "reason": "[B lean] With Barnes and Leonard out, Barrett carries Toronto's scoring. US-book price",
+   "status": "open",
+   "result": null,
+   "pnl": null,
+   "prop": "player_points",
+   "side": "Over",
+   "us_proxy": true
+  },
+  {
+   "id": 67,
+   "placed_utc": "2026-11-11T11:23:04+00:00",
+   "league": "NBA",
+   "sport_key": "basketball_nba",
+   "event_id": "095441822e3b9b1b84bff9e482b9057a",
+   "matchup": "Cleveland Cavaliers @ New York Knicks",
+   "home": "New York Knicks",
+   "away": "Cleveland Cavaliers",
+   "kickoff_utc": "2026-11-12T00:10:00Z",
+   "market": "props",
+   "selection": "Jalen Brunson",
+   "point": 25.5,
+   "price_american": -115,
+   "decimal_odds": 1.8696,
+   "implied_prob": 0.5349,
+   "book": "DraftKings",
+   "stake": 3.0,
+   "consensus_at_placement": {
+    "line": 25.5,
+    "books": 5,
+    "median_no_vig_over_prob": 0.5101
+   },
+   "projection": "27.5",
+   "reason": "[B lean] Knicks without Josh Hart (illness); Cavs without Merrill, Tyson questionable; Brunson's usage rises. US-book price",
+   "status": "open",
+   "result": null,
+   "pnl": null,
+   "prop": "player_points",
+   "side": "Over",
+   "us_proxy": true
+  },
+  {
+   "id": 68,
+   "placed_utc": "2026-11-11T11:23:04+00:00",
+   "league": "NBA",
+   "sport_key": "basketball_nba",
+   "event_id": "095441822e3b9b1b84bff9e482b9057a",
+   "matchup": "Cleveland Cavaliers @ New York Knicks",
+   "home": "New York Knicks",
+   "away": "Cleveland Cavaliers",
+   "kickoff_utc": "2026-11-12T00:10:00Z",
+   "market": "spreads",
+   "selection": "New York Knicks",
+   "point": -4.5,
+   "price_american": -103,
+   "decimal_odds": 1.9709,
+   "implied_prob": 0.5074,
+   "book": "Matchbook",
+   "stake": 3.0,
+   "consensus_at_placement": {
+    "spread": {
+     "Cleveland Cavaliers": 4.5,
+     "New York Knicks": -4.5
+    },
+    "total": 221.5,
+    "moneyline": {
+     "Cleveland Cavaliers": {
+      "consensus_price": 150,
+      "no_vig_prob": 0.3799
+     },
+     "New York Knicks": {
+      "consensus_price": -188,
+      "no_vig_prob": 0.6201
+     }
+    }
+   },
+   "projection": "-6",
+   "reason": "[B lean] Knicks on a 4-game home win run; Cavs lost outright to depleted Charlotte and are without Merrill; fair ~-6 vs -4.5",
+   "status": "open",
+   "result": null,
+   "pnl": null
   }
  ]
 }
