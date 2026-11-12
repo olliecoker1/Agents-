@@ -3019,6 +3019,152 @@
    "clv": {
     "clv_points": 0.0
    }
+  },
+  {
+   "id": 69,
+   "placed_utc": "2026-11-12T11:18:01+00:00",
+   "league": "NBA",
+   "sport_key": "basketball_nba",
+   "event_id": "f3f429e773bfb2340ba2bb90f2b9dd1e",
+   "matchup": "Charlotte Hornets @ Phoenix Suns",
+   "home": "Phoenix Suns",
+   "away": "Charlotte Hornets",
+   "kickoff_utc": "2026-11-13T02:10:00Z",
+   "market": "spreads",
+   "selection": "Charlotte Hornets",
+   "point": 6.5,
+   "price_american": -106,
+   "decimal_odds": 1.9434,
+   "implied_prob": 0.5146,
+   "book": "Matchbook",
+   "stake": 3.0,
+   "consensus_at_placement": {
+    "spread": {
+     "Charlotte Hornets": 6.5,
+     "Phoenix Suns": -6.5
+    },
+    "total": 214.5,
+    "moneyline": {
+     "Charlotte Hornets": {
+      "consensus_price": 190,
+      "no_vig_prob": 0.3256
+     },
+     "Phoenix Suns": {
+      "consensus_price": -250,
+      "no_vig_prob": 0.6744
+     }
+    }
+   },
+   "projection": "+5",
+   "reason": "[B lean] Hornets beat the Cavs outright even without Miller and others; Grant Williams back (probable); fair ~Suns -5 vs -6.5",
+   "status": "open",
+   "result": null,
+   "pnl": null
+  },
+  {
+   "id": 70,
+   "placed_utc": "2026-11-12T11:18:01+00:00",
+   "league": "NBA",
+   "sport_key": "basketball_nba",
+   "event_id": "3c93e4724d36d796aed71c0ca4055b1b",
+   "matchup": "Dallas Mavericks @ Minnesota Timberwolves",
+   "home": "Minnesota Timberwolves",
+   "away": "Dallas Mavericks",
+   "kickoff_utc": "2026-11-13T01:10:00Z",
+   "market": "spreads",
+   "selection": "Dallas Mavericks",
+   "point": 5.5,
+   "price_american": -103,
+   "decimal_odds": 1.9709,
+   "implied_prob": 0.5074,
+   "book": "Matchbook",
+   "stake": 3.0,
+   "consensus_at_placement": {
+    "spread": {
+     "Dallas Mavericks": 5.5,
+     "Minnesota Timberwolves": -5.5
+    },
+    "total": 227.5,
+    "moneyline": {
+     "Dallas Mavericks": {
+      "consensus_price": 175,
+      "no_vig_prob": 0.3444
+     },
+     "Minnesota Timberwolves": {
+      "consensus_price": -225,
+      "no_vig_prob": 0.6556
+     }
+    }
+   },
+   "projection": "+4",
+   "reason": "[B lean] Wolves still without Anthony Edwards; Flagg in form (43 v Pacers); fair ~Wolves -4 vs -5.5",
+   "status": "open",
+   "result": null,
+   "pnl": null
+  },
+  {
+   "id": 71,
+   "placed_utc": "2026-11-12T11:18:02+00:00",
+   "league": "NBA",
+   "sport_key": "basketball_nba",
+   "event_id": "d5c5ae8d56762b45d1ec4b85337878f3",
+   "matchup": "Detroit Pistons @ Washington Wizards",
+   "home": "Washington Wizards",
+   "away": "Detroit Pistons",
+   "kickoff_utc": "2026-11-13T00:10:00Z",
+   "market": "props",
+   "selection": "Cade Cunningham",
+   "point": 24.5,
+   "price_american": -115,
+   "decimal_odds": 1.8696,
+   "implied_prob": 0.5349,
+   "book": "DraftKings",
+   "stake": 3.0,
+   "consensus_at_placement": {
+    "line": 24.5,
+    "books": 4,
+    "median_no_vig_over_prob": 0.5133
+   },
+   "projection": "26.5",
+   "reason": "[B lean] Wizards on a 5-game skid; Cunningham scored 26 v Philadelphia last week. US-book price",
+   "status": "open",
+   "result": null,
+   "pnl": null,
+   "prop": "player_points",
+   "side": "Over",
+   "us_proxy": true
+  },
+  {
+   "id": 72,
+   "placed_utc": "2026-11-12T11:18:02+00:00",
+   "league": "NBA",
+   "sport_key": "basketball_nba",
+   "event_id": "a98ff1ab79feb59277d989c656f16144",
+   "matchup": "Toronto Raptors @ Philadelphia 76ers",
+   "home": "Philadelphia 76ers",
+   "away": "Toronto Raptors",
+   "kickoff_utc": "2026-11-13T00:10:00Z",
+   "market": "props",
+   "selection": "Tyrese Maxey",
+   "point": 24.5,
+   "price_american": -102,
+   "decimal_odds": 1.9804,
+   "implied_prob": 0.505,
+   "book": "FanDuel",
+   "stake": 3.0,
+   "consensus_at_placement": {
+    "line": 24.5,
+    "books": 5,
+    "median_no_vig_over_prob": 0.4854
+   },
+   "projection": "26.5",
+   "reason": "[B lean] Raptors without Kawhi Leonard (and Barnes out last game); Maxey leads Philadelphia's scoring. US-book price",
+   "status": "open",
+   "result": null,
+   "pnl": null,
+   "prop": "player_points",
+   "side": "Over",
+   "us_proxy": true
   }
  ]
 }
