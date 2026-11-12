@@ -2885,9 +2885,17 @@
    },
    "projection": "-10",
    "reason": "[B lean] Raptors without Scottie Barnes (groin) and Kawhi Leonard; Celtics on a road win streak; fair ~-10 vs -7.5",
-   "status": "open",
-   "result": null,
-   "pnl": null
+   "status": "settled",
+   "result": "loss",
+   "pnl": -3.0,
+   "final_score": {
+    "Toronto Raptors": 93.0,
+    "Boston Celtics": 98.0
+   },
+   "closing_snapshot_utc": "2026-11-11T11:22:41+00:00",
+   "clv": {
+    "clv_points": 0.0
+   }
   },
   {
    "id": 66,
@@ -2914,12 +2922,17 @@
    },
    "projection": "26.5",
    "reason": "[B lean] With Barnes and Leonard out, Barrett carries Toronto's scoring. US-book price",
-   "status": "open",
-   "result": null,
-   "pnl": null,
+   "status": "settled",
+   "result": "loss",
+   "pnl": -3.0,
    "prop": "player_points",
    "side": "Over",
-   "us_proxy": true
+   "us_proxy": true,
+   "final_score": {
+    "Toronto Raptors": "93",
+    "Boston Celtics": "98"
+   },
+   "actual": 12.0
   },
   {
    "id": 67,
@@ -2946,12 +2959,17 @@
    },
    "projection": "27.5",
    "reason": "[B lean] Knicks without Josh Hart (illness); Cavs without Merrill, Tyson questionable; Brunson's usage rises. US-book price",
-   "status": "open",
-   "result": null,
-   "pnl": null,
+   "status": "settled",
+   "result": "win",
+   "pnl": 2.61,
    "prop": "player_points",
    "side": "Over",
-   "us_proxy": true
+   "us_proxy": true,
+   "final_score": {
+    "New York Knicks": "107",
+    "Cleveland Cavaliers": "115"
+   },
+   "actual": 27.0
   },
   {
    "id": 68,
@@ -2990,9 +3008,17 @@
    },
    "projection": "-6",
    "reason": "[B lean] Knicks on a 4-game home win run; Cavs lost outright to depleted Charlotte and are without Merrill; fair ~-6 vs -4.5",
-   "status": "open",
-   "result": null,
-   "pnl": null
+   "status": "settled",
+   "result": "loss",
+   "pnl": -3.0,
+   "final_score": {
+    "New York Knicks": 107.0,
+    "Cleveland Cavaliers": 115.0
+   },
+   "closing_snapshot_utc": "2026-11-11T11:22:41+00:00",
+   "clv": {
+    "clv_points": 0.0
+   }
   }
  ]
 }

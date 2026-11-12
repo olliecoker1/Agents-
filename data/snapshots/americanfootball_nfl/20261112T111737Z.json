@@ -1,0 +1,57 @@
+{
+ "74d39e19225caf211ad2c8eb4110179f": {
+  "books": 19,
+  "best_price": {
+   "h2h": {
+    "New York Giants": {
+     "price": -120,
+     "book": "Betfair"
+    },
+    "Washington Commanders": {
+     "price": 120,
+     "book": "Betfair"
+    }
+   },
+   "spreads": {
+    "New York Giants": {
+     "price": -110,
+     "book": "888sport",
+     "point": -2.5
+    },
+    "Washington Commanders": {
+     "price": -110,
+     "book": "888sport",
+     "point": 2.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -106,
+     "book": "Virgin Bet",
+     "point": 41.5
+    },
+    "Under": {
+     "price": -114,
+     "book": "Virgin Bet",
+     "point": 41.5
+    }
+   }
+  },
+  "moneyline": {
+   "New York Giants": {
+    "consensus_price": -137,
+    "no_vig_prob": 0.5483
+   },
+   "Washington Commanders": {
+    "consensus_price": 110,
+    "no_vig_prob": 0.4517
+   }
+  },
+  "hold_pct": 5.42,
+  "spread": {
+   "New York Giants": -2.5,
+   "Washington Commanders": 2.5
+  },
+  "total": 40.75
+ }
+}

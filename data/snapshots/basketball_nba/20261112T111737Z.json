@@ -1,0 +1,222 @@
+{
+ "d5c5ae8d56762b45d1ec4b85337878f3": {
+  "books": 20,
+  "best_price": {
+   "h2h": {
+    "Detroit Pistons": {
+     "price": -400,
+     "book": "Matchbook"
+    },
+    "Washington Wizards": {
+     "price": 370,
+     "book": "Matchbook"
+    }
+   },
+   "spreads": {
+    "Detroit Pistons": {
+     "price": -101,
+     "book": "Matchbook",
+     "point": -10.5
+    },
+    "Washington Wizards": {
+     "price": -104,
+     "book": "Matchbook",
+     "point": 10.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -104,
+     "book": "Matchbook",
+     "point": 220.5
+    },
+    "Under": {
+     "price": -103,
+     "book": "Matchbook",
+     "point": 220.5
+    }
+   }
+  },
+  "moneyline": {
+   "Detroit Pistons": {
+    "consensus_price": -450,
+    "no_vig_prob": 0.7704
+   },
+   "Washington Wizards": {
+    "consensus_price": 310,
+    "no_vig_prob": 0.2296
+   }
+  },
+  "hold_pct": 6.21,
+  "spread": {
+   "Detroit Pistons": -10.5,
+   "Washington Wizards": 10.5
+  },
+  "total": 220.5
+ },
+ "a98ff1ab79feb59277d989c656f16144": {
+  "books": 20,
+  "best_price": {
+   "h2h": {
+    "Philadelphia 76ers": {
+     "price": -385,
+     "book": "Matchbook"
+    },
+    "Toronto Raptors": {
+     "price": 360,
+     "book": "Smarkets"
+    }
+   },
+   "spreads": {
+    "Philadelphia 76ers": {
+     "price": 100,
+     "book": "888sport",
+     "point": -10.5
+    },
+    "Toronto Raptors": {
+     "price": -118,
+     "book": "Virgin Bet",
+     "point": 10.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -110,
+     "book": "Matchbook",
+     "point": 220.5
+    },
+    "Under": {
+     "price": -102,
+     "book": "Matchbook",
+     "point": 220.5
+    }
+   }
+  },
+  "moneyline": {
+   "Philadelphia 76ers": {
+    "consensus_price": -455,
+    "no_vig_prob": 0.7707
+   },
+   "Toronto Raptors": {
+    "consensus_price": 310,
+    "no_vig_prob": 0.2293
+   }
+  },
+  "hold_pct": 6.37,
+  "spread": {
+   "Philadelphia 76ers": -10.5,
+   "Toronto Raptors": 10.5
+  },
+  "total": 220.5
+ },
+ "3c93e4724d36d796aed71c0ca4055b1b": {
+  "books": 20,
+  "best_price": {
+   "h2h": {
+    "Dallas Mavericks": {
+     "price": 194,
+     "book": "Matchbook"
+    },
+    "Minnesota Timberwolves": {
+     "price": -200,
+     "book": "Sky Bet"
+    }
+   },
+   "spreads": {
+    "Dallas Mavericks": {
+     "price": -103,
+     "book": "Matchbook",
+     "point": 5.5
+    },
+    "Minnesota Timberwolves": {
+     "price": -103,
+     "book": "Matchbook",
+     "point": -5.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -105,
+     "book": "Matchbook",
+     "point": 227.5
+    },
+    "Under": {
+     "price": -105,
+     "book": "Matchbook",
+     "point": 227.5
+    }
+   }
+  },
+  "moneyline": {
+   "Dallas Mavericks": {
+    "consensus_price": 175,
+    "no_vig_prob": 0.3444
+   },
+   "Minnesota Timberwolves": {
+    "consensus_price": -225,
+    "no_vig_prob": 0.6556
+   }
+  },
+  "hold_pct": 5.59,
+  "spread": {
+   "Dallas Mavericks": 5.5,
+   "Minnesota Timberwolves": -5.5
+  },
+  "total": 227.5
+ },
+ "f3f429e773bfb2340ba2bb90f2b9dd1e": {
+  "books": 20,
+  "best_price": {
+   "h2h": {
+    "Charlotte Hornets": {
+     "price": 215,
+     "book": "Matchbook"
+    },
+    "Phoenix Suns": {
+     "price": -222,
+     "book": "Matchbook"
+    }
+   },
+   "spreads": {
+    "Charlotte Hornets": {
+     "price": -106,
+     "book": "Matchbook",
+     "point": 6.5
+    },
+    "Phoenix Suns": {
+     "price": -103,
+     "book": "Matchbook",
+     "point": -6.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -104,
+     "book": "Matchbook",
+     "point": 214.5
+    },
+    "Under": {
+     "price": -106,
+     "book": "Matchbook",
+     "point": 214.5
+    }
+   }
+  },
+  "moneyline": {
+   "Charlotte Hornets": {
+    "consensus_price": 190,
+    "no_vig_prob": 0.3256
+   },
+   "Phoenix Suns": {
+    "consensus_price": -250,
+    "no_vig_prob": 0.6744
+   }
+  },
+  "hold_pct": 5.91,
+  "spread": {
+   "Charlotte Hornets": 6.5,
+   "Phoenix Suns": -6.5
+  },
+  "total": 214.5
+ }
+}
