@@ -3191,6 +3191,152 @@
     "Toronto Raptors": "112"
    },
    "actual": 27.0
+  },
+  {
+   "id": 73,
+   "placed_utc": "2026-11-13T11:16:37+00:00",
+   "league": "NBA",
+   "sport_key": "basketball_nba",
+   "event_id": "58b860d500be69ebf853926aa1ac8271",
+   "matchup": "Cleveland Cavaliers @ Miami Heat",
+   "home": "Miami Heat",
+   "away": "Cleveland Cavaliers",
+   "kickoff_utc": "2026-11-14T01:10:00Z",
+   "market": "spreads",
+   "selection": "Miami Heat",
+   "point": -2.5,
+   "price_american": -118,
+   "decimal_odds": 1.8475,
+   "implied_prob": 0.5413,
+   "book": "888sport",
+   "stake": 3.0,
+   "consensus_at_placement": {
+    "spread": {
+     "Cleveland Cavaliers": 2.5,
+     "Miami Heat": -2.5
+    },
+    "total": 235.5,
+    "moneyline": {
+     "Cleveland Cavaliers": {
+      "consensus_price": 110,
+      "no_vig_prob": 0.4517
+     },
+     "Miami Heat": {
+      "consensus_price": -137,
+      "no_vig_prob": 0.5483
+     }
+    }
+   },
+   "projection": "-4.5",
+   "reason": "[B lean] Cavaliers without Evan Mobley (toe); Heat at home; fair ~Heat -4.5 vs -2.5",
+   "status": "open",
+   "result": null,
+   "pnl": null
+  },
+  {
+   "id": 74,
+   "placed_utc": "2026-11-13T11:16:37+00:00",
+   "league": "NBA",
+   "sport_key": "basketball_nba",
+   "event_id": "8a40b260e8fa0d67c1f2bc2b39a24982",
+   "matchup": "Memphis Grizzlies @ New Orleans Pelicans",
+   "home": "New Orleans Pelicans",
+   "away": "Memphis Grizzlies",
+   "kickoff_utc": "2026-11-14T01:10:00Z",
+   "market": "spreads",
+   "selection": "New Orleans Pelicans",
+   "point": 3.5,
+   "price_american": -118,
+   "decimal_odds": 1.8475,
+   "implied_prob": 0.5413,
+   "book": "888sport",
+   "stake": 3.0,
+   "consensus_at_placement": {
+    "spread": {
+     "Memphis Grizzlies": -4.0,
+     "New Orleans Pelicans": 4.0
+    },
+    "total": 235.5,
+    "moneyline": {
+     "Memphis Grizzlies": {
+      "consensus_price": -167,
+      "no_vig_prob": 0.5899
+     },
+     "New Orleans Pelicans": {
+      "consensus_price": 130,
+      "no_vig_prob": 0.4101
+     }
+    }
+   },
+   "projection": "+2",
+   "reason": "[B lean] Grizzlies without Zach Edey and Quinten Post (both bigs); fair ~Grizzlies -2 vs Pelicans +3.5",
+   "status": "open",
+   "result": null,
+   "pnl": null
+  },
+  {
+   "id": 75,
+   "placed_utc": "2026-11-13T11:16:37+00:00",
+   "league": "NBA",
+   "sport_key": "basketball_nba",
+   "event_id": "76416359b5453c01968e94702a375f16",
+   "matchup": "Milwaukee Bucks @ Orlando Magic",
+   "home": "Orlando Magic",
+   "away": "Milwaukee Bucks",
+   "kickoff_utc": "2026-11-14T00:10:00Z",
+   "market": "props",
+   "selection": "Franz Wagner",
+   "point": 25.5,
+   "price_american": -106,
+   "decimal_odds": 1.9434,
+   "implied_prob": 0.5146,
+   "book": "DraftKings",
+   "stake": 3.0,
+   "consensus_at_placement": {
+    "line": 25.5,
+    "books": 3,
+    "median_no_vig_over_prob": 0.4877
+   },
+   "projection": "27.5",
+   "reason": "[B lean] Jalen Suggs questionable again; Wagner scored a season-high 33 on Tuesday; Bucks on a long losing run. US-book price",
+   "status": "open",
+   "result": null,
+   "pnl": null,
+   "prop": "player_points",
+   "side": "Over",
+   "us_proxy": true
+  },
+  {
+   "id": 76,
+   "placed_utc": "2026-11-13T11:16:37+00:00",
+   "league": "NBA",
+   "sport_key": "basketball_nba",
+   "event_id": "6669b911691463c669a5c10574742e8e",
+   "matchup": "New York Knicks @ Indiana Pacers",
+   "home": "Indiana Pacers",
+   "away": "New York Knicks",
+   "kickoff_utc": "2026-11-14T00:10:00Z",
+   "market": "props",
+   "selection": "Jalen Brunson",
+   "point": 25.5,
+   "price_american": -103,
+   "decimal_odds": 1.9709,
+   "implied_prob": 0.5074,
+   "book": "DraftKings",
+   "stake": 3.0,
+   "consensus_at_placement": {
+    "line": 25.5,
+    "books": 4,
+    "median_no_vig_over_prob": 0.4806
+   },
+   "projection": "27.5",
+   "reason": "[B lean] Brunson scored 27 on Wednesday; Pacers without Haliburton defend poorly at the point. US-book price",
+   "status": "open",
+   "result": null,
+   "pnl": null,
+   "prop": "player_points",
+   "side": "Over",
+   "us_proxy": true
   }
  ]
 }
