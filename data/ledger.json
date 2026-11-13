@@ -3057,9 +3057,17 @@
    },
    "projection": "+5",
    "reason": "[B lean] Hornets beat the Cavs outright even without Miller and others; Grant Williams back (probable); fair ~Suns -5 vs -6.5",
-   "status": "open",
-   "result": null,
-   "pnl": null
+   "status": "settled",
+   "result": "win",
+   "pnl": 2.83,
+   "final_score": {
+    "Phoenix Suns": 101.0,
+    "Charlotte Hornets": 96.0
+   },
+   "closing_snapshot_utc": "2026-11-12T11:17:37+00:00",
+   "clv": {
+    "clv_points": 0.0
+   }
   },
   {
    "id": 70,
@@ -3098,9 +3106,17 @@
    },
    "projection": "+4",
    "reason": "[B lean] Wolves still without Anthony Edwards; Flagg in form (43 v Pacers); fair ~Wolves -4 vs -5.5",
-   "status": "open",
-   "result": null,
-   "pnl": null
+   "status": "settled",
+   "result": "loss",
+   "pnl": -3.0,
+   "final_score": {
+    "Minnesota Timberwolves": 133.0,
+    "Dallas Mavericks": 94.0
+   },
+   "closing_snapshot_utc": "2026-11-12T11:17:37+00:00",
+   "clv": {
+    "clv_points": 0.0
+   }
   },
   {
    "id": 71,
@@ -3127,12 +3143,17 @@
    },
    "projection": "26.5",
    "reason": "[B lean] Wizards on a 5-game skid; Cunningham scored 26 v Philadelphia last week. US-book price",
-   "status": "open",
-   "result": null,
-   "pnl": null,
+   "status": "settled",
+   "result": "win",
+   "pnl": 2.61,
    "prop": "player_points",
    "side": "Over",
-   "us_proxy": true
+   "us_proxy": true,
+   "final_score": {
+    "Washington Wizards": "140",
+    "Detroit Pistons": "144"
+   },
+   "actual": 52.0
   },
   {
    "id": 72,
@@ -3159,12 +3180,17 @@
    },
    "projection": "26.5",
    "reason": "[B lean] Raptors without Kawhi Leonard (and Barnes out last game); Maxey leads Philadelphia's scoring. US-book price",
-   "status": "open",
-   "result": null,
-   "pnl": null,
+   "status": "settled",
+   "result": "win",
+   "pnl": 2.94,
    "prop": "player_points",
    "side": "Over",
-   "us_proxy": true
+   "us_proxy": true,
+   "final_score": {
+    "Philadelphia 76ers": "123",
+    "Toronto Raptors": "112"
+   },
+   "actual": 27.0
   }
  ]
 }
