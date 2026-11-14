@@ -3229,9 +3229,17 @@
    },
    "projection": "-4.5",
    "reason": "[B lean] Cavaliers without Evan Mobley (toe); Heat at home; fair ~Heat -4.5 vs -2.5",
-   "status": "open",
-   "result": null,
-   "pnl": null
+   "status": "settled",
+   "result": "win",
+   "pnl": 2.54,
+   "final_score": {
+    "Miami Heat": 133.0,
+    "Cleveland Cavaliers": 121.0
+   },
+   "closing_snapshot_utc": "2026-11-13T11:16:16+00:00",
+   "clv": {
+    "clv_points": 0.0
+   }
   },
   {
    "id": 74,
@@ -3270,9 +3278,17 @@
    },
    "projection": "+2",
    "reason": "[B lean] Grizzlies without Zach Edey and Quinten Post (both bigs); fair ~Grizzlies -2 vs Pelicans +3.5",
-   "status": "open",
-   "result": null,
-   "pnl": null
+   "status": "settled",
+   "result": "loss",
+   "pnl": -3.0,
+   "final_score": {
+    "New Orleans Pelicans": 111.0,
+    "Memphis Grizzlies": 142.0
+   },
+   "closing_snapshot_utc": "2026-11-13T11:16:16+00:00",
+   "clv": {
+    "clv_points": -0.5
+   }
   },
   {
    "id": 75,
@@ -3299,12 +3315,17 @@
    },
    "projection": "27.5",
    "reason": "[B lean] Jalen Suggs questionable again; Wagner scored a season-high 33 on Tuesday; Bucks on a long losing run. US-book price",
-   "status": "open",
-   "result": null,
-   "pnl": null,
+   "status": "settled",
+   "result": "win",
+   "pnl": 2.83,
    "prop": "player_points",
    "side": "Over",
-   "us_proxy": true
+   "us_proxy": true,
+   "final_score": {
+    "Orlando Magic": "107",
+    "Milwaukee Bucks": "99"
+   },
+   "actual": 35.0
   },
   {
    "id": 76,
@@ -3331,12 +3352,17 @@
    },
    "projection": "27.5",
    "reason": "[B lean] Brunson scored 27 on Wednesday; Pacers without Haliburton defend poorly at the point. US-book price",
-   "status": "open",
-   "result": null,
-   "pnl": null,
+   "status": "settled",
+   "result": "win",
+   "pnl": 2.91,
    "prop": "player_points",
    "side": "Over",
-   "us_proxy": true
+   "us_proxy": true,
+   "final_score": {
+    "Indiana Pacers": "106",
+    "New York Knicks": "104"
+   },
+   "actual": 33.0
   }
  ]
 }

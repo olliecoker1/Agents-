@@ -1,0 +1,277 @@
+{
+ "6cb4c8feeadd57aa6ab46ebdee60818a": {
+  "books": 20,
+  "best_price": {
+   "h2h": {
+    "Denver Nuggets": {
+     "price": -526,
+     "book": "Matchbook"
+    },
+    "New Orleans Pelicans": {
+     "price": 490,
+     "book": "Matchbook"
+    }
+   },
+   "spreads": {
+    "Denver Nuggets": {
+     "price": 102,
+     "book": "Matchbook",
+     "point": -12.5
+    },
+    "New Orleans Pelicans": {
+     "price": -111,
+     "book": "Matchbook",
+     "point": 12.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -106,
+     "book": "Virgin Bet",
+     "point": 234.5
+    },
+    "Under": {
+     "price": -111,
+     "book": "Betano (UK)",
+     "point": 234.5
+    }
+   }
+  },
+  "moneyline": {
+   "Denver Nuggets": {
+    "consensus_price": -650,
+    "no_vig_prob": 0.8125
+   },
+   "New Orleans Pelicans": {
+    "consensus_price": 400,
+    "no_vig_prob": 0.1875
+   }
+  },
+  "hold_pct": 6.67,
+  "spread": {
+   "Denver Nuggets": -12.5,
+   "New Orleans Pelicans": 12.5
+  },
+  "total": 234.5
+ },
+ "2cc2c254049b0bd0a6219f70cbb0b69a": {
+  "books": 20,
+  "best_price": {
+   "h2h": {
+    "Cleveland Cavaliers": {
+     "price": -114,
+     "book": "Matchbook"
+    },
+    "Dallas Mavericks": {
+     "price": 112,
+     "book": "LiveScore Bet"
+    }
+   },
+   "spreads": {
+    "Cleveland Cavaliers": {
+     "price": -118,
+     "book": "888sport",
+     "point": -1.5
+    },
+    "Dallas Mavericks": {
+     "price": -110,
+     "book": "Casumo",
+     "point": 1.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -108,
+     "book": "Matchbook",
+     "point": 231.5
+    },
+    "Under": {
+     "price": -105,
+     "book": "Matchbook",
+     "point": 231.5
+    }
+   }
+  },
+  "moneyline": {
+   "Cleveland Cavaliers": {
+    "consensus_price": -130,
+    "no_vig_prob": 0.5306
+   },
+   "Dallas Mavericks": {
+    "consensus_price": -100,
+    "no_vig_prob": 0.4694
+   }
+  },
+  "hold_pct": 6.52,
+  "spread": {
+   "Cleveland Cavaliers": -1.5,
+   "Dallas Mavericks": 1.5
+  },
+  "total": 231.5
+ },
+ "a7cb6062530bd69eb6caee84a015abd0": {
+  "books": 20,
+  "best_price": {
+   "h2h": {
+    "Brooklyn Nets": {
+     "price": 176,
+     "book": "Matchbook"
+    },
+    "Memphis Grizzlies": {
+     "price": -182,
+     "book": "Matchbook"
+    }
+   },
+   "spreads": {
+    "Brooklyn Nets": {
+     "price": 102,
+     "book": "Matchbook",
+     "point": 4.5
+    },
+    "Memphis Grizzlies": {
+     "price": -109,
+     "book": "Matchbook",
+     "point": -4.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -105,
+     "book": "Matchbook",
+     "point": 227.5
+    },
+    "Under": {
+     "price": -103,
+     "book": "Matchbook",
+     "point": 227.5
+    }
+   }
+  },
+  "moneyline": {
+   "Brooklyn Nets": {
+    "consensus_price": 160,
+    "no_vig_prob": 0.3659
+   },
+   "Memphis Grizzlies": {
+    "consensus_price": -200,
+    "no_vig_prob": 0.6341
+   }
+  },
+  "hold_pct": 5.13,
+  "spread": {
+   "Brooklyn Nets": 4.5,
+   "Memphis Grizzlies": -4.5
+  },
+  "total": 227.5
+ },
+ "5773e80d52d3fba36b11be38ded62790": {
+  "books": 20,
+  "best_price": {
+   "h2h": {
+    "Chicago Bulls": {
+     "price": 700,
+     "book": "Matchbook"
+    },
+    "Minnesota Timberwolves": {
+     "price": -769,
+     "book": "Matchbook"
+    }
+   },
+   "spreads": {
+    "Chicago Bulls": {
+     "price": -105,
+     "book": "Matchbook",
+     "point": 14.5
+    },
+    "Minnesota Timberwolves": {
+     "price": -105,
+     "book": "Matchbook",
+     "point": -14.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -105,
+     "book": "Matchbook",
+     "point": 235.5
+    },
+    "Under": {
+     "price": -103,
+     "book": "Virgin Bet",
+     "point": 235.5
+    }
+   }
+  },
+  "moneyline": {
+   "Chicago Bulls": {
+    "consensus_price": 550,
+    "no_vig_prob": 0.1447
+   },
+   "Minnesota Timberwolves": {
+    "consensus_price": -1000,
+    "no_vig_prob": 0.8553
+   }
+  },
+  "hold_pct": 6.29,
+  "spread": {
+   "Chicago Bulls": 14.5,
+   "Minnesota Timberwolves": -14.5
+  },
+  "total": 235.5
+ },
+ "cb06267ae037a883ae6f71078d6e2aaa": {
+  "books": 20,
+  "best_price": {
+   "h2h": {
+    "Detroit Pistons": {
+     "price": -182,
+     "book": "Smarkets"
+    },
+    "Miami Heat": {
+     "price": 172,
+     "book": "Matchbook"
+    }
+   },
+   "spreads": {
+    "Detroit Pistons": {
+     "price": -118,
+     "book": "888sport",
+     "point": -4.5
+    },
+    "Miami Heat": {
+     "price": -118,
+     "book": "888sport",
+     "point": 4.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -104,
+     "book": "Matchbook",
+     "point": 229.5
+    },
+    "Under": {
+     "price": -109,
+     "book": "Matchbook",
+     "point": 229.5
+    }
+   }
+  },
+  "moneyline": {
+   "Detroit Pistons": {
+    "consensus_price": -200,
+    "no_vig_prob": 0.625
+   },
+   "Miami Heat": {
+    "consensus_price": 150,
+    "no_vig_prob": 0.375
+   }
+  },
+  "hold_pct": 6.67,
+  "spread": {
+   "Detroit Pistons": -5.0,
+   "Miami Heat": 5.0
+  },
+  "total": 229.5
+ }
+}
