@@ -3363,6 +3363,161 @@
     "New York Knicks": "104"
    },
    "actual": 33.0
+  },
+  {
+   "id": 77,
+   "placed_utc": "2026-11-14T11:16:39+00:00",
+   "league": "NFL",
+   "sport_key": "americanfootball_nfl",
+   "event_id": "5d8d85473b87f772a979ecf294acab94",
+   "matchup": "Minnesota Vikings @ Green Bay Packers",
+   "home": "Green Bay Packers",
+   "away": "Minnesota Vikings",
+   "kickoff_utc": "2026-11-15T18:00:00Z",
+   "market": "spreads",
+   "selection": "Green Bay Packers",
+   "point": -2.5,
+   "price_american": -125,
+   "decimal_odds": 1.8,
+   "implied_prob": 0.5556,
+   "book": "888sport",
+   "stake": 3.0,
+   "consensus_at_placement": {
+    "spread": {
+     "Green Bay Packers": -2.5,
+     "Minnesota Vikings": 2.5
+    },
+    "total": 42.0,
+    "moneyline": {
+     "Green Bay Packers": {
+      "consensus_price": -154,
+      "no_vig_prob": 0.577
+     },
+     "Minnesota Vikings": {
+      "consensus_price": 125,
+      "no_vig_prob": 0.423
+     }
+    }
+   },
+   "projection": "-4.5",
+   "reason": "[B lean] Vikings ruled out QB Kyler Murray (hamstring), TE Hockenson and WR Jennings; fair ~Packers -4.5 vs -2.5 despite Parsons out",
+   "status": "open",
+   "result": null,
+   "pnl": null
+  },
+  {
+   "id": 78,
+   "placed_utc": "2026-11-14T11:16:39+00:00",
+   "league": "NFL",
+   "sport_key": "americanfootball_nfl",
+   "event_id": "be0e03cc42fbc9b6962467b22c7bf9dd",
+   "matchup": "Houston Texans @ Cleveland Browns",
+   "home": "Cleveland Browns",
+   "away": "Houston Texans",
+   "kickoff_utc": "2026-11-15T18:00:00Z",
+   "market": "spreads",
+   "selection": "Cleveland Browns",
+   "point": 4.5,
+   "price_american": -102,
+   "decimal_odds": 1.9804,
+   "implied_prob": 0.505,
+   "book": "Matchbook",
+   "stake": 3.0,
+   "consensus_at_placement": {
+    "spread": {
+     "Cleveland Browns": 4.5,
+     "Houston Texans": -4.5
+    },
+    "total": 40.5,
+    "moneyline": {
+     "Cleveland Browns": {
+      "consensus_price": 185,
+      "no_vig_prob": 0.3357
+     },
+     "Houston Texans": {
+      "consensus_price": -227,
+      "no_vig_prob": 0.6643
+     }
+    }
+   },
+   "projection": "+2.5",
+   "reason": "[B lean] Texans without Danielle Hunter, Azeez Al-Shaair, Marvin Harrison Jr. and G Rutledge; fair ~Texans -2.5 vs +4.5",
+   "status": "open",
+   "result": null,
+   "pnl": null
+  },
+  {
+   "id": 79,
+   "placed_utc": "2026-11-14T11:16:40+00:00",
+   "league": "NFL",
+   "sport_key": "americanfootball_nfl",
+   "event_id": "e5aa20e1364dd639f042af1c2281bbe2",
+   "matchup": "Carolina Panthers @ New Orleans Saints",
+   "home": "New Orleans Saints",
+   "away": "Carolina Panthers",
+   "kickoff_utc": "2026-11-15T18:00:00Z",
+   "market": "spreads",
+   "selection": "Carolina Panthers",
+   "point": 2.5,
+   "price_american": 100,
+   "decimal_odds": 2.0,
+   "implied_prob": 0.5,
+   "book": "888sport",
+   "stake": 3.0,
+   "consensus_at_placement": {
+    "spread": {
+     "Carolina Panthers": 2.5,
+     "New Orleans Saints": -2.5
+    },
+    "total": 48.5,
+    "moneyline": {
+     "Carolina Panthers": {
+      "consensus_price": 115,
+      "no_vig_prob": 0.4451
+     },
+     "New Orleans Saints": {
+      "consensus_price": -138,
+      "no_vig_prob": 0.5549
+     }
+    }
+   },
+   "projection": "+0.5",
+   "reason": "[B lean] Saints without C Erik McCoy, RT Taliese Fuaga and DT Christen Miller; fair ~pick'em vs Panthers +2.5 at 2.00",
+   "status": "open",
+   "result": null,
+   "pnl": null
+  },
+  {
+   "id": 80,
+   "placed_utc": "2026-11-14T11:16:40+00:00",
+   "league": "NBA",
+   "sport_key": "basketball_nba",
+   "event_id": "2cc2c254049b0bd0a6219f70cbb0b69a",
+   "matchup": "Dallas Mavericks @ Cleveland Cavaliers",
+   "home": "Cleveland Cavaliers",
+   "away": "Dallas Mavericks",
+   "kickoff_utc": "2026-11-15T00:40:00Z",
+   "market": "props",
+   "selection": "Cooper Flagg",
+   "point": 24.5,
+   "price_american": -104,
+   "decimal_odds": 1.9615,
+   "implied_prob": 0.5098,
+   "book": "FanDuel",
+   "stake": 3.0,
+   "consensus_at_placement": {
+    "line": 24.5,
+    "books": 3,
+    "median_no_vig_over_prob": 0.4896
+   },
+   "projection": "27",
+   "reason": "[B lean] Flagg scored 43 v Indiana last week and leads Dallas's scoring with Lively out. US-book price",
+   "status": "open",
+   "result": null,
+   "pnl": null,
+   "prop": "player_points",
+   "side": "Over",
+   "us_proxy": true
   }
  ]
 }
