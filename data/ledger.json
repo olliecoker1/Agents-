@@ -3523,6 +3523,143 @@
     "Dallas Mavericks": "117"
    },
    "actual": 18.0
+  },
+  {
+   "id": 81,
+   "placed_utc": "2026-11-15T11:16:43+00:00",
+   "league": "NBA",
+   "sport_key": "basketball_nba",
+   "event_id": "de475830b5df0d1aae4fcd8f9bbaead9",
+   "matchup": "Indiana Pacers @ Philadelphia 76ers",
+   "home": "Philadelphia 76ers",
+   "away": "Indiana Pacers",
+   "kickoff_utc": "2026-11-15T18:10:00Z",
+   "market": "props",
+   "selection": "Tyrese Maxey",
+   "point": 26.5,
+   "price_american": -110,
+   "decimal_odds": 1.9091,
+   "implied_prob": 0.5238,
+   "book": "BetMGM",
+   "stake": 3.0,
+   "consensus_at_placement": {
+    "line": 26.5,
+    "books": 6,
+    "median_no_vig_over_prob": 0.4996
+   },
+   "projection": "28.5",
+   "reason": "[B lean] Maxey scored 27 v Toronto on Thursday; Pacers without Haliburton defend the point poorly. US-book price",
+   "status": "open",
+   "result": null,
+   "pnl": null,
+   "prop": "player_points",
+   "side": "Over",
+   "us_proxy": true
+  },
+  {
+   "id": 82,
+   "placed_utc": "2026-11-15T11:16:43+00:00",
+   "league": "NBA",
+   "sport_key": "basketball_nba",
+   "event_id": "de475830b5df0d1aae4fcd8f9bbaead9",
+   "matchup": "Indiana Pacers @ Philadelphia 76ers",
+   "home": "Philadelphia 76ers",
+   "away": "Indiana Pacers",
+   "kickoff_utc": "2026-11-15T18:10:00Z",
+   "market": "props",
+   "selection": "Pascal Siakam",
+   "point": 21.5,
+   "price_american": -110,
+   "decimal_odds": 1.9091,
+   "implied_prob": 0.5238,
+   "book": "DraftKings",
+   "stake": 3.0,
+   "consensus_at_placement": {
+    "line": 21.5,
+    "books": 5,
+    "median_no_vig_over_prob": 0.5
+   },
+   "projection": "23.5",
+   "reason": "[B lean] With Haliburton out the Pacers' offence runs through Siakam; 76ers thin up front without Adem Bona. US-book price",
+   "status": "open",
+   "result": null,
+   "pnl": null,
+   "prop": "player_points",
+   "side": "Over",
+   "us_proxy": true
+  },
+  {
+   "id": 83,
+   "placed_utc": "2026-11-15T11:16:43+00:00",
+   "league": "NFL",
+   "sport_key": "americanfootball_nfl",
+   "event_id": "b8c10fdf1e0ac4e13deee7f7c0af0b0b",
+   "matchup": "New England Patriots @ Detroit Lions",
+   "home": "Detroit Lions",
+   "away": "New England Patriots",
+   "kickoff_utc": "2026-11-15T14:30:00Z",
+   "market": "spreads",
+   "selection": "New England Patriots",
+   "point": 2.5,
+   "price_american": 108,
+   "decimal_odds": 2.08,
+   "implied_prob": 0.4808,
+   "book": "Matchbook",
+   "stake": 3.0,
+   "consensus_at_placement": {
+    "spread": {
+     "Detroit Lions": -2.5,
+     "New England Patriots": 2.5
+    },
+    "total": 49.5,
+    "moneyline": {
+     "Detroit Lions": {
+      "consensus_price": -149,
+      "no_vig_prob": 0.5683
+     },
+     "New England Patriots": {
+      "consensus_price": 120,
+      "no_vig_prob": 0.4317
+     }
+    }
+   },
+   "projection": "+0.5",
+   "reason": "[B lean] Patriots are 6-0 after a loss under Vrabel; Lions without G Cade Mays in Munich; fair ~Lions -0.5 vs +2.5 at 2.08",
+   "status": "open",
+   "result": null,
+   "pnl": null
+  },
+  {
+   "id": 84,
+   "placed_utc": "2026-11-15T11:16:43+00:00",
+   "league": "NBA",
+   "sport_key": "basketball_nba",
+   "event_id": "29b8bbf05645162d89780189eed390c2",
+   "matchup": "Los Angeles Lakers @ Phoenix Suns",
+   "home": "Phoenix Suns",
+   "away": "Los Angeles Lakers",
+   "kickoff_utc": "2026-11-15T21:10:00Z",
+   "market": "props",
+   "selection": "Devin Booker",
+   "point": 24.5,
+   "price_american": -114,
+   "decimal_odds": 1.8772,
+   "implied_prob": 0.5327,
+   "book": "FanDuel",
+   "stake": 3.0,
+   "consensus_at_placement": {
+    "line": 24.5,
+    "books": 5,
+    "median_no_vig_over_prob": 0.5031
+   },
+   "projection": "26.5",
+   "reason": "[B lean] Booker scored 30, 24 and 30 in recent wins; Suns at home v Lakers. US-book price",
+   "status": "open",
+   "result": null,
+   "pnl": null,
+   "prop": "player_points",
+   "side": "Over",
+   "us_proxy": true
   }
  ]
 }
