@@ -1,0 +1,662 @@
+{
+ "b8c10fdf1e0ac4e13deee7f7c0af0b0b": {
+  "books": 20,
+  "best_price": {
+   "h2h": {
+    "Detroit Lions": {
+     "price": -137,
+     "book": "Matchbook"
+    },
+    "New England Patriots": {
+     "price": 134,
+     "book": "Matchbook"
+    }
+   },
+   "spreads": {
+    "Detroit Lions": {
+     "price": -112,
+     "book": "Matchbook",
+     "point": -2.5
+    },
+    "New England Patriots": {
+     "price": 108,
+     "book": "Matchbook",
+     "point": 2.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -110,
+     "book": "888sport",
+     "point": 49.5
+    },
+    "Under": {
+     "price": -110,
+     "book": "888sport",
+     "point": 49.5
+    }
+   }
+  },
+  "moneyline": {
+   "Detroit Lions": {
+    "consensus_price": -149,
+    "no_vig_prob": 0.5683
+   },
+   "New England Patriots": {
+    "consensus_price": 120,
+    "no_vig_prob": 0.4317
+   }
+  },
+  "hold_pct": 5.29,
+  "spread": {
+   "Detroit Lions": -2.5,
+   "New England Patriots": 2.5
+  },
+  "total": 49.5
+ },
+ "3c71d515b726f1096aabb435badb83fd": {
+  "books": 20,
+  "best_price": {
+   "h2h": {
+    "Atlanta Falcons": {
+     "price": 168,
+     "book": "Matchbook"
+    },
+    "Kansas City Chiefs": {
+     "price": -175,
+     "book": "Paddy Power"
+    }
+   },
+   "spreads": {
+    "Atlanta Falcons": {
+     "price": -110,
+     "book": "888sport",
+     "point": 3.5
+    },
+    "Kansas City Chiefs": {
+     "price": 110,
+     "book": "Matchbook",
+     "point": -3.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -114,
+     "book": "LiveScore Bet",
+     "point": 47.0
+    },
+    "Under": {
+     "price": -105,
+     "book": "LiveScore Bet",
+     "point": 47.0
+    }
+   }
+  },
+  "moneyline": {
+   "Atlanta Falcons": {
+    "consensus_price": 145,
+    "no_vig_prob": 0.3874
+   },
+   "Kansas City Chiefs": {
+    "consensus_price": -182,
+    "no_vig_prob": 0.6126
+   }
+  },
+  "hold_pct": 5.36,
+  "spread": {
+   "Atlanta Falcons": 3.5,
+   "Kansas City Chiefs": -3.5
+  },
+  "total": 47.0
+ },
+ "1057d50949844ddf483da9c8c20354be": {
+  "books": 20,
+  "best_price": {
+   "h2h": {
+    "Buffalo Bills": {
+     "price": -350,
+     "book": "BoyleSports"
+    },
+    "New York Jets": {
+     "price": 380,
+     "book": "Matchbook"
+    }
+   },
+   "spreads": {
+    "Buffalo Bills": {
+     "price": -110,
+     "book": "888sport",
+     "point": -7.5
+    },
+    "New York Jets": {
+     "price": -110,
+     "book": "888sport",
+     "point": 7.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -106,
+     "book": "Virgin Bet",
+     "point": 51.0
+    },
+    "Under": {
+     "price": -114,
+     "book": "Virgin Bet",
+     "point": 51.0
+    }
+   }
+  },
+  "moneyline": {
+   "Buffalo Bills": {
+    "consensus_price": -450,
+    "no_vig_prob": 0.7787
+   },
+   "New York Jets": {
+    "consensus_price": 330,
+    "no_vig_prob": 0.2213
+   }
+  },
+  "hold_pct": 5.07,
+  "spread": {
+   "Buffalo Bills": -7.5,
+   "New York Jets": 7.5
+  },
+  "total": 50.5
+ },
+ "e5aa20e1364dd639f042af1c2281bbe2": {
+  "books": 19,
+  "best_price": {
+   "h2h": {
+    "Carolina Panthers": {
+     "price": 112,
+     "book": "Smarkets"
+    },
+    "New Orleans Saints": {
+     "price": -115,
+     "book": "Betfair"
+    }
+   },
+   "spreads": {
+    "Carolina Panthers": {
+     "price": -110,
+     "book": "888sport",
+     "point": 2.5
+    },
+    "New Orleans Saints": {
+     "price": -110,
+     "book": "888sport",
+     "point": -2.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -110,
+     "book": "888sport",
+     "point": 48.5
+    },
+    "Under": {
+     "price": -106,
+     "book": "LiveScore Bet",
+     "point": 48.5
+    }
+   }
+  },
+  "moneyline": {
+   "Carolina Panthers": {
+    "consensus_price": 109,
+    "no_vig_prob": 0.456
+   },
+   "New Orleans Saints": {
+    "consensus_price": -133,
+    "no_vig_prob": 0.544
+   }
+  },
+  "hold_pct": 4.93,
+  "spread": {
+   "Carolina Panthers": 2.5,
+   "New Orleans Saints": -2.5
+  },
+  "total": 48.5
+ },
+ "be0e03cc42fbc9b6962467b22c7bf9dd": {
+  "books": 20,
+  "best_price": {
+   "h2h": {
+    "Cleveland Browns": {
+     "price": 200,
+     "book": "Matchbook"
+    },
+    "Houston Texans": {
+     "price": -208,
+     "book": "Matchbook"
+    }
+   },
+   "spreads": {
+    "Cleveland Browns": {
+     "price": -110,
+     "book": "888sport",
+     "point": 4.5
+    },
+    "Houston Texans": {
+     "price": -110,
+     "book": "888sport",
+     "point": -4.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -105,
+     "book": "Matchbook",
+     "point": 40.5
+    },
+    "Under": {
+     "price": 104,
+     "book": "Matchbook",
+     "point": 40.5
+    }
+   }
+  },
+  "moneyline": {
+   "Cleveland Browns": {
+    "consensus_price": 180,
+    "no_vig_prob": 0.3397
+   },
+   "Houston Texans": {
+    "consensus_price": -227,
+    "no_vig_prob": 0.6603
+   }
+  },
+  "hold_pct": 5.13,
+  "spread": {
+   "Cleveland Browns": 4.25,
+   "Houston Texans": -4.25
+  },
+  "total": 40.5
+ },
+ "5d8d85473b87f772a979ecf294acab94": {
+  "books": 20,
+  "best_price": {
+   "h2h": {
+    "Green Bay Packers": {
+     "price": -139,
+     "book": "Matchbook"
+    },
+    "Minnesota Vikings": {
+     "price": 136,
+     "book": "Matchbook"
+    }
+   },
+   "spreads": {
+    "Green Bay Packers": {
+     "price": -125,
+     "book": "888sport",
+     "point": -2.5
+    },
+    "Minnesota Vikings": {
+     "price": 100,
+     "book": "888sport",
+     "point": 2.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -110,
+     "book": "LiveScore Bet",
+     "point": 42.0
+    },
+    "Under": {
+     "price": -110,
+     "book": "LiveScore Bet",
+     "point": 42.0
+    }
+   }
+  },
+  "moneyline": {
+   "Green Bay Packers": {
+    "consensus_price": -150,
+    "no_vig_prob": 0.569
+   },
+   "Minnesota Vikings": {
+    "consensus_price": 120,
+    "no_vig_prob": 0.431
+   }
+  },
+  "hold_pct": 5.45,
+  "spread": {
+   "Green Bay Packers": -2.5,
+   "Minnesota Vikings": 2.5
+  },
+  "total": 42.0
+ },
+ "b5700b4d938fd94429f60d4622cc9c0a": {
+  "books": 20,
+  "best_price": {
+   "h2h": {
+    "Indianapolis Colts": {
+     "price": -200,
+     "book": "Paddy Power"
+    },
+    "Miami Dolphins": {
+     "price": 198,
+     "book": "Matchbook"
+    }
+   },
+   "spreads": {
+    "Indianapolis Colts": {
+     "price": -102,
+     "book": "Matchbook",
+     "point": -4.5
+    },
+    "Miami Dolphins": {
+     "price": 100,
+     "book": "Matchbook",
+     "point": 4.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": 104,
+     "book": "Matchbook",
+     "point": 37.5
+    },
+    "Under": {
+     "price": -108,
+     "book": "Matchbook",
+     "point": 37.5
+    }
+   }
+  },
+  "moneyline": {
+   "Indianapolis Colts": {
+    "consensus_price": -222,
+    "no_vig_prob": 0.6505
+   },
+   "Miami Dolphins": {
+    "consensus_price": 170,
+    "no_vig_prob": 0.3495
+   }
+  },
+  "hold_pct": 5.98,
+  "spread": {
+   "Indianapolis Colts": -4.5,
+   "Miami Dolphins": 4.5
+  },
+  "total": 37.5
+ },
+ "28800df7e768ecec14f116454d560f9b": {
+  "books": 20,
+  "best_price": {
+   "h2h": {
+    "Jacksonville Jaguars": {
+     "price": -549,
+     "book": "Betway"
+    },
+    "Tennessee Titans": {
+     "price": 520,
+     "book": "Matchbook"
+    }
+   },
+   "spreads": {
+    "Jacksonville Jaguars": {
+     "price": 100,
+     "book": "Matchbook",
+     "point": -11.0
+    },
+    "Tennessee Titans": {
+     "price": -104,
+     "book": "Matchbook",
+     "point": 11.0
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": 102,
+     "book": "Matchbook",
+     "point": 46.5
+    },
+    "Under": {
+     "price": -106,
+     "book": "Matchbook",
+     "point": 46.5
+    }
+   }
+  },
+  "moneyline": {
+   "Jacksonville Jaguars": {
+    "consensus_price": -667,
+    "no_vig_prob": 0.8271
+   },
+   "Tennessee Titans": {
+    "consensus_price": 450,
+    "no_vig_prob": 0.1729
+   }
+  },
+  "hold_pct": 5.14,
+  "spread": {
+   "Jacksonville Jaguars": -11.25,
+   "Tennessee Titans": 11.25
+  },
+  "total": 46.5
+ },
+ "6c932a965110f3f89ec4a5f1a6ac256e": {
+  "books": 20,
+  "best_price": {
+   "h2h": {
+    "Arizona Cardinals": {
+     "price": 410,
+     "book": "Smarkets"
+    },
+    "Los Angeles Rams": {
+     "price": -435,
+     "book": "Matchbook"
+    }
+   },
+   "spreads": {
+    "Arizona Cardinals": {
+     "price": 102,
+     "book": "Matchbook",
+     "point": 9.5
+    },
+    "Los Angeles Rams": {
+     "price": -108,
+     "book": "Matchbook",
+     "point": -9.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": 100,
+     "book": "Matchbook",
+     "point": 38.5
+    },
+    "Under": {
+     "price": -104,
+     "book": "Virgin Bet",
+     "point": 38.5
+    }
+   }
+  },
+  "moneyline": {
+   "Arizona Cardinals": {
+    "consensus_price": 375,
+    "no_vig_prob": 0.2004
+   },
+   "Los Angeles Rams": {
+    "consensus_price": -526,
+    "no_vig_prob": 0.7996
+   }
+  },
+  "hold_pct": 5.08,
+  "spread": {
+   "Arizona Cardinals": 9.5,
+   "Los Angeles Rams": -9.5
+  },
+  "total": 38.5
+ },
+ "6079a5cbabf99b265a17edfc92a1da60": {
+  "books": 19,
+  "best_price": {
+   "h2h": {
+    "Las Vegas Raiders": {
+     "price": 260,
+     "book": "Matchbook"
+    },
+    "Seattle Seahawks": {
+     "price": -270,
+     "book": "Matchbook"
+    }
+   },
+   "spreads": {
+    "Las Vegas Raiders": {
+     "price": -102,
+     "book": "Matchbook",
+     "point": 6.5
+    },
+    "Seattle Seahawks": {
+     "price": -103,
+     "book": "Matchbook",
+     "point": -6.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": 102,
+     "book": "Matchbook",
+     "point": 40.5
+    },
+    "Under": {
+     "price": -106,
+     "book": "Matchbook",
+     "point": 40.5
+    }
+   }
+  },
+  "moneyline": {
+   "Las Vegas Raiders": {
+    "consensus_price": 240,
+    "no_vig_prob": 0.2805
+   },
+   "Seattle Seahawks": {
+    "consensus_price": -307,
+    "no_vig_prob": 0.7195
+   }
+  },
+  "hold_pct": 4.87,
+  "spread": {
+   "Las Vegas Raiders": 6.5,
+   "Seattle Seahawks": -6.5
+  },
+  "total": 40.5
+ },
+ "7627192fd89b05120ab6c712aa23fd81": {
+  "books": 19,
+  "best_price": {
+   "h2h": {
+    "Dallas Cowboys": {
+     "price": 184,
+     "book": "Matchbook"
+    },
+    "San Francisco 49ers": {
+     "price": -189,
+     "book": "Matchbook"
+    }
+   },
+   "spreads": {
+    "Dallas Cowboys": {
+     "price": -102,
+     "book": "Matchbook",
+     "point": 4.0
+    },
+    "San Francisco 49ers": {
+     "price": 100,
+     "book": "Matchbook",
+     "point": -4.0
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -101,
+     "book": "Matchbook",
+     "point": 56.0
+    },
+    "Under": {
+     "price": -109,
+     "book": "LiveScore Bet",
+     "point": 56.0
+    }
+   }
+  },
+  "moneyline": {
+   "Dallas Cowboys": {
+    "consensus_price": 175,
+    "no_vig_prob": 0.3444
+   },
+   "San Francisco 49ers": {
+    "consensus_price": -225,
+    "no_vig_prob": 0.6556
+   }
+  },
+  "hold_pct": 5.59,
+  "spread": {
+   "Dallas Cowboys": 4.0,
+   "San Francisco 49ers": -4.0
+  },
+  "total": 56.0
+ },
+ "48e497c230e6c9afcb3b600091d28e17": {
+  "books": 19,
+  "best_price": {
+   "h2h": {
+    "Cincinnati Bengals": {
+     "price": -175,
+     "book": "Matchbook"
+    },
+    "Pittsburgh Steelers": {
+     "price": 168,
+     "book": "Matchbook"
+    }
+   },
+   "spreads": {
+    "Cincinnati Bengals": {
+     "price": 100,
+     "book": "Matchbook",
+     "point": -3.5
+    },
+    "Pittsburgh Steelers": {
+     "price": -104,
+     "book": "Matchbook",
+     "point": 3.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -101,
+     "book": "Matchbook",
+     "point": 49.5
+    },
+    "Under": {
+     "price": -102,
+     "book": "Matchbook",
+     "point": 49.5
+    }
+   }
+  },
+  "moneyline": {
+   "Cincinnati Bengals": {
+    "consensus_price": -189,
+    "no_vig_prob": 0.6297
+   },
+   "Pittsburgh Steelers": {
+    "consensus_price": 160,
+    "no_vig_prob": 0.3703
+   }
+  },
+  "hold_pct": 3.86,
+  "spread": {
+   "Cincinnati Bengals": -3.5,
+   "Pittsburgh Steelers": 3.5
+  },
+  "total": 49.5
+ }
+}

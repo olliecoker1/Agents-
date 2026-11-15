@@ -3512,12 +3512,17 @@
    },
    "projection": "27",
    "reason": "[B lean] Flagg scored 43 v Indiana last week and leads Dallas's scoring with Lively out. US-book price",
-   "status": "open",
-   "result": null,
-   "pnl": null,
+   "status": "settled",
+   "result": "loss",
+   "pnl": -3.0,
    "prop": "player_points",
    "side": "Over",
-   "us_proxy": true
+   "us_proxy": true,
+   "final_score": {
+    "Cleveland Cavaliers": "127",
+    "Dallas Mavericks": "117"
+   },
+   "actual": 18.0
   }
  ]
 }
