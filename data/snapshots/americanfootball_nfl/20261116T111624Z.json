@@ -1,0 +1,57 @@
+{
+ "35e3bdff558b5d1506251e814986f164": {
+  "books": 20,
+  "best_price": {
+   "h2h": {
+    "Baltimore Ravens": {
+     "price": -208,
+     "book": "Matchbook"
+    },
+    "Los Angeles Chargers": {
+     "price": 205,
+     "book": "Betfair"
+    }
+   },
+   "spreads": {
+    "Baltimore Ravens": {
+     "price": -102,
+     "book": "Matchbook",
+     "point": -4.5
+    },
+    "Los Angeles Chargers": {
+     "price": 100,
+     "book": "Matchbook",
+     "point": 4.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -106,
+     "book": "Virgin Bet",
+     "point": 39.0
+    },
+    "Under": {
+     "price": -114,
+     "book": "Virgin Bet",
+     "point": 39.0
+    }
+   }
+  },
+  "moneyline": {
+   "Baltimore Ravens": {
+    "consensus_price": -227,
+    "no_vig_prob": 0.6603
+   },
+   "Los Angeles Chargers": {
+    "consensus_price": 180,
+    "no_vig_prob": 0.3397
+   }
+  },
+  "hold_pct": 5.13,
+  "spread": {
+   "Baltimore Ravens": -4.5,
+   "Los Angeles Chargers": 4.5
+  },
+  "total": 39.0
+ }
+}

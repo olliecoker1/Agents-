@@ -3401,9 +3401,17 @@
    },
    "projection": "-4.5",
    "reason": "[B lean] Vikings ruled out QB Kyler Murray (hamstring), TE Hockenson and WR Jennings; fair ~Packers -4.5 vs -2.5 despite Parsons out",
-   "status": "open",
-   "result": null,
-   "pnl": null
+   "status": "settled",
+   "result": "loss",
+   "pnl": -3.0,
+   "final_score": {
+    "Green Bay Packers": 10.0,
+    "Minnesota Vikings": 30.0
+   },
+   "closing_snapshot_utc": "2026-11-15T16:11:06+00:00",
+   "clv": {
+    "clv_points": 0.0
+   }
   },
   {
    "id": 78,
@@ -3442,9 +3450,17 @@
    },
    "projection": "+2.5",
    "reason": "[B lean] Texans without Danielle Hunter, Azeez Al-Shaair, Marvin Harrison Jr. and G Rutledge; fair ~Texans -2.5 vs +4.5",
-   "status": "open",
-   "result": null,
-   "pnl": null
+   "status": "settled",
+   "result": "win",
+   "pnl": 2.94,
+   "final_score": {
+    "Cleveland Browns": 27.0,
+    "Houston Texans": 24.0
+   },
+   "closing_snapshot_utc": "2026-11-15T16:11:06+00:00",
+   "clv": {
+    "clv_points": 1.0
+   }
   },
   {
    "id": 79,
@@ -3483,9 +3499,17 @@
    },
    "projection": "+0.5",
    "reason": "[B lean] Saints without C Erik McCoy, RT Taliese Fuaga and DT Christen Miller; fair ~pick'em vs Panthers +2.5 at 2.00",
-   "status": "open",
-   "result": null,
-   "pnl": null
+   "status": "settled",
+   "result": "win",
+   "pnl": 3.0,
+   "final_score": {
+    "New Orleans Saints": 17.0,
+    "Carolina Panthers": 20.0
+   },
+   "closing_snapshot_utc": "2026-11-15T16:11:06+00:00",
+   "clv": {
+    "clv_points": 3.0
+   }
   },
   {
    "id": 80,
@@ -3549,12 +3573,17 @@
    },
    "projection": "28.5",
    "reason": "[B lean] Maxey scored 27 v Toronto on Thursday; Pacers without Haliburton defend the point poorly. US-book price",
-   "status": "open",
-   "result": null,
-   "pnl": null,
+   "status": "settled",
+   "result": "win",
+   "pnl": 2.73,
    "prop": "player_points",
    "side": "Over",
-   "us_proxy": true
+   "us_proxy": true,
+   "final_score": {
+    "Philadelphia 76ers": "131",
+    "Indiana Pacers": "124"
+   },
+   "actual": 27.0
   },
   {
    "id": 82,
@@ -3581,12 +3610,17 @@
    },
    "projection": "23.5",
    "reason": "[B lean] With Haliburton out the Pacers' offence runs through Siakam; 76ers thin up front without Adem Bona. US-book price",
-   "status": "open",
-   "result": null,
-   "pnl": null,
+   "status": "settled",
+   "result": "win",
+   "pnl": 2.73,
    "prop": "player_points",
    "side": "Over",
-   "us_proxy": true
+   "us_proxy": true,
+   "final_score": {
+    "Philadelphia 76ers": "131",
+    "Indiana Pacers": "124"
+   },
+   "actual": 31.0
   },
   {
    "id": 83,
@@ -3625,9 +3659,17 @@
    },
    "projection": "+0.5",
    "reason": "[B lean] Patriots are 6-0 after a loss under Vrabel; Lions without G Cade Mays in Munich; fair ~Lions -0.5 vs +2.5 at 2.08",
-   "status": "open",
-   "result": null,
-   "pnl": null
+   "status": "settled",
+   "result": "loss",
+   "pnl": -3.0,
+   "final_score": {
+    "Detroit Lions": 35.0,
+    "New England Patriots": 10.0
+   },
+   "closing_snapshot_utc": "2026-11-15T11:16:15+00:00",
+   "clv": {
+    "clv_points": 0.0
+   }
   },
   {
    "id": 84,
@@ -3654,12 +3696,17 @@
    },
    "projection": "26.5",
    "reason": "[B lean] Booker scored 30, 24 and 30 in recent wins; Suns at home v Lakers. US-book price",
-   "status": "open",
-   "result": null,
-   "pnl": null,
+   "status": "settled",
+   "result": "loss",
+   "pnl": -3.0,
    "prop": "player_points",
    "side": "Over",
-   "us_proxy": true
+   "us_proxy": true,
+   "final_score": {
+    "Phoenix Suns": "123",
+    "Los Angeles Lakers": "131"
+   },
+   "actual": 17.0
   }
  ]
 }
