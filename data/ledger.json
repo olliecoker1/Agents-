@@ -3707,6 +3707,151 @@
     "Los Angeles Lakers": "131"
    },
    "actual": 17.0
+  },
+  {
+   "id": 85,
+   "placed_utc": "2026-11-16T11:16:51+00:00",
+   "league": "NBA",
+   "sport_key": "basketball_nba",
+   "event_id": "77094bf6e4d9bf58f3cb98b6a4fb3b22",
+   "matchup": "Golden State Warriors @ New Orleans Pelicans",
+   "home": "New Orleans Pelicans",
+   "away": "Golden State Warriors",
+   "kickoff_utc": "2026-11-17T01:10:00Z",
+   "market": "spreads",
+   "selection": "Golden State Warriors",
+   "point": -3.5,
+   "price_american": -114,
+   "decimal_odds": 1.8772,
+   "implied_prob": 0.5327,
+   "book": "LeoVegas",
+   "stake": 3.0,
+   "consensus_at_placement": {
+    "spread": {
+     "Golden State Warriors": -3.5,
+     "New Orleans Pelicans": 3.5
+    },
+    "total": 225.5,
+    "moneyline": {
+     "Golden State Warriors": {
+      "consensus_price": -161,
+      "no_vig_prob": 0.5812
+     },
+     "New Orleans Pelicans": {
+      "consensus_price": 125,
+      "no_vig_prob": 0.4188
+     }
+    }
+   },
+   "projection": "-5.5",
+   "reason": "[B lean] Pelicans ruled out Trey Murphy III, Bennedict Mathurin, McGowens and Watford; even without Curry the Warriors are deeper; fair ~-5.5 vs -3.5",
+   "status": "open",
+   "result": null,
+   "pnl": null
+  },
+  {
+   "id": 86,
+   "placed_utc": "2026-11-16T11:16:51+00:00",
+   "league": "NFL",
+   "sport_key": "americanfootball_nfl",
+   "event_id": "35e3bdff558b5d1506251e814986f164",
+   "matchup": "Los Angeles Chargers @ Baltimore Ravens",
+   "home": "Baltimore Ravens",
+   "away": "Los Angeles Chargers",
+   "kickoff_utc": "2026-11-17T01:15:00Z",
+   "market": "spreads",
+   "selection": "Baltimore Ravens",
+   "point": -4.5,
+   "price_american": -102,
+   "decimal_odds": 1.9804,
+   "implied_prob": 0.505,
+   "book": "Matchbook",
+   "stake": 3.0,
+   "consensus_at_placement": {
+    "spread": {
+     "Baltimore Ravens": -4.5,
+     "Los Angeles Chargers": 4.5
+    },
+    "total": 39.0,
+    "moneyline": {
+     "Baltimore Ravens": {
+      "consensus_price": -227,
+      "no_vig_prob": 0.6603
+     },
+     "Los Angeles Chargers": {
+      "consensus_price": 180,
+      "no_vig_prob": 0.3397
+     }
+    }
+   },
+   "projection": "-6",
+   "reason": "[B lean] Chargers without WR Ladd McConkey (not travelling) and three DBs (Taylor, Williamson, Waxter); fair ~Ravens -6 vs -4.5",
+   "status": "open",
+   "result": null,
+   "pnl": null
+  },
+  {
+   "id": 87,
+   "placed_utc": "2026-11-16T11:16:51+00:00",
+   "league": "NBA",
+   "sport_key": "basketball_nba",
+   "event_id": "39dbdb7fdc78bd01ceac2fc7048bc1fd",
+   "matchup": "Chicago Bulls @ Cleveland Cavaliers",
+   "home": "Cleveland Cavaliers",
+   "away": "Chicago Bulls",
+   "kickoff_utc": "2026-11-17T00:10:00Z",
+   "market": "props",
+   "selection": "Donovan Mitchell",
+   "point": 25.5,
+   "price_american": -110,
+   "decimal_odds": 1.9091,
+   "implied_prob": 0.5238,
+   "book": "BetOnline.ag",
+   "stake": 3.0,
+   "consensus_at_placement": {
+    "line": 25.5,
+    "books": 4,
+    "median_no_vig_over_prob": 0.4929
+   },
+   "projection": "27.5",
+   "reason": "[B lean] Cavs without Evan Mobley and Sam Merrill again: more of the scoring on Mitchell v Bulls. US-book price",
+   "status": "open",
+   "result": null,
+   "pnl": null,
+   "prop": "player_points",
+   "side": "Over",
+   "us_proxy": true
+  },
+  {
+   "id": 88,
+   "placed_utc": "2026-11-16T11:16:52+00:00",
+   "league": "NFL",
+   "sport_key": "americanfootball_nfl",
+   "event_id": "35e3bdff558b5d1506251e814986f164",
+   "matchup": "Los Angeles Chargers @ Baltimore Ravens",
+   "home": "Baltimore Ravens",
+   "away": "Los Angeles Chargers",
+   "kickoff_utc": "2026-11-17T01:15:00Z",
+   "market": "props",
+   "selection": "Derrick Henry",
+   "point": null,
+   "price_american": -139,
+   "decimal_odds": 1.7194,
+   "implied_prob": 0.5816,
+   "book": "BetRivers",
+   "stake": 3.0,
+   "consensus_at_placement": {
+    "books": 6,
+    "median_implied_prob": 0.5943
+   },
+   "projection": "0.64",
+   "reason": "[B lean] Ravens at home v a Chargers defence missing three DBs; Henry gets the goal-line work; fair ~64% vs 58% at 1.72. US-book price",
+   "status": "open",
+   "result": null,
+   "pnl": null,
+   "prop": "player_anytime_td",
+   "side": "Yes",
+   "us_proxy": true
   }
  ]
 }
