@@ -3745,9 +3745,17 @@
    },
    "projection": "-5.5",
    "reason": "[B lean] Pelicans ruled out Trey Murphy III, Bennedict Mathurin, McGowens and Watford; even without Curry the Warriors are deeper; fair ~-5.5 vs -3.5",
-   "status": "open",
-   "result": null,
-   "pnl": null
+   "status": "settled",
+   "result": "loss",
+   "pnl": -3.0,
+   "final_score": {
+    "New Orleans Pelicans": 115.0,
+    "Golden State Warriors": 94.0
+   },
+   "closing_snapshot_utc": "2026-11-16T11:16:24+00:00",
+   "clv": {
+    "clv_points": 0.0
+   }
   },
   {
    "id": 86,
@@ -3786,9 +3794,17 @@
    },
    "projection": "-6",
    "reason": "[B lean] Chargers without WR Ladd McConkey (not travelling) and three DBs (Taylor, Williamson, Waxter); fair ~Ravens -6 vs -4.5",
-   "status": "open",
-   "result": null,
-   "pnl": null
+   "status": "settled",
+   "result": "loss",
+   "pnl": -3.0,
+   "final_score": {
+    "Baltimore Ravens": 20.0,
+    "Los Angeles Chargers": 23.0
+   },
+   "closing_snapshot_utc": "2026-11-16T11:16:24+00:00",
+   "clv": {
+    "clv_points": 0.0
+   }
   },
   {
    "id": 87,
@@ -3815,12 +3831,17 @@
    },
    "projection": "27.5",
    "reason": "[B lean] Cavs without Evan Mobley and Sam Merrill again: more of the scoring on Mitchell v Bulls. US-book price",
-   "status": "open",
-   "result": null,
-   "pnl": null,
+   "status": "settled",
+   "result": "win",
+   "pnl": 2.73,
    "prop": "player_points",
    "side": "Over",
-   "us_proxy": true
+   "us_proxy": true,
+   "final_score": {
+    "Cleveland Cavaliers": "126",
+    "Chicago Bulls": "115"
+   },
+   "actual": 39.0
   },
   {
    "id": 88,
@@ -3846,12 +3867,17 @@
    },
    "projection": "0.64",
    "reason": "[B lean] Ravens at home v a Chargers defence missing three DBs; Henry gets the goal-line work; fair ~64% vs 58% at 1.72. US-book price",
-   "status": "open",
-   "result": null,
-   "pnl": null,
+   "status": "settled",
+   "result": "win",
+   "pnl": 2.16,
    "prop": "player_anytime_td",
    "side": "Yes",
-   "us_proxy": true
+   "us_proxy": true,
+   "final_score": {
+    "Baltimore Ravens": "20",
+    "Los Angeles Chargers": "23"
+   },
+   "actual": 2.0
   }
  ]
 }
