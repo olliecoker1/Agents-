@@ -3904,12 +3904,17 @@
    },
    "projection": "27.5",
    "reason": "[B lean] Pistons without Taurean Prince, Ronald Holland and Duncan Robinson, Isaiah Joe doubtful: even more usage for Cunningham (52 last week). US-book price",
-   "status": "open",
-   "result": null,
-   "pnl": null,
+   "status": "settled",
+   "result": "win",
+   "pnl": 2.78,
    "prop": "player_points",
    "side": "Over",
-   "us_proxy": true
+   "us_proxy": true,
+   "final_score": {
+    "San Antonio Spurs": "93",
+    "Detroit Pistons": "105"
+   },
+   "actual": 27.0
   },
   {
    "id": 90,
@@ -3936,12 +3941,17 @@
    },
    "projection": "30",
    "reason": "[B lean] Wembanyama has scored 52, 43, 40 and 36 in recent games; Pistons thin up front. US-book price",
-   "status": "open",
-   "result": null,
-   "pnl": null,
+   "status": "settled",
+   "result": "loss",
+   "pnl": -3.0,
    "prop": "player_points",
    "side": "Over",
-   "us_proxy": true
+   "us_proxy": true,
+   "final_score": {
+    "San Antonio Spurs": "93",
+    "Detroit Pistons": "105"
+   },
+   "actual": 25.0
   },
   {
    "id": 91,
@@ -3968,12 +3978,17 @@
    },
    "projection": "28.5",
    "reason": "[B lean] Brunson cleared this market in his last two (27, 33); Raptors' guard depth is thin. US-book price",
-   "status": "open",
-   "result": null,
-   "pnl": null,
+   "status": "settled",
+   "result": "win",
+   "pnl": 2.75,
    "prop": "player_points",
    "side": "Over",
-   "us_proxy": true
+   "us_proxy": true,
+   "final_score": {
+    "Toronto Raptors": "102",
+    "New York Knicks": "111"
+   },
+   "actual": 31.0
   },
   {
    "id": 92,
@@ -4000,12 +4015,17 @@
    },
    "projection": "23.5",
    "reason": "[B lean] Raptors start Collin Murray-Boyles at centre with Nate Bittle out: size edge for Towns. US-book price",
-   "status": "open",
-   "result": null,
-   "pnl": null,
+   "status": "settled",
+   "result": "loss",
+   "pnl": -3.0,
    "prop": "player_points",
    "side": "Over",
-   "us_proxy": true
+   "us_proxy": true,
+   "final_score": {
+    "Toronto Raptors": "102",
+    "New York Knicks": "111"
+   },
+   "actual": 16.0
   }
  ]
 }
