@@ -1,0 +1,222 @@
+{
+ "3c082b72aa002131c276ff5e24bada1b": {
+  "books": 20,
+  "best_price": {
+   "h2h": {
+    "Golden State Warriors": {
+     "price": 255,
+     "book": "Matchbook"
+    },
+    "Memphis Grizzlies": {
+     "price": -263,
+     "book": "Matchbook"
+    }
+   },
+   "spreads": {
+    "Golden State Warriors": {
+     "price": -104,
+     "book": "Matchbook",
+     "point": 7.5
+    },
+    "Memphis Grizzlies": {
+     "price": -104,
+     "book": "Matchbook",
+     "point": -7.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -111,
+     "book": "Betano (UK)",
+     "point": 226.5
+    },
+    "Under": {
+     "price": -111,
+     "book": "Betano (UK)",
+     "point": 226.5
+    }
+   }
+  },
+  "moneyline": {
+   "Golden State Warriors": {
+    "consensus_price": 225,
+    "no_vig_prob": 0.2904
+   },
+   "Memphis Grizzlies": {
+    "consensus_price": -303,
+    "no_vig_prob": 0.7096
+   }
+  },
+  "hold_pct": 5.96,
+  "spread": {
+   "Golden State Warriors": 7.5,
+   "Memphis Grizzlies": -7.5
+  },
+  "total": 226.5
+ },
+ "20fa5e2d73cec494c113790161a89aec": {
+  "books": 20,
+  "best_price": {
+   "h2h": {
+    "Los Angeles Clippers": {
+     "price": 820,
+     "book": "Matchbook"
+    },
+    "San Antonio Spurs": {
+     "price": -909,
+     "book": "Matchbook"
+    }
+   },
+   "spreads": {
+    "Los Angeles Clippers": {
+     "price": -106,
+     "book": "Matchbook",
+     "point": 15.5
+    },
+    "San Antonio Spurs": {
+     "price": -105,
+     "book": "Matchbook",
+     "point": -15.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -109,
+     "book": "Matchbook",
+     "point": 226.5
+    },
+    "Under": {
+     "price": -108,
+     "book": "Matchbook",
+     "point": 226.5
+    }
+   }
+  },
+  "moneyline": {
+   "Los Angeles Clippers": {
+    "consensus_price": 700,
+    "no_vig_prob": 0.1181
+   },
+   "San Antonio Spurs": {
+    "consensus_price": -1400,
+    "no_vig_prob": 0.8819
+   }
+  },
+  "hold_pct": 5.83,
+  "spread": {
+   "Los Angeles Clippers": 15.5,
+   "San Antonio Spurs": -15.5
+  },
+  "total": 226.5
+ },
+ "006df00e5e48650d849d1bb4cd81565d": {
+  "books": 20,
+  "best_price": {
+   "h2h": {
+    "Milwaukee Bucks": {
+     "price": 360,
+     "book": "Smarkets"
+    },
+    "Portland Trail Blazers": {
+     "price": -385,
+     "book": "Matchbook"
+    }
+   },
+   "spreads": {
+    "Milwaukee Bucks": {
+     "price": -109,
+     "book": "Matchbook",
+     "point": 10.5
+    },
+    "Portland Trail Blazers": {
+     "price": 100,
+     "book": "Matchbook",
+     "point": -10.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -104,
+     "book": "Matchbook",
+     "point": 228.5
+    },
+    "Under": {
+     "price": -108,
+     "book": "Matchbook",
+     "point": 228.5
+    }
+   }
+  },
+  "moneyline": {
+   "Milwaukee Bucks": {
+    "consensus_price": 300,
+    "no_vig_prob": 0.234
+   },
+   "Portland Trail Blazers": {
+    "consensus_price": -450,
+    "no_vig_prob": 0.766
+   }
+  },
+  "hold_pct": 6.82,
+  "spread": {
+   "Milwaukee Bucks": 10.5,
+   "Portland Trail Blazers": -10.5
+  },
+  "total": 228.5
+ },
+ "5ee4efd00c1daaebd8249ff44fd6ac9d": {
+  "books": 20,
+  "best_price": {
+   "h2h": {
+    "Minnesota Timberwolves": {
+     "price": 110,
+     "book": "Matchbook"
+    },
+    "New York Knicks": {
+     "price": -115,
+     "book": "Matchbook"
+    }
+   },
+   "spreads": {
+    "Minnesota Timberwolves": {
+     "price": -110,
+     "book": "Virgin Bet",
+     "point": 1.5
+    },
+    "New York Knicks": {
+     "price": -111,
+     "book": "Virgin Bet",
+     "point": -1.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": 102,
+     "book": "Virgin Bet",
+     "point": 217.5
+    },
+    "Under": {
+     "price": -103,
+     "book": "Matchbook",
+     "point": 217.5
+    }
+   }
+  },
+  "moneyline": {
+   "Minnesota Timberwolves": {
+    "consensus_price": -100,
+    "no_vig_prob": 0.4719
+   },
+   "New York Knicks": {
+    "consensus_price": -127,
+    "no_vig_prob": 0.5281
+   }
+  },
+  "hold_pct": 5.95,
+  "spread": {
+   "Minnesota Timberwolves": 1.5,
+   "New York Knicks": -1.5
+  },
+  "total": 217.5
+ }
+}

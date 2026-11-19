@@ -1,0 +1,57 @@
+{
+ "66f9e83cf025d58acee12bce18661fb3": {
+  "books": 20,
+  "best_price": {
+   "h2h": {
+    "Houston Texans": {
+     "price": -588,
+     "book": "Matchbook"
+    },
+    "Indianapolis Colts": {
+     "price": 580,
+     "book": "Smarkets"
+    }
+   },
+   "spreads": {
+    "Houston Texans": {
+     "price": 100,
+     "book": "Matchbook",
+     "point": -12.5
+    },
+    "Indianapolis Colts": {
+     "price": -104,
+     "book": "Matchbook",
+     "point": 12.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -108,
+     "book": "Matchbook",
+     "point": 44.0
+    },
+    "Under": {
+     "price": -103,
+     "book": "Matchbook",
+     "point": 44.0
+    }
+   }
+  },
+  "moneyline": {
+   "Houston Texans": {
+    "consensus_price": -769,
+    "no_vig_prob": 0.8415
+   },
+   "Indianapolis Colts": {
+    "consensus_price": 500,
+    "no_vig_prob": 0.1585
+   }
+  },
+  "hold_pct": 5.16,
+  "spread": {
+   "Houston Texans": -12.5,
+   "Indianapolis Colts": 12.5
+  },
+  "total": 44.0
+ }
+}

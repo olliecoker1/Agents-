@@ -4052,12 +4052,17 @@
    },
    "projection": "24",
    "reason": "[B lean] Siakam 25.0 ppg over his last six (19-31, 30-35 min); Haliburton out keeps usage high. US-book price.",
-   "status": "open",
-   "result": null,
-   "pnl": null,
+   "status": "settled",
+   "result": "win",
+   "pnl": 3.06,
    "prop": "player_points",
    "side": "Over",
-   "us_proxy": true
+   "us_proxy": true,
+   "final_score": {
+    "Indiana Pacers": "104",
+    "Houston Rockets": "119"
+   },
+   "actual": 24.0
   },
   {
    "id": 94,
@@ -4084,12 +4089,17 @@
    },
    "projection": "13",
    "reason": "[B lean] Smith 11.7 ppg last six, none above 15; line 15.5 sits above his recent range. US-book price.",
-   "status": "open",
-   "result": null,
-   "pnl": null,
+   "status": "settled",
+   "result": "loss",
+   "pnl": -3.0,
    "prop": "player_points",
    "side": "Under",
-   "us_proxy": true
+   "us_proxy": true,
+   "final_score": {
+    "Indiana Pacers": "104",
+    "Houston Rockets": "119"
+   },
+   "actual": 17.0
   },
   {
    "id": 95,
@@ -4116,12 +4126,17 @@
    },
    "projection": "12",
    "reason": "[B lean] Allen 11.2 ppg in his last four (9-13). US-book price.",
-   "status": "open",
-   "result": null,
-   "pnl": null,
+   "status": "settled",
+   "result": "loss",
+   "pnl": -3.0,
    "prop": "player_points",
    "side": "Under",
-   "us_proxy": true
+   "us_proxy": true,
+   "final_score": {
+    "Cleveland Cavaliers": "121",
+    "Memphis Grizzlies": "124"
+   },
+   "actual": 19.0
   },
   {
    "id": 96,
@@ -4148,12 +4163,16 @@
    },
    "projection": "11",
    "reason": "[B lean] Watson 10.0 ppg last five, max 14. US-book price.",
-   "status": "open",
-   "result": null,
-   "pnl": null,
+   "status": "settled",
+   "result": "push",
+   "pnl": 0.0,
    "prop": "player_points",
    "side": "Under",
-   "us_proxy": true
+   "us_proxy": true,
+   "final_score": {
+    "Cleveland Cavaliers": "121",
+    "Memphis Grizzlies": "124"
+   }
   },
   {
    "id": 97,
@@ -4180,12 +4199,17 @@
    },
    "projection": "17.5",
    "reason": "[B lean] Boozer 16.5 ppg last six; Jerome/Stewart out lift usage, so only a small lean. US-book price.",
-   "status": "open",
-   "result": null,
-   "pnl": null,
+   "status": "settled",
+   "result": "win",
+   "pnl": 2.88,
    "prop": "player_points",
    "side": "Under",
-   "us_proxy": true
+   "us_proxy": true,
+   "final_score": {
+    "Cleveland Cavaliers": "121",
+    "Memphis Grizzlies": "124"
+   },
+   "actual": 18.0
   }
  ]
 }
