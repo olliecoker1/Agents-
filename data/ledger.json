@@ -4332,12 +4332,17 @@
    },
    "projection": "19.5",
    "reason": "[B lean] Lendeborg 19.2 ppg last six (23, 23, 25, 3, 28, 13); line 21.5 above his average. US-book price.",
-   "status": "open",
-   "result": null,
-   "pnl": null,
+   "status": "settled",
+   "result": "win",
+   "pnl": 2.54,
    "prop": "player_points",
    "side": "Under",
-   "us_proxy": true
+   "us_proxy": true,
+   "final_score": {
+    "Memphis Grizzlies": "126",
+    "Golden State Warriors": "98"
+   },
+   "actual": 11.0
   },
   {
    "id": 102,
@@ -4364,12 +4369,17 @@
    },
    "projection": "16",
    "reason": "[B lean] Coward 15.5 ppg last six and 23, 18, 20 in his last three. US-book price.",
-   "status": "open",
-   "result": null,
-   "pnl": null,
+   "status": "settled",
+   "result": "win",
+   "pnl": 2.5,
    "prop": "player_points",
    "side": "Over",
-   "us_proxy": true
+   "us_proxy": true,
+   "final_score": {
+    "Memphis Grizzlies": "126",
+    "Golden State Warriors": "98"
+   },
+   "actual": 19.0
   }
  ]
 }
