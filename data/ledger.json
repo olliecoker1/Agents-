@@ -4236,12 +4236,17 @@
    },
    "projection": "14",
    "reason": "[B lean] Lopez 17.3 ppg over his last six (20, 20, 8, 26, 7, 23); 15.5-pt underdog Clippers are a blowout risk, so projection trimmed. US-book price.",
-   "status": "open",
-   "result": null,
-   "pnl": null,
+   "status": "settled",
+   "result": "win",
+   "pnl": 2.68,
    "prop": "player_points",
    "side": "Over",
-   "us_proxy": true
+   "us_proxy": true,
+   "final_score": {
+    "San Antonio Spurs": "124",
+    "LA Clippers": "112"
+   },
+   "actual": 23.0
   },
   {
    "id": 99,
@@ -4268,12 +4273,17 @@
    },
    "projection": "12.5",
    "reason": "[B lean] Wagler 11-15 in each of his last six (13.0 avg) on 16-28 min. US-book price.",
-   "status": "open",
-   "result": null,
-   "pnl": null,
+   "status": "settled",
+   "result": "loss",
+   "pnl": -3.0,
    "prop": "player_points",
    "side": "Over",
-   "us_proxy": true
+   "us_proxy": true,
+   "final_score": {
+    "San Antonio Spurs": "124",
+    "LA Clippers": "112"
+   },
+   "actual": 7.0
   },
   {
    "id": 100,
@@ -4300,12 +4310,17 @@
    },
    "projection": "12.5",
    "reason": "[B lean] Fox 10.6 ppg in his last five, max 17; Dylan Harper out adds some usage, so only a lean. US-book price.",
-   "status": "open",
-   "result": null,
-   "pnl": null,
+   "status": "settled",
+   "result": "win",
+   "pnl": 3.06,
    "prop": "player_points",
    "side": "Under",
-   "us_proxy": true
+   "us_proxy": true,
+   "final_score": {
+    "San Antonio Spurs": "124",
+    "LA Clippers": "112"
+   },
+   "actual": 10.0
   },
   {
    "id": 101,

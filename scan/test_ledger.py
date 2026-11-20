@@ -55,6 +55,8 @@ class CardTest(unittest.TestCase):
         self.assertTrue(ledger.same_team("AFC Bournemouth", "Bournemouth"))
         self.assertTrue(ledger.same_team("Brighton & Hove Albion", "Brighton and Hove Albion"))
         self.assertFalse(ledger.same_team("Manchester City", "Manchester United"))
+        self.assertTrue(ledger.same_team("LA Clippers", "Los Angeles Clippers"))
+        self.assertFalse(ledger.same_team("LA Clippers", "Los Angeles Lakers"))
         self.assertEqual(ledger.find_player("Antonio Silva", ["António Silva"]), "António Silva")
         self.assertEqual(ledger.find_player("B. Fernandes", ["Bruno Fernandes"]), "Bruno Fernandes")
         self.assertIsNone(ledger.find_player("J. Smith", ["John Smith", "Jack Smith"]))

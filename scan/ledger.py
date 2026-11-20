@@ -118,7 +118,8 @@ def norm(name):
 
 
 def same_team(a, b):
-    a, b = norm(a), norm(b)
+    # ESPN writes "LA Clippers" where the odds feed has "Los Angeles Clippers"
+    a, b = (("los angeles " + n[3:]) if n.startswith("la ") else n for n in (norm(a), norm(b)))
     return a == b or a in b or b in a
 
 
