@@ -4421,12 +4421,17 @@
    },
    "projection": "29",
    "reason": "[A] Wagner 30.7 ppg over his last six (30, 33, 38, 35, 21, 27) on 36-40 min; line 24.5. US-book price, so flat stake.",
-   "status": "open",
-   "result": null,
-   "pnl": null,
+   "status": "settled",
+   "result": "win",
+   "pnl": 2.68,
    "prop": "player_points",
    "side": "Over",
-   "us_proxy": true
+   "us_proxy": true,
+   "final_score": {
+    "Brooklyn Nets": "111",
+    "Orlando Magic": "113"
+   },
+   "actual": 35.0
   },
   {
    "id": 104,
@@ -4453,12 +4458,17 @@
    },
    "projection": "14",
    "reason": "[A] Traore 16.0 ppg over his last five, none below 11; line 10.5. US-book price, so flat stake.",
-   "status": "open",
-   "result": null,
-   "pnl": null,
+   "status": "settled",
+   "result": "loss",
+   "pnl": -3.0,
    "prop": "player_points",
    "side": "Over",
-   "us_proxy": true
+   "us_proxy": true,
+   "final_score": {
+    "Brooklyn Nets": "111",
+    "Orlando Magic": "113"
+   },
+   "actual": 4.0
   },
   {
    "id": 105,
@@ -4485,12 +4495,17 @@
    },
    "projection": "18",
    "reason": "[A] Okongwu 19.2 ppg over his last six, none below 16; Jock Landale ruled out, so more minutes at centre. US-book price, so flat stake.",
-   "status": "open",
-   "result": null,
-   "pnl": null,
+   "status": "settled",
+   "result": "win",
+   "pnl": 2.66,
    "prop": "player_points",
    "side": "Over",
-   "us_proxy": true
+   "us_proxy": true,
+   "final_score": {
+    "Atlanta Hawks": "111",
+    "Charlotte Hornets": "97"
+   },
+   "actual": 16.0
   },
   {
    "id": 106,
@@ -4517,12 +4532,17 @@
    },
    "projection": "21",
    "reason": "[B lean] Reid 20.5 ppg last six; Hornets without Grayson Allen and Grant Williams lifts his usage. US-book price.",
-   "status": "open",
-   "result": null,
-   "pnl": null,
+   "status": "settled",
+   "result": "loss",
+   "pnl": -3.0,
    "prop": "player_points",
    "side": "Over",
-   "us_proxy": true
+   "us_proxy": true,
+   "final_score": {
+    "Atlanta Hawks": "111",
+    "Charlotte Hornets": "97"
+   },
+   "actual": 12.0
   },
   {
    "id": 107,
@@ -4549,12 +4569,17 @@
    },
    "projection": "14",
    "reason": "[B lean] Wiggins 14.0 ppg last six; CJ McCollum out at least four weeks. US-book price.",
-   "status": "open",
-   "result": null,
-   "pnl": null,
+   "status": "settled",
+   "result": "win",
+   "pnl": 3.0,
    "prop": "player_points",
    "side": "Over",
-   "us_proxy": true
+   "us_proxy": true,
+   "final_score": {
+    "Atlanta Hawks": "111",
+    "Charlotte Hornets": "97"
+   },
+   "actual": 19.0
   }
  ]
 }

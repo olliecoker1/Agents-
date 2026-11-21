@@ -1,0 +1,332 @@
+{
+ "6cd4587453e4da55317b2c1e3576e75b": {
+  "books": 21,
+  "best_price": {
+   "h2h": {
+    "Milwaukee Bucks": {
+     "price": 500,
+     "book": "Matchbook"
+    },
+    "Philadelphia 76ers": {
+     "price": -526,
+     "book": "Matchbook"
+    }
+   },
+   "spreads": {
+    "Milwaukee Bucks": {
+     "price": -118,
+     "book": "Casumo",
+     "point": 12.5
+    },
+    "Philadelphia 76ers": {
+     "price": 100,
+     "book": "888sport",
+     "point": -12.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -103,
+     "book": "Matchbook",
+     "point": 229.5
+    },
+    "Under": {
+     "price": -105,
+     "book": "Matchbook",
+     "point": 229.5
+    }
+   }
+  },
+  "moneyline": {
+   "Milwaukee Bucks": {
+    "consensus_price": 425,
+    "no_vig_prob": 0.1797
+   },
+   "Philadelphia 76ers": {
+    "consensus_price": -667,
+    "no_vig_prob": 0.8203
+   }
+  },
+  "hold_pct": 6.01,
+  "spread": {
+   "Milwaukee Bucks": 12.5,
+   "Philadelphia 76ers": -12.5
+  },
+  "total": 229.5
+ },
+ "232f705eea406644ff14ad17bcf9aea6": {
+  "books": 21,
+  "best_price": {
+   "h2h": {
+    "New York Knicks": {
+     "price": -192,
+     "book": "Matchbook"
+    },
+    "Portland Trail Blazers": {
+     "price": 188,
+     "book": "Matchbook"
+    }
+   },
+   "spreads": {
+    "New York Knicks": {
+     "price": -104,
+     "book": "Matchbook",
+     "point": -5.5
+    },
+    "Portland Trail Blazers": {
+     "price": -109,
+     "book": "Matchbook",
+     "point": 5.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -109,
+     "book": "Matchbook",
+     "point": 217.5
+    },
+    "Under": {
+     "price": -102,
+     "book": "Matchbook",
+     "point": 217.5
+    }
+   }
+  },
+  "moneyline": {
+   "New York Knicks": {
+    "consensus_price": -219,
+    "no_vig_prob": 0.6476
+   },
+   "Portland Trail Blazers": {
+    "consensus_price": 167,
+    "no_vig_prob": 0.3524
+   }
+  },
+  "hold_pct": 6.09,
+  "spread": {
+   "New York Knicks": -5.5,
+   "Portland Trail Blazers": 5.5
+  },
+  "total": 217.5
+ },
+ "293cafe6913a9bd59328c98049266ad0": {
+  "books": 21,
+  "best_price": {
+   "h2h": {
+    "Dallas Mavericks": {
+     "price": -189,
+     "book": "Sky Bet"
+    },
+    "Los Angeles Clippers": {
+     "price": 184,
+     "book": "Matchbook"
+    }
+   },
+   "spreads": {
+    "Dallas Mavericks": {
+     "price": -108,
+     "book": "Matchbook",
+     "point": -5.5
+    },
+    "Los Angeles Clippers": {
+     "price": -102,
+     "book": "Matchbook",
+     "point": 5.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -111,
+     "book": "Bet Victor",
+     "point": 228.5
+    },
+    "Under": {
+     "price": -110,
+     "book": "888sport",
+     "point": 228.5
+    }
+   }
+  },
+  "moneyline": {
+   "Dallas Mavericks": {
+    "consensus_price": -217,
+    "no_vig_prob": 0.6435
+   },
+   "Los Angeles Clippers": {
+    "consensus_price": 163,
+    "no_vig_prob": 0.3565
+   }
+  },
+  "hold_pct": 6.45,
+  "spread": {
+   "Dallas Mavericks": -5.5,
+   "Los Angeles Clippers": 5.5
+  },
+  "total": 228.5
+ },
+ "37e3f99d7ee68587400e99e417db0e6a": {
+  "books": 21,
+  "best_price": {
+   "h2h": {
+    "Memphis Grizzlies": {
+     "price": 194,
+     "book": "Matchbook"
+    },
+    "Minnesota Timberwolves": {
+     "price": -204,
+     "book": "Matchbook"
+    }
+   },
+   "spreads": {
+    "Memphis Grizzlies": {
+     "price": -110,
+     "book": "Ladbrokes",
+     "point": 5.5
+    },
+    "Minnesota Timberwolves": {
+     "price": -118,
+     "book": "888sport",
+     "point": -5.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -106,
+     "book": "LiveScore Bet",
+     "point": 227.5
+    },
+    "Under": {
+     "price": -111,
+     "book": "Bet Victor",
+     "point": 227.5
+    }
+   }
+  },
+  "moneyline": {
+   "Memphis Grizzlies": {
+    "consensus_price": 175,
+    "no_vig_prob": 0.3441
+   },
+   "Minnesota Timberwolves": {
+    "consensus_price": -226,
+    "no_vig_prob": 0.6559
+   }
+  },
+  "hold_pct": 5.69,
+  "spread": {
+   "Memphis Grizzlies": 5.5,
+   "Minnesota Timberwolves": -5.5
+  },
+  "total": 227.5
+ },
+ "1139ffb82856378723c5465df4e13d96": {
+  "books": 21,
+  "best_price": {
+   "h2h": {
+    "New Orleans Pelicans": {
+     "price": 900,
+     "book": "Smarkets"
+    },
+    "San Antonio Spurs": {
+     "price": -1111,
+     "book": "Matchbook"
+    }
+   },
+   "spreads": {
+    "New Orleans Pelicans": {
+     "price": -118,
+     "book": "888sport",
+     "point": 17.5
+    },
+    "San Antonio Spurs": {
+     "price": -118,
+     "book": "888sport",
+     "point": -17.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -110,
+     "book": "Grosvenor",
+     "point": 227.5
+    },
+    "Under": {
+     "price": -111,
+     "book": "Bet Victor",
+     "point": 227.5
+    }
+   }
+  },
+  "moneyline": {
+   "New Orleans Pelicans": {
+    "consensus_price": 800,
+    "no_vig_prob": 0.1056
+   },
+   "San Antonio Spurs": {
+    "consensus_price": -1606,
+    "no_vig_prob": 0.8944
+   }
+  },
+  "hold_pct": 5.25,
+  "spread": {
+   "New Orleans Pelicans": 17.5,
+   "San Antonio Spurs": -17.5
+  },
+  "total": 227.5
+ },
+ "b754a1bf84af81d45d4a3a16398daa44": {
+  "books": 21,
+  "best_price": {
+   "h2h": {
+    "Boston Celtics": {
+     "price": -625,
+     "book": "Matchbook"
+    },
+    "Sacramento Kings": {
+     "price": 600,
+     "book": "Matchbook"
+    }
+   },
+   "spreads": {
+    "Boston Celtics": {
+     "price": -118,
+     "book": "888sport",
+     "point": -12.5
+    },
+    "Sacramento Kings": {
+     "price": -110,
+     "book": "Casumo",
+     "point": 12.5
+    }
+   },
+   "totals": {
+    "Over": {
+     "price": -105,
+     "book": "Matchbook",
+     "point": 217.5
+    },
+    "Under": {
+     "price": -106,
+     "book": "Matchbook",
+     "point": 217.5
+    }
+   }
+  },
+  "moneyline": {
+   "Boston Celtics": {
+    "consensus_price": -800,
+    "no_vig_prob": 0.8421
+   },
+   "Sacramento Kings": {
+    "consensus_price": 500,
+    "no_vig_prob": 0.1579
+   }
+  },
+  "hold_pct": 5.56,
+  "spread": {
+   "Boston Celtics": -12.5,
+   "Sacramento Kings": 12.5
+  },
+  "total": 217.5
+ }
+}
